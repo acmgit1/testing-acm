@@ -1,0 +1,147 @@
+guid: 17e47571-1f77-4a5a-a635-27c82641478b
+liveboard:
+  name: acm lb
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total lo_custkey by lo_shipmode and lo_orderpriority
+      tables:
+      - id: tpch5k_falcon_default_schema_lineorder acm
+        name: tpch5k_falcon_default_schema_lineorder acm
+        fqn: 92570a0c-ecc1-461d-9088-675b2bffef9c
+      search_query: "[lo_custkey] [lo_shipmode] [lo_orderpriority]"
+      answer_columns:
+      - name: Total lo_custkey
+      - name: lo_orderpriority
+      - name: lo_shipmode
+      table:
+        table_columns:
+        - column_id: Total lo_custkey
+          show_headline: false
+        - column_id: lo_orderpriority
+          show_headline: false
+        - column_id: lo_shipmode
+          show_headline: false
+        ordered_column_ids:
+        - lo_shipmode
+        - lo_orderpriority
+        - Total lo_custkey
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"lo_shipmode\",\"columnProperty\": {}},{\"columnId\": \"lo_orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total lo_custkey\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Total lo_custkey
+        - column_id: lo_orderpriority
+        - column_id: lo_shipmode
+        axis_configs:
+        - x:
+          - lo_shipmode
+          "y":
+          - Total lo_custkey
+          color:
+          - lo_orderpriority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"lo_shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total lo_custkey\",\"columnProperty\": {}},{\"columnId\": \"lo_orderpriority\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0579a72b-0dbb-4d77-bdd4-70d714874b5e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total lo_custkey\"],\"isOpposite\": false}},{\"id\": \"fdcf8d34-9cc7-4f7f-af99-227eb51054b4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"lo_shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total lo_custkey\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5afcbf60-862f-4bbd-9d6b-422f074c4408
+  - id: Viz_2
+    answer:
+      name: retest acm
+      tables:
+      - id: tpch5k_falcon_default_schema_lineorder acm
+        name: tpch5k_falcon_default_schema_lineorder acm
+        fqn: 92570a0c-ecc1-461d-9088-675b2bffef9c
+      search_query: "[lo_custkey] [lo_discount] [lo_orderpriority] [lo_shipmode]"
+      answer_columns:
+      - name: Total lo_custkey
+      - name: Total lo_discount
+      - name: lo_orderpriority
+      - name: lo_shipmode
+      table:
+        table_columns:
+        - column_id: Total lo_custkey
+          show_headline: false
+        - column_id: Total lo_discount
+          show_headline: false
+        - column_id: lo_orderpriority
+          show_headline: false
+        - column_id: lo_shipmode
+          show_headline: false
+        ordered_column_ids:
+        - lo_orderpriority
+        - lo_shipmode
+        - Total lo_custkey
+        - Total lo_discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"lo_orderpriority\",\"columnProperty\": {}},{\"columnId\": \"lo_shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total lo_custkey\",\"columnProperty\": {}},{\"columnId\": \"Total lo_discount\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total lo_custkey
+        - column_id: Total lo_discount
+        - column_id: lo_orderpriority
+        - column_id: lo_shipmode
+        axis_configs:
+        - x:
+          - lo_shipmode
+          "y":
+          - Total lo_custkey
+          - Total lo_discount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"lo_orderpriority\",\"columnProperty\": {}},{\"columnId\": \"lo_shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total lo_custkey\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total lo_discount\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN\",\"value\": \"3600\",\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"}}]}}}],\"axisProperties\": [{\"id\": \"0892d964-cf5b-4645-a912-d8e9383b7b94\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total lo_custkey\"],\"isOpposite\": false}},{\"id\": \"20d823af-efa2-4aaf-9380-ef20cb5a6d5c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total lo_discount\"],\"isOpposite\": true}},{\"id\": \"2e5bf8e8-c5ef-4db4-9b2d-1cedbb8f2542\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"lo_shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent, air\",\"color\": \"#F47E89\"},{\"serieName\": \"1-urgent, fob\",\"color\": \"#B6313E\"},{\"serieName\": \"1-urgent, mail\",\"color\": \"#F9B3B9\"},{\"serieName\": \"1-urgent, rail\",\"color\": \"#F04152\"},{\"serieName\": \"1-urgent, reg air\",\"color\": \"#A2ACBA\"},{\"serieName\": \"1-urgent, ship\",\"color\": \"#47515F\"},{\"serieName\": \"1-urgent, truck\",\"color\": \"#BEC6D0\"},{\"serieName\": \"2-high, air\",\"color\": \"#747E8C\"},{\"serieName\": \"2-high, fob\",\"color\": \"#FFA97E\"},{\"serieName\": \"2-high, mail\",\"color\": \"#C26232\"},{\"serieName\": \"2-high, rail\",\"color\": \"#FFCCB3\"},{\"serieName\": \"2-high, reg air\",\"color\": \"#FF8142\"},{\"serieName\": \"2-high, ship\",\"color\": \"#B094F8\"},{\"serieName\": \"2-high, truck\",\"color\": \"#6A4ABA\"},{\"serieName\": \"3-medium, air\",\"color\": \"#D1C0FB\"},{\"serieName\": \"3-medium, fob\",\"color\": \"#8C62F5\"},{\"serieName\": \"3-medium, mail\",\"color\": \"#025B3C\"},{\"serieName\": \"3-medium, rail\",\"color\": \"#56D3A8\"},{\"serieName\": \"3-medium, reg air\",\"color\": \"#049160\"},{\"serieName\": \"3-medium, ship\",\"color\": \"#9BE5CB\"},{\"serieName\": \"3-medium, truck\",\"color\": \"#06BF7F\"},{\"serieName\": \"4-not specified, air\",\"color\": \"#785F1A\"},{\"serieName\": \"4-not specified, fob\",\"color\": \"#FCD977\"},{\"serieName\": \"4-not specified, mail\",\"color\": \"#BF982A\"},{\"serieName\": \"4-not specified, rail\",\"color\": \"#FDE9AF\"},{\"serieName\": \"4-not specified, reg air\",\"color\": \"#FCC838\"},{\"serieName\": \"4-not specified, ship\",\"color\": \"#22636B\"},{\"serieName\": \"4-not specified, truck\",\"color\": \"#82DFE9\"},{\"serieName\": \"5-low, {null}\",\"color\": \"#369FAA\"},{\"serieName\": \"5-low, air\",\"color\": \"#B5ECF2\"},{\"serieName\": \"5-low, fob\",\"color\": \"#48D1E0\"},{\"serieName\": \"5-low, mail\",\"color\": \"#163772\"},{\"serieName\": \"5-low, rail\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low, reg air\",\"color\": \"#2359B6\"},{\"serieName\": \"5-low, ship\",\"color\": \"#ABC7F9\"},{\"serieName\": \"5-low, truck\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total lo_custkey\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total lo_discount\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d2e3e6e5-0061-40c0-a879-56b5a2a9c762
+  - id: Viz_3
+    answer:
+      name: Total C_CUSTKEY by Quarterly LO_COMMITDATE - Fiscal
+      tables:
+      - id: acmws
+        name: acmws
+        fqn: 1a9694a7-5222-4195-9431-6c71fcb4a617
+      search_query: "[C_CUSTKEY] [LO_COMMITDATE] [LO_COMMITDATE].quarterly"
+      answer_columns:
+      - name: Quarter(LO_COMMITDATE)
+      - name: Total C_CUSTKEY
+      table:
+        table_columns:
+        - column_id: Quarter(LO_COMMITDATE)
+          show_headline: false
+        - column_id: Total C_CUSTKEY
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(LO_COMMITDATE)
+        - Total C_CUSTKEY
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Quarter(LO_COMMITDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total C_CUSTKEY\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(LO_COMMITDATE)
+        - column_id: Total C_CUSTKEY
+        axis_configs:
+        - x:
+          - Quarter(LO_COMMITDATE)
+          "y":
+          - Total C_CUSTKEY
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(LO_COMMITDATE)\",\"columnProperty\": {}},{\"columnId\": \"Total C_CUSTKEY\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1b2bed7f-4abc-412b-9602-eb17be04faf8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total C_CUSTKEY\"],\"isOpposite\": false}},{\"id\": \"a74f4369-4348-425e-8edd-a93d7ad5f6bf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(LO_COMMITDATE)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f52a9645-be60-4872-90a8-12152b5232d2
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 7
+      width: 12
+    - visualization_id: Viz_3
+      x: 9
+      "y": 7
+      height: 4
+      width: 3
+    - visualization_id: Viz_2
+      x: 0
+      "y": 7
+      height: 8
+      width: 6
