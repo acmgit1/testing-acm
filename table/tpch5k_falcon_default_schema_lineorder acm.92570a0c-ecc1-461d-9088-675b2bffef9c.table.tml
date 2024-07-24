@@ -1,0 +1,137 @@
+guid: 92570a0c-ecc1-461d-9088-675b2bffef9c
+table:
+  name: tpch5k_falcon_default_schema_lineorder acm
+  schema: TESTUSER
+  db_table: tpch5k_falcon_default_schema_lineorder
+  connection:
+    name: oracle acm
+    fqn: 2ada8c81-92fe-4e08-922a-c0ea898c908a
+  columns:
+  - name: lo_orderkey
+    db_column_name: lo_orderkey
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_linenumber
+    db_column_name: lo_linenumber
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_custkey
+    db_column_name: lo_custkey
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_partkey
+    db_column_name: lo_partkey
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_suppkey
+    db_column_name: lo_suppkey
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_orderdate
+    db_column_name: lo_orderdate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: lo_orderpriority
+    db_column_name: lo_orderpriority
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: lo_shippriority
+    db_column_name: lo_shippriority
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: lo_quantity
+    db_column_name: lo_quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_extendedprice
+    db_column_name: lo_extendedprice
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_ordtotalprice
+    db_column_name: lo_ordtotalprice
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_discount
+    db_column_name: lo_discount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_revenue
+    db_column_name: lo_revenue
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_supplycost
+    db_column_name: lo_supplycost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_tax
+    db_column_name: lo_tax
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: lo_commitdate
+    db_column_name: lo_commitdate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: lo_shipmode
+    db_column_name: lo_shipmode
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
