@@ -100,6 +100,12 @@ liveboard:
   layout:
     tiles:
     - visualization_id: Viz_2
-      size: MEDIUM
+      x: 0
+      "y": 0
+      height: 3
+      width: 4
     - visualization_id: Viz_1
-      size: LARGE
+      x: 0
+      "y": 3
+      height: 8
+      width: 12
