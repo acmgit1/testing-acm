@@ -1,0 +1,8 @@
+guid: b7f147f9-0b88-473e-94da-291a79b9d09d
+action_object:
+  name: callback_local1
+  type: CALLBACK
+  callback_action_details:
+    reference: callback_local1
+  availability: LOCAL
+  application: NONE

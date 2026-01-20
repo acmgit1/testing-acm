@@ -1,0 +1,2716 @@
+guid: a3d43cfc-e054-4c46-bef4-a1f6a70f309a
+liveboard:
+  name: LB_mandatory_filters (Please do not touch-retest LB)
+  description: Please do not touch-retest LB
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Copy of mandatory_filter
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm11
+        name: frm11
+        expr: "[str_param] "
+        was_auto_generated: false
+      search_query: "[Lo Extendedprice] [Lo Orderpriority] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Extendedprice
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Extendedprice
+          color:
+          - Lo Orderpriority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"7750607f-3db1-45c6-853d-89f1440cf7ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"21640bb6-4612-4c0c-b989-fc504d43f9d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4cd062f4-6a68-4085-be2b-c4af61b46682
+    action_object_associations:
+    - action_name: callback_local
+      context: PRIMARY
+      enabled: true
+    - action_name: url_local
+      context: MENU
+      enabled: true
+  - id: Viz_2
+    answer:
+      name: mandatory_filter
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm11
+        name: frm11
+        expr: "[str_param] "
+        was_auto_generated: false
+      search_query: "[Lo Extendedprice] [Lo Orderpriority] [formula_frm11] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: THOUSANDS
+            decimals: 0.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+            removeTrailingZeroes: false
+          isCategoryEditable: true
+      - name: frm11
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+          headline_client_state: "{\"headlineVizPropVersion\": \"V1\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#2E75F0\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false}]}}}"
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        - column_id: frm11
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Orderpriority
+        - frm11
+        - Lo Shipmode
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"theme\": \"ZEBRA\",\"density\": \"COMPACT\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"1-urgent\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#8C62F5\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#06BF7F\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false}]}}},{\"columnId\": \"frm11\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        - column_id: frm11
+        axis_configs:
+        - x:
+          - Lo Orderpriority
+          - frm11
+          "y":
+          - Total Lo Extendedprice
+        - "y":
+          - Total Lo Extendedprice
+        - x:
+          - Lo Orderpriority
+          "y":
+          - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"isStackedAsPercent\": false,\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"frm11\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"7cfe1962-a66c-444d-9c0f-38b8a5802bd1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"06d1d3b1-7ea4-4895-9ead-3cd2cd17a42d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Orderpriority\",\"frm11\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 56250d3f-d1a4-4bba-8e9a-1d35be50d629
+  - id: Viz_3
+    answer:
+      name: Total Lo Discount by Quarterly Lo Commitdate - Fiscal
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Discount] [Lo Commitdate] [Lo Commitdate].quarterly"
+      answer_columns:
+      - name: Quarter(Lo Commitdate)
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: Quarter(Lo Commitdate)
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Lo Commitdate)
+        - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(Lo Commitdate)
+        - column_id: Total Lo Discount
+        axis_configs:
+        - x:
+          - Quarter(Lo Commitdate)
+          "y":
+          - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"52ac5de9-d6e2-48ef-86b5-4850c5b97edb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"e066fe79-ad6f-4214-8c5d-d9d48a00de77\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Lo Commitdate)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 791959b9-345e-4372-8974-cb46379d77cc
+  - id: Viz_4
+    answer:
+      name: Total Lo Revenue
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Revenue]"
+      answer_columns:
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: Total Lo Revenue
+          show_headline: false
+        ordered_column_ids:
+        - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - "y":
+          - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"212a1a54-d109-4ac5-a9c9-b8932d339686\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": false}},{\"id\": \"65d9c749-9a71-4c44-bd94-fb9286839c21\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f921e98d-a446-40c8-aec1-041afd86970c
+  - id: Viz_5
+    answer:
+      name: "Total Lo Linenumber by Lo Shipmode, Lo Commitdate"
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Linenumber] [Lo Shipmode] [Lo Commitdate] [Lo Commitdate].detailed"
+      answer_columns:
+      - name: Lo Commitdate
+      - name: Lo Shipmode
+      - name: Total Lo Linenumber
+      table:
+        table_columns:
+        - column_id: Lo Commitdate
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Linenumber
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - Lo Commitdate
+        - Total Lo Linenumber
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Lo Commitdate
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Linenumber
+        axis_configs:
+        - x:
+          - Lo Commitdate
+          "y":
+          - Total Lo Linenumber
+          color:
+          - Lo Shipmode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Lo Commitdate\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0e11549b-9984-44f4-9331-fd5b17a125d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Linenumber\"],\"isOpposite\": false}},{\"id\": \"c7f1eb12-38ea-44af-8329-06978ec46035\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Commitdate\"]}}],\"systemSeriesColors\": [{\"serieName\": \"null_test\",\"color\": \"#2E75F0\"},{\"serieName\": \"air\",\"color\": \"#48D1E0\"},{\"serieName\": \"fob\",\"color\": \"#FCC838\"},{\"serieName\": \"mail\",\"color\": \"#06BF7F\"},{\"serieName\": \"rail\",\"color\": \"#8C62F5\"},{\"serieName\": \"reg air\",\"color\": \"#FF8142\"},{\"serieName\": \"ship\",\"color\": \"#ABC7F9\"},{\"serieName\": \"truck\",\"color\": \"#B5ECF2\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 4eb5d844-0c97-47a7-96a3-d6127533413a
+  - id: Viz_6
+    answer:
+      name: "Total sales by SKU, city"
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [SKU] [city]"
+      answer_columns:
+      - name: SKU
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: SKU
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - SKU
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: SKU
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - SKU
+          "y":
+          - Total sales
+          color:
+          - city
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"SKU\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"city\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"6e0eb555-e733-4cc1-b720-d85a656fdbeb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"12\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#48D1E0\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"a10cef2d-0d74-4959-9d18-f285b1b416a8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"SKU\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#FF8142\\\",\\\"fontSize\\\":\\\"12\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#FCC838\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"alpharetta\",\"color\": \"#A2ACBA\"},{\"serieName\": \"ann arbor\",\"color\": \"#47515F\"},{\"serieName\": \"arcadia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"atlanta\",\"color\": \"#747E8C\"},{\"serieName\": \"berkeley\",\"color\": \"#FFA97E\"},{\"serieName\": \"billings\",\"color\": \"#C26232\"},{\"serieName\": \"bloomington\",\"color\": \"#FFCCB3\"},{\"serieName\": \"boise\",\"color\": \"#FF8142\"},{\"serieName\": \"boston\",\"color\": \"#B094F8\"},{\"serieName\": \"boulder\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bozeman\",\"color\": \"#D1C0FB\"},{\"serieName\": \"chandler\",\"color\": \"#8C62F5\"},{\"serieName\": \"chicago\",\"color\": \"#56D3A8\"},{\"serieName\": \"colorado springs\",\"color\": \"#049160\"},{\"serieName\": \"columbia\",\"color\": \"#9BE5CB\"},{\"serieName\": \"east hanover\",\"color\": \"#06BF7F\"},{\"serieName\": \"flagstaff\",\"color\": \"#FCD977\"},{\"serieName\": \"framingham\",\"color\": \"#BF982A\"},{\"serieName\": \"henderson\",\"color\": \"#FDE9AF\"},{\"serieName\": \"indianapolis\",\"color\": \"#FCC838\"},{\"serieName\": \"kentwood\",\"color\": \"#22636B\"},{\"serieName\": \"las vegas\",\"color\": \"#82DFE9\"},{\"serieName\": \"maple grove\",\"color\": \"#369FAA\"},{\"serieName\": \"newark\",\"color\": \"#B5ECF2\"},{\"serieName\": \"north conway\",\"color\": \"#48D1E0\"},{\"serieName\": \"northbrook\",\"color\": \"#163772\"},{\"serieName\": \"norwalk\",\"color\": \"#71A1F4\"},{\"serieName\": \"st. louis\",\"color\": \"#2359B6\"},{\"serieName\": \"west des moines\",\"color\": \"#ABC7F9\"},{\"serieName\": \"west hartford\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 661b7c50-ee1a-4752-b489-b2fbe8a9332d
+  - id: Viz_7
+    answer:
+      name: Total sales by Yearly date - Fiscal
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [date].yearly sort by [date] [date].yearly descending"
+      answer_columns:
+      - name: Total sales
+      - name: Year(date)
+        sort_info:
+          category: DEFAULT
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: Year(date)
+          show_headline: false
+        ordered_column_ids:
+        - Year(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Total sales
+        - column_id: Year(date)
+        axis_configs:
+        - x:
+          - Year(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Year(date)\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"ac57c9ed-ecdf-43cd-ae93-cadc987627be\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#2E75F0\\\",\\\"fontSize\\\":\\\"12\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#FCC838\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"5038abd6-d22a-4725-9bda-a43070e35221\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Year(date)\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#48D1E0\\\",\\\"fontSize\\\":\\\"12\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#06BF7F\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7f8200cc-8ec4-40ee-9f8c-807784492e8e
+  - id: Viz_8
+    answer:
+      name: Total Lo Custkey by Lo Commitdate
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Custkey] [Lo Commitdate] [Lo Commitdate].detailed [Lo Orderdate] [Lo Orderdate].detailed [Lo Orderpriority]"
+      answer_columns:
+      - name: Lo Commitdate
+      - name: Lo Orderdate
+      - name: Lo Orderpriority
+      - name: Total Lo Custkey
+      table:
+        table_columns:
+        - column_id: Lo Commitdate
+          show_headline: false
+        - column_id: Lo Orderdate
+          show_headline: false
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Total Lo Custkey
+          show_headline: false
+        ordered_column_ids:
+        - Lo Commitdate
+        - Lo Orderdate
+        - Lo Orderpriority
+        - Total Lo Custkey
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Lo Commitdate
+        - column_id: Lo Orderdate
+        - column_id: Lo Orderpriority
+        - column_id: Total Lo Custkey
+        axis_configs:
+        - x:
+          - Lo Commitdate
+          "y":
+          - Total Lo Custkey
+          color:
+          - Lo Orderpriority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Commitdate\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderdate\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e783dd52-a26e-4ba4-b848-e13aa4e18c33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"ffc21c28-07d5-49e2-8740-423a46f1b01e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Commitdate\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Custkey\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: Total Lo Custkey by Lo Commitdate
+    viz_guid: 8ec65b56-9844-4a5f-ac9b-9b5d0dabef31
+  - id: Viz_9
+    answer:
+      name: Total sales
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales]"
+      answer_columns:
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total sales
+        axis_configs:
+        - "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2c53691b-bcdd-4055-84d1-def4086bc708\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"bfc3871a-510c-4cc3-afb3-7c30a6374118\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: e4f226d9-5d80-4e0a-888f-8cf6555df96e
+  - id: Viz_10
+    answer:
+      name: Total Lo Custkey by Lo Commitdate
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Custkey] [Lo Commitdate] [Lo Commitdate].detailed [Lo Orderdate] [Lo Orderdate].detailed [Lo Orderpriority] [Lo Linenumber]"
+      answer_columns:
+      - name: Lo Commitdate
+      - name: Lo Orderdate
+      - name: Lo Orderpriority
+      - name: Total Lo Custkey
+      - name: Total Lo Linenumber
+      table:
+        table_columns:
+        - column_id: Lo Commitdate
+          show_headline: false
+        - column_id: Lo Orderdate
+          show_headline: false
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Total Lo Custkey
+          show_headline: false
+        - column_id: Total Lo Linenumber
+          show_headline: false
+        ordered_column_ids:
+        - Lo Commitdate
+        - Lo Orderdate
+        - Lo Orderpriority
+        - Total Lo Custkey
+        - Total Lo Linenumber
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"2-high\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FCC838\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#06BF7F\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false},{\"operator\": \"IS\",\"value\": \"2-high\",\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FF8142\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#8C62F5\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Lo Linenumber\",\"isHighlightRow\": false}]}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Commitdate
+        - column_id: Lo Orderdate
+        - column_id: Lo Orderpriority
+        - column_id: Total Lo Custkey
+        - column_id: Total Lo Linenumber
+        axis_configs:
+        - x:
+          - Lo Commitdate
+          "y":
+          - Total Lo Custkey
+          - Total Lo Linenumber
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Commitdate\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderdate\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4579fbb6-d9ba-4fa8-a185-8abc2bdec9ca\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"3681d099-8be9-41f5-a352-34ebf85d0313\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Linenumber\"],\"isOpposite\": true}},{\"id\": \"36e88e80-a942-4183-9dc1-60101ca0e175\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Commitdate\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Custkey\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: Total Lo Custkey by Lo Commitdate
+    viz_guid: 263e4460-6cb3-4131-84d4-c0a211db2d3d
+  - id: Viz_11
+    viz_guid: 12e97a48-162f-456b-a4a3-36c7d80bc660
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">testing</span></h2><p class=\"theme-module__editor-paragraph\"><img id=\"5cfc5b2b-9975-4272-8138-350509218994\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  - id: Viz_12
+    answer:
+      name: Total Budget
+      tables:
+      - id: Golden_WS
+        name: Golden_WS
+        fqn: bd1d48e0-a9ea-4497-bf16-1961c310a3d1
+      search_query: "[Budget]"
+      answer_columns:
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: Total Budget
+          show_headline: false
+        ordered_column_ids:
+        - Total Budget
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Budget\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Budget
+        axis_configs:
+        - "y":
+          - Total Budget
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Budget\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"45f4f9e6-3657-4ab2-bb40-682a284759b1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"ae3021ef-4e1a-4430-9024-c8688df2f793\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 91ec97b2-9f9d-4fd3-9b2c-347ac4015b43
+  - id: Viz_13
+    answer:
+      name: Total Budget
+      tables:
+      - id: Golden_WS
+        name: Golden_WS
+        fqn: bd1d48e0-a9ea-4497-bf16-1961c310a3d1
+      search_query: "[Budget]"
+      answer_columns:
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: Total Budget
+          show_headline: false
+        ordered_column_ids:
+        - Total Budget
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Budget\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Budget
+        axis_configs:
+        - "y":
+          - Total Budget
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Budget\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"24420430-00f1-4fb6-82b9-c71ee0dbd9f8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"08351014-ed69-486f-ab12-2526d5fb1b51\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 23d48826-79b4-48da-bf8a-fd2dbcb61e5e
+  - id: Viz_14
+    answer:
+      name: Total LO_LINENUMBER by LO_SHIPMODE
+      tables:
+      - id: LINEORDER10
+        name: LINEORDER10
+        fqn: 05df801e-da45-4902-8316-16aff06683e3
+      search_query: "[LO_LINENUMBER] [LO_SHIPMODE]"
+      answer_columns:
+      - name: LO_SHIPMODE
+      - name: Total LO_LINENUMBER
+      table:
+        table_columns:
+        - column_id: LO_SHIPMODE
+          show_headline: false
+        - column_id: Total LO_LINENUMBER
+          show_headline: false
+        ordered_column_ids:
+        - LO_SHIPMODE
+        - Total LO_LINENUMBER
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: LO_SHIPMODE
+        - column_id: Total LO_LINENUMBER
+        axis_configs:
+        - x:
+          - LO_SHIPMODE
+          "y":
+          - Total LO_LINENUMBER
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"LO_SHIPMODE\",\"columnProperty\": {}},{\"columnId\": \"Total LO_LINENUMBER\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"294bba90-ab84-4912-8b05-9592f08383e2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total LO_LINENUMBER\"],\"isOpposite\": false}},{\"id\": \"19b95822-608e-45ec-a235-3d89aabe2d6f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"LO_SHIPMODE\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total LO_LINENUMBER\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d755e3ef-595b-419d-87d3-6727b72b48fd
+  - id: Viz_15
+    answer:
+      name: Total LO_DISCOUNT by LO_ORDERPRIORITY
+      tables:
+      - id: LINEORDER10
+        name: LINEORDER10
+        fqn: 05df801e-da45-4902-8316-16aff06683e3
+      search_query: "[LO_DISCOUNT] [LO_ORDERPRIORITY]"
+      answer_columns:
+      - name: LO_ORDERPRIORITY
+      - name: Total LO_DISCOUNT
+      table:
+        table_columns:
+        - column_id: LO_ORDERPRIORITY
+          show_headline: false
+        - column_id: Total LO_DISCOUNT
+          show_headline: false
+        ordered_column_ids:
+        - LO_ORDERPRIORITY
+        - Total LO_DISCOUNT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: LO_ORDERPRIORITY
+        - column_id: Total LO_DISCOUNT
+        axis_configs:
+        - x:
+          - LO_ORDERPRIORITY
+          "y":
+          - Total LO_DISCOUNT
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"LO_ORDERPRIORITY\",\"columnProperty\": {}},{\"columnId\": \"Total LO_DISCOUNT\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"884a237b-178a-4b5c-88e9-53c734741c36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total LO_DISCOUNT\"],\"isOpposite\": false}},{\"id\": \"c47128a5-1156-4f94-9abb-71b0be08b158\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"LO_ORDERPRIORITY\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total LO_DISCOUNT\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9d44e9ff-ae06-4643-8824-5fc3faf6b7fc
+  - id: Viz_16
+    answer:
+      name: Total Lo Discount by Lo Shipmode
+      tables:
+      - id: test_model11
+        name: test_model11
+        fqn: 735c1116-ba16-4ef4-bccf-e461ad6eedf4
+      search_query: "[Lo Discount] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Discount
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0d913071-0472-4e1e-9e2e-10dfb23ddb4d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"f8b5a805-add7-4b16-bed5-359870cb736f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1e490690-55a2-4821-a95b-e81a4f89283f
+  - id: Viz_17
+    answer:
+      name: Table_ABAC
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm_ans_pp
+        name: frm_ans_pp
+        expr: "[ans_str] "
+        was_auto_generated: false
+      - id: formula_frm_ip
+        name: frm_ip
+        expr: "[int_param] "
+        was_auto_generated: false
+      - id: formula_frm_str
+        name: frm_str
+        expr: "[str_param] "
+        was_auto_generated: false
+      - id: formula_frm_ws_str
+        name: frm_ws_str
+        expr: "[ws_str] "
+        was_auto_generated: false
+      search_query: "[Lo Discount] [Lo Orderpriority] [Lo Shipmode] [Lo Commitdate] [Lo Commitdate].quarterly [formula_frm_str] [formula_frm_ip] [formula_frm_ans_pp] [formula_frm_ws_str]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Quarter(Lo Commitdate)
+      - name: Total Lo Discount
+      - name: Total frm_ip
+      - name: frm_ans_pp
+      - name: frm_str
+      - name: frm_ws_str
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Quarter(Lo Commitdate)
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: Total frm_ip
+          show_headline: false
+        - column_id: frm_ans_pp
+          show_headline: false
+        - column_id: frm_str
+          show_headline: false
+        - column_id: frm_ws_str
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Quarter(Lo Commitdate)
+        - frm_str
+        - frm_ans_pp
+        - frm_ws_str
+        - Total Lo Discount
+        - Total frm_ip
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Measure values
+          type: MEASURE_VALUES
+        - column_id: Quarter(Lo Commitdate)
+        - column_id: Total Lo Discount
+        - column_id: Total frm_ip
+        - column_id: frm_ans_pp
+        - column_id: frm_str
+        - column_id: frm_ws_str
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Quarter(Lo Commitdate)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"column\"},{\"dataField\": \"Measure names\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Measure names\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"column\"},{\"dataField\": \"Lo Shipmode\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"frm_str\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"frm_ans_pp\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"Lo Orderpriority\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"}]},\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"frm_str\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Total frm_ip\",\"columnProperty\": {}},{\"columnId\": \"frm_ans_pp\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2374e918-50f2-4dbf-aead-75d9aed72430\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"4f194334-cd52-42c4-bfb3-67a9de3c0356\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total frm_ip\"],\"isOpposite\": true}},{\"id\": \"6da00a92-def5-4257-b3e6-df31451d0be4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\",\"frm_str\",\"frm_ans_pp\",\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"2-high\",\"color\": \"#8C62F5\"},{\"serieName\": \"5-low\",\"color\": \"#FF8142\"}]}"
+        custom_visual_props: "{}"
+      display_mode: TABLE_MODE
+      parameters:
+      - id: 1759a7eb-dc94-40cf-b091-c8362585f8f2
+        name: ans_str
+        data_type: CHAR
+        default_value: anstest
+        description: ""
+      dynamic_name: Table_ABAC
+    viz_guid: 8376481b-456a-4706-9107-09ad76f80244
+  - id: Viz_18
+    answer:
+      name: Total Lo Discount by frm and Lo Shipmode
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm
+        name: frm
+        expr: "[ws_str] "
+        was_auto_generated: false
+      search_query: "[Lo Discount] [Lo Shipmode] [formula_frm]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Discount
+      - name: frm
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: frm
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - frm
+        - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"frm\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Discount
+        - column_id: frm
+        axis_configs:
+        - x:
+          - frm
+          "y":
+          - Total Lo Discount
+          color:
+          - Lo Shipmode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"frm\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c5029999-bafd-48da-93cd-72072ce79775\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"52b175ce-ebde-4554-91e7-b07d0fcaf4e6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"frm\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"ship\",\"color\": \"#8C62F5\"},{\"serieName\": \"truck\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5a430fed-b831-454a-8b04-21090f76f41e
+  - id: Viz_19
+    viz_guid: 7695e31e-f835-4cca-aa41-f0fac49490a3
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">testhhhk</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
+  - id: Viz_20
+    viz_guid: 472b3f65-232b-44ae-9fd3-8edbab410dd8
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">ytrfaHJNAs</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(66, 46, 117);\"></div>"
+  - id: Viz_21
+    viz_guid: 0f984e8f-5b1c-4288-812a-7c39bcbc9e02
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><a href=\"https://grapes-clone-upgrades.thoughtspotdev.cloud/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">10.12</span></a></h2><p class=\"theme-module__editor-paragraph\"><br></p><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><u><s><i><em class=\"theme-module__editor-text-underlineStrikethrough theme-module__editor-text-italic\" style=\"color: rgb(4, 145, 96); white-space: pre-wrap;\">czdczdasdasasd</em></i></s></u></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><table class=\"theme-module__editor-table\"><colgroup><col><col><col></colgroup><tbody><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">ZxZxz</span></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">xZxzxZ</span></p></td><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td></tr></tbody></table><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><img id=\"938b08fb-cb59-4a30-887e-ca7d1f3789a3\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(244, 126, 137);\"></div>"
+  - id: Viz_22
+    viz_guid: 1f1c3d7e-1b4c-46b3-a79d-9d471060c4af
+    note_tile:
+      html_parsed_string: |-
+        <h2 class="theme-module__editor-h2"><br></h2><hr><h2 class="theme-module__editor-h2"><br></h2><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph" dir="ltr"><span style="white-space: pre-wrap;">fdghjk</span></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><span style="position: relative;
+            width: 100%;
+            padding-bottom: 56%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 8px;"><iframe data-src-link="https://www.youtube.com/embed/GMHF17TO9bk" src="https://www.youtube.com/embed/GMHF17TO9bk" frameborder="0" title="Embedded Page" allow="fullscreen" allowfullscreen="allowfullscreen" style="position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+             margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: rgb(255, 255, 255);"></div>
+  - id: Viz_23
+    viz_guid: bc56b022-a7f8-48dd-8d28-d2b3dc4da778
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">testingzfghj</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\"></div>"
+  - id: Viz_24
+    answer:
+      name: recheck11_userparam_with parameters
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm11
+        name: frm11
+        expr: "[str_param] "
+        was_auto_generated: false
+      - id: formula_frm_int
+        name: frm_int
+        expr: "[int_param] "
+        was_auto_generated: false
+      - id: formula_frm_ws_str
+        name: frm_ws_str
+        expr: "[ws_str]"
+        was_auto_generated: false
+      search_query: "[Lo Extendedprice] [Lo Orderpriority] [formula_frm11] [Lo Shipmode] [formula_frm_int] [formula_frm_ws_str]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+      - name: Total frm_int
+      - name: frm11
+      - name: frm_ws_str
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        - column_id: Total frm_int
+          headline_aggregation: SUM
+        - column_id: frm11
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: frm_ws_str
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Orderpriority
+        - frm11
+        - Lo Shipmode
+        - frm_ws_str
+        - Total Lo Extendedprice
+        - Total frm_int
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"theme\": \"ZEBRA\",\"density\": \"COMPACT\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"3-medium\",\"plotAsBand\": false,\"fontProperties\": {\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#FF8142\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false}]}}},{\"columnId\": \"frm11\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"frm_ws_str\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FCC838\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Lo Extendedprice\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Total frm_int\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        - column_id: Total frm_int
+        - column_id: frm11
+        - column_id: frm_ws_str
+        axis_configs:
+        - x:
+          - frm_ws_str
+          "y":
+          - Total Lo Extendedprice
+          - Total frm_int
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"frm11\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total frm_int\",\"columnProperty\": {}},{\"columnId\": \"frm_ws_str\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f5ec7279-878e-4a42-87f7-a08d3687c870\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"4d763e85-3c93-477c-a2ee-5afee174e709\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total frm_int\"],\"isOpposite\": true}},{\"id\": \"53dbfac2-5da9-4c2d-b4ab-e07cfa8b6d5c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"frm_ws_str\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: recheck11_userparam_with parameters
+    viz_guid: b69da42b-aa9a-4f32-8e04-e2f6f29a7769
+  - id: Viz_25
+    answer:
+      name: Total Discount_en-US_group1 by Quarterly Order Date_en-US_group1
+      tables:
+      - id: Copy of test_model_lo_pp_alias_BH
+        name: Copy of test_model_lo_pp_alias_BH
+        fqn: 6ac6d865-c160-4c72-83bd-a0541156a00c
+      search_query: "[Color] [Order Date] [Order Date].quarterly [Discount]"
+      answer_columns:
+      - name: Color
+      - name: Quarter(Order Date)
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Color
+          show_headline: false
+        - column_id: Quarter(Order Date)
+          show_headline: false
+        - column_id: Total Discount
+          show_headline: false
+        ordered_column_ids:
+        - Color
+        - Quarter(Order Date)
+        - Total Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Color
+        - column_id: Quarter(Order Date)
+        - column_id: Total Discount
+        axis_configs:
+        - x:
+          - Quarter(Order Date)
+          "y":
+          - Total Discount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"75a325bc-20b0-430b-84d7-6995b9868b1c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"9aed13f8-93cc-4453-8058-deb965c0da41\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 20b560c9-3a87-4209-a026-fb59c7024e70
+  - id: Viz_26
+    answer:
+      name: Copy of mandatory_filter
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm11
+        name: frm11
+        expr: "[str_param] "
+        was_auto_generated: false
+      search_query: "[Lo Extendedprice] [Lo Orderpriority] [Lo Shipmode] [Lo Orderpriority].1-urgent [Lo Orderpriority].2-high [Lo Orderpriority].3-medium [Lo Orderpriority].5-low [Lo Revenue] >= 3 [Lo Custkey] >= 1 [Lo Commitdate] between [Lo Commitdate].01/01/1994 and [Lo Commitdate].01/01/1998 [Lo Shipmode].rail [Lo Shipmode].'reg air' [Lo Shipmode].ship [Lo Shipmode].truck [Lo Suppkey] > 1 [Lo Linenumber] > 0"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Extendedprice
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Extendedprice
+          color:
+          - Lo Orderpriority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"7750607f-3db1-45c6-853d-89f1440cf7ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"21640bb6-4612-4c0c-b989-fc504d43f9d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: fd8a27f1-2835-4142-85e6-3ec9f69cd083
+  - id: Viz_27
+    answer:
+      name: Total Lo Discount by P Color
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[P Color] [Lo Discount]"
+      answer_columns:
+      - name: P Color
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: P Color
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        ordered_column_ids:
+        - P Color
+        - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: P Color
+        - column_id: Total Lo Discount
+        axis_configs:
+        - x:
+          - P Color
+          "y":
+          - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"P Color\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0e7d692f-c42f-4770-be33-92dc5a85ccd3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"1f1209c6-37f4-4c5d-b456-f6a950ff06c1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"P Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Lo Discount by P Color
+    viz_guid: 76b304a4-9585-47ad-bb4c-e2eb71707422
+  - id: Viz_28
+    viz_guid: 6fd2e673-aa4b-41b7-b614-11ce2b870c53
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">tesyui</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 129, 66);\"></div>"
+  - id: Viz_29
+    viz_guid: 0be7f0c0-9446-453b-a9b0-0b1b44dd4fb3
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">newone</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  - id: Viz_30
+    viz_guid: ac1a0307-2513-455d-a6f8-a3ef4ecc89cf
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">retest</span></h2><p class=\"theme-module__editor-paragraph\"><br></p>"
+  - id: Viz_31
+    viz_guid: 9842068b-a946-4eb5-b3a6-25150ff95b07
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 129, 66);\"></div>"
+  - id: Viz_32
+    viz_guid: 1afe0ac1-173d-4a7e-8dbc-e8d71f351165
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">sdasas</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(140, 98, 245);\"></div>"
+  - id: Viz_33
+    answer:
+      name: "Total Lo Custkey, Total Lo Linenumber by P Color"
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Custkey] [Lo Linenumber] [P Color] sort by [P Color]"
+      answer_columns:
+      - name: P Color
+        sort_info:
+          category: CUSTOM
+          custom_order:
+          - yellow
+          - beige
+          - azure
+          - cyan
+          - misty
+          - ivory
+      - name: Total Lo Custkey
+      - name: Total Lo Linenumber
+      table:
+        table_columns:
+        - column_id: P Color
+          show_headline: false
+        - column_id: Total Lo Custkey
+          show_headline: false
+        - column_id: Total Lo Linenumber
+          show_headline: false
+        ordered_column_ids:
+        - P Color
+        - Total Lo Custkey
+        - Total Lo Linenumber
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"P Color\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"yellow\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#06BF7F\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#FF8142\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"P Color\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FF8142\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#8C62F5\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Lo Custkey\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: P Color
+        - column_id: Total Lo Custkey
+        - column_id: Total Lo Linenumber
+        axis_configs:
+        - x:
+          - Total Lo Custkey
+          "y":
+          - Total Lo Linenumber
+          category:
+          - P Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"P Color\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8cae5291-0512-4df4-a764-157a2f29fb2e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Linenumber\"],\"isOpposite\": false}},{\"id\": \"e6cbb5eb-9044-4228-b5e0-aec33b5ad0aa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Lo Custkey\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Linenumber\",\"color\": \"#06BF7F\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: "Total Lo Custkey, Total Lo Linenumber by P Color"
+    viz_guid: 4cd36ae0-551e-49fe-a6d8-7aea755ea7db
+  - id: Viz_34
+    answer:
+      name: Total Lo Quantity by Lo Shipmode
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Shipmode] [Lo Shipmode].rail [Lo Quantity]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Quantity
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Quantity
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Quantity
+        axis_configs:
+        - "y":
+          - Total Lo Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"40316e00-3bbe-47ec-aac4-38cd4a87d63b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Quantity\"],\"isOpposite\": false}},{\"id\": \"c2415b2b-8798-4093-8887-64d91a7533fb\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Quantity\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Lo Quantity by Lo Shipmode
+    viz_guid: 39c9c72e-979e-4b42-8301-089080014c92
+  - id: Viz_35
+    answer:
+      name: Total Lo Quantity
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Quantity]"
+      answer_columns:
+      - name: Total Lo Quantity
+      table:
+        table_columns:
+        - column_id: Total Lo Quantity
+          show_headline: false
+        ordered_column_ids:
+        - Total Lo Quantity
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Quantity
+        axis_configs:
+        - "y":
+          - Total Lo Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 7468d681-5a0f-4b81-9a20-0871262bc9aa
+  - id: Viz_36
+    answer:
+      name: Pivot V2_ABAC1
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm_ans_pp
+        name: frm_ans_pp
+        expr: "[ans_str]"
+        was_auto_generated: false
+      - id: formula_frm_ip
+        name: frm_ip
+        expr: "[int_param]"
+        was_auto_generated: false
+      - id: formula_frm_str
+        name: frm_str
+        expr: "[str_param]"
+        was_auto_generated: false
+      - id: formula_frm_ws_str
+        name: frm_ws_str
+        expr: "[ws_str]"
+        was_auto_generated: false
+      search_query: "[Lo Discount] [Lo Orderpriority] [Lo Shipmode] [Lo Commitdate] [Lo Commitdate].quarterly [formula_frm_str] [formula_frm_ip] [formula_frm_ans_pp] [formula_frm_ws_str]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Quarter(Lo Commitdate)
+      - name: Total Lo Discount
+      - name: Total frm_ip
+      - name: frm_ans_pp
+      - name: frm_str
+      - name: frm_ws_str
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Quarter(Lo Commitdate)
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: Total frm_ip
+          show_headline: false
+        - column_id: frm_ans_pp
+          show_headline: false
+        - column_id: frm_str
+          show_headline: false
+        - column_id: frm_ws_str
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Quarter(Lo Commitdate)
+        - frm_str
+        - frm_ans_pp
+        - frm_ws_str
+        - Total Lo Discount
+        - Total frm_ip
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_PIVOT_TABLE
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Quarter(Lo Commitdate)
+        - column_id: Total Lo Discount
+        - column_id: Total frm_ip
+        - column_id: frm_ans_pp
+        - column_id: frm_str
+        - column_id: frm_ws_str
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"frm_str\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Total frm_ip\",\"columnProperty\": {}},{\"columnId\": \"frm_ans_pp\",\"columnProperty\": {}},{\"columnId\": \"frm_ws_str\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"93e65654-11d9-4557-bb8b-027b0b40eb8d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"e499ce25-8a07-4248-884b-7a6e1ee84065\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total frm_ip\"],\"isOpposite\": true}},{\"id\": \"d38eb605-fbb1-4e8b-8218-38d161a53c36\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\",\"frm_str\",\"frm_ws_str\",\"frm_ans_pp\",\"Lo Orderpriority\",\"Quarter(Lo Commitdate)\",\"Measure names\"]}}],\"systemSeriesColors\": [{\"serieName\": \"2-high\",\"color\": \"#8C62F5\"},{\"serieName\": \"5-low\",\"color\": \"#FF8142\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: rows
+            columns:
+            - Lo Shipmode
+            - frm_str
+            - frm_ws_str
+            - frm_ans_pp
+            - Lo Orderpriority
+            mode: COLUMN_DRIVEN
+          - key: values
+            columns:
+            - Total Lo Discount
+            - Total frm_ip
+            mode: COLUMN_DRIVEN
+          - key: columns
+            columns:
+            - Quarter(Lo Commitdate)
+            - Measure names
+            mode: COLUMN_DRIVEN
+          - key: split-by-color
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      parameters:
+      - id: 3e145ad5-4285-45de-a1be-799c0318c952
+        name: ans_str
+        data_type: CHAR
+        default_value: anstest
+        description: ""
+      dynamic_name: Pivot V2_ABAC
+    viz_guid: 0ad0fb54-c395-4e28-ac42-03f456115cea
+    action_object_associations:
+    - action_name: callback_local
+      context: PRIMARY
+      enabled: true
+    - action_name: callback_local1
+      context: CONTEXT_MENU
+      enabled: true
+  - id: Viz_37
+    answer:
+      name: recheck11_userparam_with parameters
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm11
+        name: frm11
+        expr: "[str_param] "
+        was_auto_generated: false
+      - id: formula_frm_int
+        name: frm_int
+        expr: "[int_param] "
+        was_auto_generated: false
+      - id: formula_frm_ws_str
+        name: frm_ws_str
+        expr: "[ws_str]"
+        was_auto_generated: false
+      search_query: "[Lo Extendedprice] [Lo Orderpriority] [formula_frm11] [Lo Shipmode] [formula_frm_int] [formula_frm_ws_str]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+      - name: Total frm_int
+      - name: frm11
+      - name: frm_ws_str
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        - column_id: Total frm_int
+          headline_aggregation: SUM
+        - column_id: frm11
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: frm_ws_str
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Orderpriority
+        - frm11
+        - Lo Shipmode
+        - frm_ws_str
+        - Total Lo Extendedprice
+        - Total frm_int
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"theme\": \"ZEBRA\",\"density\": \"COMPACT\",\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS\",\"value\": \"3-medium\",\"plotAsBand\": false,\"fontProperties\": {\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#FF8142\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Lo Orderpriority\",\"isHighlightRow\": false}]}}},{\"columnId\": \"frm11\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"frm_ws_str\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FCC838\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Lo Extendedprice\",\"isHighlightRow\": false}]}}},{\"columnId\": \"Total frm_int\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        - column_id: Total frm_int
+        - column_id: frm11
+        - column_id: frm_ws_str
+        axis_configs:
+        - x:
+          - frm_ws_str
+          "y":
+          - Total Lo Extendedprice
+          - Total frm_int
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"frm11\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total frm_int\",\"columnProperty\": {}},{\"columnId\": \"frm_ws_str\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f5ec7279-878e-4a42-87f7-a08d3687c870\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"4d763e85-3c93-477c-a2ee-5afee174e709\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total frm_int\"],\"isOpposite\": true}},{\"id\": \"53dbfac2-5da9-4c2d-b4ab-e07cfa8b6d5c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"frm_ws_str\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: recheck11_userparam_with parameters
+    viz_guid: 85658b0e-899c-43cc-8f7b-237d04c4ee1e
+    action_object_associations:
+    - action_name: callback_local
+      context: MENU
+      enabled: true
+    - action_name: callback_local1
+      context: CONTEXT_MENU
+      enabled: true
+    - action_name: url_local
+      context: PRIMARY
+      enabled: true
+  - id: Viz_38
+    answer:
+      name: Total Lo Custkey by Lo Shipmode and Lo Orderpriorit111y
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Custkey] [Lo Shipmode] [Lo Orderpriority]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Custkey
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Custkey
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - Lo Orderpriority
+        - Total Lo Custkey
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Custkey
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Custkey
+          color:
+          - Lo Orderpriority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"539c116b-1487-4519-af95-234f40f7f790\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"9175cc40-fba7-4573-b5bc-35aa5de44b7c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#5E5E5E\\\",\\\"fontSize\\\":\\\"16\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#8C62F5\"},{\"serieName\": \"5-low\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Lo Custkey by Lo Shipmode and Lo Orderpriorit111y
+    viz_guid: f12ec236-b322-41de-9c81-ea839e166fa1
+    action_object_associations:
+    - action_name: callback_local1
+      context: PRIMARY
+      enabled: true
+  - id: Viz_39
+    answer:
+      name: Pivot V1_ABAC
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm_ans_pp
+        name: frm_ans_pp
+        expr: "[ans_str] "
+        was_auto_generated: false
+      - id: formula_frm_ip
+        name: frm_ip
+        expr: "[int_param] "
+        was_auto_generated: false
+      - id: formula_frm_str
+        name: frm_str
+        expr: "[str_param] "
+        was_auto_generated: false
+      search_query: "[Lo Discount] [Lo Orderpriority] [Lo Shipmode] [Lo Commitdate] [Lo Commitdate].quarterly [formula_frm_str] [formula_frm_ip] [formula_frm_ans_pp]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Quarter(Lo Commitdate)
+      - name: Total Lo Discount
+      - name: Total frm_ip
+      - name: frm_ans_pp
+      - name: frm_str
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Quarter(Lo Commitdate)
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: Total frm_ip
+          show_headline: false
+        - column_id: frm_ans_pp
+          show_headline: false
+        - column_id: frm_str
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Quarter(Lo Commitdate)
+        - frm_str
+        - frm_ans_pp
+        - Total Lo Discount
+        - Total frm_ip
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Measure values
+          type: MEASURE_VALUES
+        - column_id: Quarter(Lo Commitdate)
+        - column_id: Total Lo Discount
+        - column_id: Total frm_ip
+        - column_id: frm_ans_pp
+        - column_id: frm_str
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          - Measure names
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        - x:
+          - Lo Shipmode
+          - frm_str
+          - frm_ans_pp
+          - Lo Orderpriority
+          "y":
+          - Measure values
+          color:
+          - Quarter(Lo Commitdate)
+          measure_values:
+          - Total Lo Discount
+          - Total frm_ip
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Quarter(Lo Commitdate)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"column\"},{\"dataField\": \"Measure names\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Measure names\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"column\"},{\"dataField\": \"Lo Shipmode\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"frm_str\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"frm_ans_pp\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"},{\"dataField\": \"Lo Orderpriority\",\"sortBy\": \"value\",\"sortBySummaryField\": \"\",\"sortOrder\": \"\",\"expanded\": true,\"area\": \"row\"}]},\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"frm_str\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Total frm_ip\",\"columnProperty\": {}},{\"columnId\": \"frm_ans_pp\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2374e918-50f2-4dbf-aead-75d9aed72430\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"4f194334-cd52-42c4-bfb3-67a9de3c0356\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total frm_ip\"],\"isOpposite\": true}},{\"id\": \"6da00a92-def5-4257-b3e6-df31451d0be4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\",\"frm_str\",\"frm_ans_pp\",\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"2-high\",\"color\": \"#8C62F5\"},{\"serieName\": \"5-low\",\"color\": \"#FF8142\"}]}"
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      parameters:
+      - id: 676f4396-65f2-4737-b091-6438e3fbc0d6
+        name: ans_str
+        data_type: CHAR
+        default_value: anstest
+        description: ""
+      dynamic_name: Pivot V1_ABAC
+    viz_guid: c99e82f3-7ab7-48d7-a691-decbb3571b26
+    action_object_associations:
+    - action_name: callback_local
+      context: PRIMARY
+      enabled: true
+  - id: Viz_40
+    answer:
+      name: Total sales by city and item type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city] [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        - column_id: item type
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+          color:
+          - item type
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"02fc44b3-19d9-4002-b987-f4e925c2b21b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"65990089-9b54-48c1-9140-a79d877d444f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bags\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dresses\",\"color\": \"#B094F8\"},{\"serieName\": \"headwear\",\"color\": \"#8C62F5\"},{\"serieName\": \"jackets\",\"color\": \"#049160\"},{\"serieName\": \"jeans\",\"color\": \"#56D3A8\"},{\"serieName\": \"pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"shirts\",\"color\": \"#BF982A\"},{\"serieName\": \"shorts\",\"color\": \"#FCD977\"},{\"serieName\": \"skirts\",\"color\": \"#FCC838\"},{\"serieName\": \"socks\",\"color\": \"#704ec4\"},{\"serieName\": \"sweaters\",\"color\": \"#a381f7\"},{\"serieName\": \"sweatshirts\",\"color\": \"#8C62F5\"},{\"serieName\": \"swimwear\",\"color\": \"#059966\"},{\"serieName\": \"underwear\",\"color\": \"#38cc99\"},{\"serieName\": \"vests\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 75c7facd-a457-498e-b004-afd6e2f7ca46
+  - id: Viz_41
+    answer:
+      name: Total Lo Quantity
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Quantity]"
+      answer_columns:
+      - name: Total Lo Quantity
+      table:
+        table_columns:
+        - column_id: Total Lo Quantity
+          show_headline: false
+        ordered_column_ids:
+        - Total Lo Quantity
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Quantity
+        axis_configs:
+        - "y":
+          - Total Lo Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: adce8c37-1f01-43c8-8506-57dc97a2cc42
+  - id: Viz_42
+    answer:
+      name: Total sales by city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"19ea2538-2999-4e28-96a5-f19cd5a5a69a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"2df1ba00-e267-4e1e-ab32-36cc69e307ce\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#06BF7F\\\",\\\"fontSize\\\":\\\"12\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#FCD977\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total sales by city
+    viz_guid: 815a9787-686e-4d18-a331-87f2793bb02a
+  - id: Viz_43
+    answer:
+      name: Total sales by city and item type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city] [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        - column_id: item type
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+          color:
+          - item type
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"item type\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"c0d6483e-a05e-4b6f-8c2e-cf199c740e85\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"59584550-9134-40ba-b6a3-7f3d59fc1149\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bags\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dresses\",\"color\": \"#B094F8\"},{\"serieName\": \"headwear\",\"color\": \"#8C62F5\"},{\"serieName\": \"jackets\",\"color\": \"#049160\"},{\"serieName\": \"jeans\",\"color\": \"#56D3A8\"},{\"serieName\": \"pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"shirts\",\"color\": \"#BF982A\"},{\"serieName\": \"shorts\",\"color\": \"#FCD977\"},{\"serieName\": \"skirts\",\"color\": \"#FCC838\"},{\"serieName\": \"socks\",\"color\": \"#369FAA\"},{\"serieName\": \"sweaters\",\"color\": \"#82DFE9\"},{\"serieName\": \"sweatshirts\",\"color\": \"#48D1E0\"},{\"serieName\": \"swimwear\",\"color\": \"#3aa7b3\"},{\"serieName\": \"underwear\",\"color\": \"#6ddae6\"},{\"serieName\": \"vests\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total sales by city and item type
+    viz_guid: 9fe56e12-8bff-4d77-9851-c10616f40773
+  - id: Viz_44
+    answer:
+      name: new muze studio
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city] [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: MUZE_STUDIO
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        - column_id: item type
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"item type\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"a4fbfba7-e584-4f97-b0b7-f91313dc8fdd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"c1314c0a-1de3-41ff-83a8-d985fa9ef35a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\",\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bags\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dresses\",\"color\": \"#B094F8\"},{\"serieName\": \"headwear\",\"color\": \"#8C62F5\"},{\"serieName\": \"jackets\",\"color\": \"#049160\"},{\"serieName\": \"jeans\",\"color\": \"#56D3A8\"},{\"serieName\": \"pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"shirts\",\"color\": \"#BF982A\"},{\"serieName\": \"shorts\",\"color\": \"#FCD977\"},{\"serieName\": \"skirts\",\"color\": \"#FCC838\"},{\"serieName\": \"socks\",\"color\": \"#369FAA\"},{\"serieName\": \"sweaters\",\"color\": \"#82DFE9\"},{\"serieName\": \"sweatshirts\",\"color\": \"#48D1E0\"},{\"serieName\": \"swimwear\",\"color\": \"#3aa7b3\"},{\"serieName\": \"underwear\",\"color\": \"#6ddae6\"},{\"serieName\": \"vests\",\"color\": \"#48D1E0\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - city
+            - item type
+            - Total sales
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: new muze studio
+    viz_guid: 4a4a7fdf-4de1-4bb5-909d-d1fc830af32e
+  - id: Viz_45
+    answer:
+      name: New Muze_chart
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_AREA
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"8a3740b3-1aeb-476b-9281-89bae7e268af\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"10ad6920-6f2b-46a9-ba9f-de0d8d953159\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#48D1E0\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: city
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total sales
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"\\\",\\\"cssCodeBase64\\\":\\\"\\\",\\\"htmlCodeBase64\\\":\\\"\\\"},\\\"splitSizes\\\":[55,45],\\\"editorConsoleSplitSizes\\\":[99,1]}}\",\"axisVisualProps\":{},\"columnVisualProps\":{},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{},\"legendVisualProps\":{},\"displayVisualProps\":{}}"
+      display_mode: CHART_MODE
+      dynamic_name: New Muze_chart
+    viz_guid: 2372346c-a9e4-40d9-84b4-0e2953960135
+  filters:
+  - column:
+    - test_model_lo_pp_mandatory::Lo Shipmode
+    oper: in
+    values:
+    - rail
+    - reg air
+    - ship
+    - truck
+    - mail
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Commitdate
+    is_mandatory: false
+    date_filter:
+      type: EXACT_DATE_RANGE
+      oper: between
+      date_range:
+        start_date: 01/01/1994
+        end_date: 01/01/1998
+    display_name: ""
+  - column:
+    - (Sample) Retail - Apparel::SKU
+    oper: in
+    values:
+    - "359992"
+    - "359995"
+    - "359994"
+    - "359996"
+    - "359998"
+    - "359999"
+    - "360032"
+    - "360030"
+    - "360027"
+    - "360028"
+    - "360061"
+    - "360059"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Orderpriority
+    oper: in
+    values:
+    - 1-urgent
+    - 3-medium
+    - 5-low
+    - 2-high
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Linenumber
+    oper: '>'
+    values:
+    - "0"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Revenue
+    oper: '>='
+    values:
+    - "3"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Suppkey
+    oper: '>'
+    values:
+    - "1"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - (Sample) Retail - Apparel::city
+    oper: in
+    values:
+    - Alpharetta
+    - Atlanta
+    - Boston
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  - column:
+    - test_model_lo_pp_mandatory::Lo Custkey
+    oper: '>='
+    values:
+    - "1"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Tab 1
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_3
+        x: 0
+        "y": 16
+        height: 4
+        width: 3
+      - visualization_id: Viz_4
+        x: 3
+        "y": 12
+        height: 2
+        width: 3
+      - visualization_id: Viz_5
+        x: 0
+        "y": 20
+        height: 8
+        width: 12
+      - visualization_id: Viz_6
+        x: 0
+        "y": 28
+        height: 8
+        width: 12
+      - visualization_id: Viz_7
+        x: 0
+        "y": 36
+        height: 8
+        width: 6
+      - visualization_id: Viz_8
+        x: 0
+        "y": 44
+        height: 8
+        width: 12
+      - visualization_id: Viz_18
+        x: 0
+        "y": 52
+        height: 8
+        width: 6
+      - visualization_id: Viz_27
+        x: 6
+        "y": 52
+        height: 8
+        width: 6
+      - visualization_id: Viz_31
+        x: 0
+        "y": 12
+        height: 4
+        width: 3
+      - visualization_id: Viz_32
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_34
+        x: 0
+        "y": 60
+        height: 2
+        width: 3
+      - visualization_id: Viz_35
+        x: 3
+        "y": 60
+        height: 2
+        width: 3
+      - visualization_id: Viz_41
+        x: 6
+        "y": 60
+        height: 2
+        width: 3
+      - visualization_id: Viz_42
+        x: 0
+        "y": 62
+        height: 8
+        width: 6
+      - visualization_id: Viz_43
+        x: 6
+        "y": 62
+        height: 8
+        width: 6
+      - visualization_id: Viz_44
+        x: 0
+        "y": 70
+        height: 8
+        width: 6
+      - visualization_id: Viz_45
+        x: 6
+        "y": 70
+        height: 8
+        width: 6
+      id: 1b0c5c98-7e2f-49a2-9cd2-1c72bbd1c73b
+    - name: Tab 2
+      description: ""
+      tiles:
+      - visualization_id: Viz_10
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      - visualization_id: Viz_9
+        x: 0
+        "y": 8
+        height: 2
+        width: 3
+      - visualization_id: Viz_12
+        x: 3
+        "y": 8
+        height: 2
+        width: 3
+      - visualization_id: Viz_17
+        x: 0
+        "y": 10
+        height: 8
+        width: 12
+      - visualization_id: Viz_40
+        x: 0
+        "y": 18
+        height: 8
+        width: 6
+      id: 702888a2-8871-4e8c-9b32-e7568e17197e
+    - name: NT
+      description: ""
+      tiles:
+      - visualization_id: Viz_11
+        x: 0
+        "y": 0
+        height: 6
+        width: 8
+      - visualization_id: Viz_14
+        x: 0
+        "y": 6
+        height: 8
+        width: 6
+      - visualization_id: Viz_15
+        x: 6
+        "y": 6
+        height: 8
+        width: 6
+      - visualization_id: Viz_16
+        x: 0
+        "y": 14
+        height: 8
+        width: 6
+      - visualization_id: Viz_13
+        x: 8
+        "y": 14
+        height: 2
+        width: 3
+      - visualization_id: Viz_19
+        x: 0
+        "y": 22
+        height: 4
+        width: 3
+      id: 4057db9c-e341-46ae-b636-bb89be7f1b3f
+    - name: CA
+      description: ""
+      tiles:
+      - visualization_id: Viz_36
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_37
+        x: 0
+        "y": 8
+        height: 8
+        width: 12
+      - visualization_id: Viz_38
+        x: 0
+        "y": 16
+        height: 8
+        width: 6
+      - visualization_id: Viz_39
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: 347e664c-7837-43e6-9b97-b986d7234243
+    - name: NT_iframe
+      description: ""
+      tiles:
+      - visualization_id: Viz_22
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 333031e3-2260-46c4-89ac-37245bd35b63
+    - name: Tab 6
+      description: ""
+      tiles:
+      - visualization_id: Viz_21
+        x: 0
+        "y": 4
+        height: 6
+        width: 8
+      - visualization_id: Viz_30
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 1e1c4ac2-a658-4899-a611-350ae28e2353
+    - name: Tab 7
+      description: ""
+      id: c44d698e-c5dd-40e2-95e8-8834bbcfd698
+    - name: Tab 7
+      description: ""
+      tiles:
+      - visualization_id: Viz_20
+        x: 0
+        "y": 8
+        height: 3
+        width: 6
+      - visualization_id: Viz_23
+        x: 6
+        "y": 4
+        height: 4
+        width: 3
+      - visualization_id: Viz_28
+        x: 0
+        "y": 4
+        height: 4
+        width: 3
+      - visualization_id: Viz_29
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 16704dd5-baa0-4944-ac16-130d63ff39d2
+    - name: CF
+      description: ""
+      tiles:
+      - visualization_id: Viz_24
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      - visualization_id: Viz_25
+        x: 0
+        "y": 8
+        height: 4
+        width: 3
+      - visualization_id: Viz_26
+        x: 3
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_33
+        x: 0
+        "y": 16
+        height: 8
+        width: 12
+      id: 6eb47cf2-6332-46d8-82a0-fad02b4b5b74
+    - name: test
+      description: ""
+      id: 5f0d393f-fba5-499f-807e-95f1552fa272
+  parameter_overrides:
+  - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    value:
+      name: test_model_lo_pp_mandatory::str_param
+  - key: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+    value:
+      name: test_model_lo_pp_mandatory::int_param
+  - key: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    value:
+      name: test_model_lo_pp_mandatory::ws_str
+  ordered_chips:
+  - name: test_model_lo_pp_mandatory::str_param
+    type: PARAMETER
+  - name: test_model_lo_pp_mandatory::Lo Shipmode
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::Lo Commitdate
+    type: FILTER
+  - name: (Sample) Retail - Apparel::SKU
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::Lo Orderpriority
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::Lo Linenumber
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::Lo Revenue
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::Lo Suppkey
+    type: FILTER
+  - name: (Sample) Retail - Apparel::city
+    type: FILTER
+  - name: test_model_lo_pp_mandatory::int_param
+    type: PARAMETER
+  - name: test_model_lo_pp_mandatory::ws_str
+    type: PARAMETER
+  - name: test_model_lo_pp_mandatory::Lo Custkey
+    type: FILTER
+  views:
+  - view_guid: 83210cc9-7594-47b8-b93e-d6b419dbf4b7
+    name: vw3
+    view_filters:
+    - column:
+      - test_model_lo_pp_mandatory::Lo Shipmode
+      oper: in
+      values:
+      - rail
+      - reg air
+      - ship
+      - truck
+      - mail
+    - column:
+      - test_model_lo_pp_mandatory::Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1994
+          end_date: 01/01/1998
+    - column:
+      - (Sample) Retail - Apparel::SKU
+      oper: in
+      values:
+      - "359992"
+      - "359994"
+      - "359995"
+      - "359996"
+      - "359998"
+      - "359999"
+      - "360027"
+      - "360028"
+      - "360030"
+      - "360032"
+      - "360059"
+      - "360061"
+      - "360004"
+      - "360005"
+      - "360009"
+      - "360010"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 3-medium
+      - 5-low
+      - 2-high
+    - column:
+      - test_model_lo_pp_mandatory::Lo Linenumber
+      oper: '>'
+      values:
+      - "0"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Revenue
+      oper: '>='
+      values:
+      - "3"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Suppkey
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - (Sample) Retail - Apparel::city
+      oper: in
+      values:
+      - Alpharetta
+      - Atlanta
+      - Boston
+    - column:
+      - test_model_lo_pp_mandatory::Lo Custkey
+      oper: '>='
+      values:
+      - "1"
+    is_public: true
+    view_parameters:
+    - name: str_param
+      id: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    - name: ws_str
+      id: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    - name: int_param
+      id: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+  - view_guid: 4d9d6a8a-ec6c-432a-a89c-3db16b4ac58e
+    name: vw26
+    view_filters:
+    - column:
+      - test_model_lo_pp_mandatory::Lo Shipmode
+      oper: in
+      values:
+      - rail
+      - reg air
+      - ship
+      - truck
+      - mail
+    - column:
+      - test_model_lo_pp_mandatory::Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1994
+          end_date: 01/01/1998
+    - column:
+      - (Sample) Retail - Apparel::SKU
+      oper: in
+      values:
+      - "359992"
+      - "359995"
+      - "359994"
+      - "359996"
+      - "359998"
+      - "359999"
+      - "360032"
+      - "360030"
+      - "360027"
+      - "360028"
+      - "360061"
+      - "360059"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 3-medium
+      - 5-low
+      - 2-high
+    - column:
+      - test_model_lo_pp_mandatory::Lo Linenumber
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Revenue
+      oper: '>='
+      values:
+      - "3"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Suppkey
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - (Sample) Retail - Apparel::city
+      oper: in
+      values:
+      - Alpharetta
+      - Atlanta
+      - Boston
+    - column:
+      - test_model_lo_pp_mandatory::Lo Custkey
+      oper: '>='
+      values:
+      - "1"
+    is_public: true
+    view_parameters:
+    - name: str_param
+      id: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    - name: ws_str
+      id: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    - name: int_param
+      id: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+  - view_guid: 390a61f0-11ea-406f-8ef5-cdc502e156ec
+    name: vw2
+    view_filters:
+    - column:
+      - test_model_lo_pp_mandatory::Lo Shipmode
+      oper: in
+      values:
+      - mail
+      - ship
+      - truck
+      - air
+    - column:
+      - test_model_lo_pp_mandatory::Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1994
+          end_date: 01/01/1998
+    - column:
+      - (Sample) Retail - Apparel::SKU
+      oper: in
+      values:
+      - "359992"
+      - "359995"
+      - "359994"
+      - "359996"
+      - "359998"
+      - "359999"
+      - "360032"
+      - "360030"
+      - "360027"
+      - "360028"
+      - "360061"
+      - "360059"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 3-medium
+      - 5-low
+    - column:
+      - test_model_lo_pp_mandatory::Lo Linenumber
+      oper: '>'
+      values:
+      - "0"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Revenue
+      oper: '>='
+      values:
+      - "3"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Suppkey
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - (Sample) Retail - Apparel::city
+      oper: in
+      values:
+      - Alpharetta
+      - Atlanta
+      - Boston
+    - column:
+      - test_model_lo_pp_mandatory::Lo Custkey
+      oper: '>='
+      values:
+      - "1"
+    is_public: true
+    view_parameters:
+    - name: str_param
+      id: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    - name: ws_str
+      id: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    - name: int_param
+      id: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+  - view_guid: 1bc6ea9e-9dbb-4f5b-8b3a-d490bba69b94
+    name: vw1
+    view_filters:
+    - column:
+      - test_model_lo_pp_mandatory::Lo Shipmode
+      oper: in
+      values:
+      - rail
+      - reg air
+      - ship
+      - truck
+    - column:
+      - test_model_lo_pp_mandatory::Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1994
+          end_date: 01/01/1998
+    - column:
+      - (Sample) Retail - Apparel::SKU
+      oper: in
+      values:
+      - "359992"
+      - "359994"
+      - "359995"
+      - "359996"
+      - "359998"
+      - "359999"
+      - "360027"
+      - "360028"
+      - "360030"
+      - "360032"
+      - "360059"
+      - "360061"
+      - "360004"
+      - "360005"
+      - "360009"
+      - "360010"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 3-medium
+      - 5-low
+      - 2-high
+    - column:
+      - test_model_lo_pp_mandatory::Lo Linenumber
+      oper: '>'
+      values:
+      - "0"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Revenue
+      oper: '>='
+      values:
+      - "3"
+    - column:
+      - test_model_lo_pp_mandatory::Lo Suppkey
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - (Sample) Retail - Apparel::city
+      oper: in
+      values:
+      - Alpharetta
+      - Atlanta
+      - Boston
+    - column:
+      - test_model_lo_pp_mandatory::Lo Custkey
+      oper: '>='
+      values:
+      - "1"
+    is_public: false
+    view_parameters:
+    - name: str_param
+      id: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    - name: ws_str
+      id: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    - name: int_param
+      id: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: SHARP
+    - name: lb_brand_color
+      value: LBC_B
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "false"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

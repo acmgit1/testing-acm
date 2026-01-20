@@ -1,0 +1,11 @@
+guid: 2a1a3a36-bf6d-4c89-916f-46b1281c10f1
+action_object:
+  name: url_local
+  type: URL
+  url_action_details:
+    url: www.gmail.com
+    reference: url_local
+    authentication:
+      type: NONE
+  availability: LOCAL
+  application: NONE

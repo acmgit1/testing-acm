@@ -1,0 +1,304 @@
+guid: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+model:
+  name: test_model_lo_pp_mandatory
+  description: This worksheet encompasses a comprehensive dataset that includes transactional details such as order and commitment dates, pricing, discounts, taxes, and shipping priorities. It also integrates product-specific information like brand, category, color, manufacturer, and packaging type. Additionally, it tracks customer and supplier identifiers, which are crucial for analyzing purchasing patterns and supply chain logistics. (AI generated)
+  model_tables:
+  - name: LINEORDER123
+    fqn: b934885f-f5d9-4767-a161-32b7f647a0d0
+    joins:
+    - with: PART123
+      'on': '[LINEORDER123::LO_PARTKEY] = [PART123::P_PARTKEY]'
+      type: INNER
+      cardinality: ONE_TO_ONE
+  - name: PART123
+    fqn: a5a77ac3-6e09-43cf-874b-4c0b5cb55c1b
+  columns:
+  - name: Lo Shipmode
+    column_id: LINEORDER123::LO_SHIPMODE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Shipping Method
+      - Transport Mode
+      is_hidden: true
+      synonym_type: AUTO_GENERATED
+      is_mandatory_token_filter: true
+  - name: Lo Commitdate
+    column_id: LINEORDER123::LO_COMMITDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Commit Date
+      - Confirmation Date
+      synonym_type: AUTO_GENERATED
+      is_mandatory_token_filter: false
+  - name: Lo Custkey
+    column_id: LINEORDER123::LO_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Customer Key
+      - Client Key
+      synonym_type: AUTO_GENERATED
+      is_mandatory_token_filter: false
+  - name: Lo Discount
+    column_id: LINEORDER123::LO_DISCOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Discount Amount
+      - Rebate
+      synonym_type: AUTO_GENERATED
+  - name: Lo Extendedprice
+    column_id: LINEORDER123::LO_EXTENDEDPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Total Price
+      - Extended Cost
+      synonym_type: AUTO_GENERATED
+  - name: Lo Linenumber
+    column_id: LINEORDER123::LO_LINENUMBER
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Line Number
+      - Row Number
+      synonym_type: AUTO_GENERATED
+  - name: Lo Orderdate
+    column_id: LINEORDER123::LO_ORDERDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Order Date
+      - Purchase Date
+      synonym_type: AUTO_GENERATED
+  - name: Lo Orderkey
+    column_id: LINEORDER123::LO_ORDERKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Order Key
+      - Transaction Key
+      synonym_type: AUTO_GENERATED
+  - name: Lo Orderpriority
+    column_id: LINEORDER123::LO_ORDERPRIORITY
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Order Priority
+      - Priority Level
+      synonym_type: AUTO_GENERATED
+  - name: Lo Ordtotalprice
+    column_id: LINEORDER123::LO_ORDTOTALPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Order Total Price
+      - Total Order Cost
+      synonym_type: AUTO_GENERATED
+  - name: Lo Partkey
+    column_id: LINEORDER123::LO_PARTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Lo Key
+      - Part Identifier
+      synonym_type: AUTO_GENERATED
+  - name: Lo Quantity
+    column_id: LINEORDER123::LO_QUANTITY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Order Quantity
+      - Item Quantity
+      synonym_type: AUTO_GENERATED
+  - name: Lo Revenue
+    column_id: LINEORDER123::LO_REVENUE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Total Revenue
+      - Sales Revenue
+      synonym_type: AUTO_GENERATED
+  - name: Lo Shippriority
+    column_id: LINEORDER123::LO_SHIPPRIORITY
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shipping Priority
+      - Delivery Priority
+      synonym_type: AUTO_GENERATED
+  - name: Lo Suppkey
+    column_id: LINEORDER123::LO_SUPPKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Supplier Key
+      - Vendor Key
+      synonym_type: AUTO_GENERATED
+  - name: Lo Supplycost
+    column_id: LINEORDER123::LO_SUPPLYCOST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Supply Expense
+      - Procurement Cost
+      synonym_type: AUTO_GENERATED
+  - name: Lo Tax
+    column_id: LINEORDER123::LO_TAX
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Tax Amount
+      - Tax Value
+      synonym_type: AUTO_GENERATED
+  - name: P Brand1
+    column_id: PART123::P_BRAND1
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Product Brand
+      - Item Brand
+      synonym_type: AUTO_GENERATED
+  - name: P Category
+    column_id: PART123::P_CATEGORY
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Product Category
+      - Item Category
+      synonym_type: AUTO_GENERATED
+  - name: P Color
+    column_id: PART123::P_COLOR
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Product Color
+      - Item Color
+      synonym_type: AUTO_GENERATED
+      is_mandatory_token_filter: true
+  - name: P Container
+    column_id: PART123::P_CONTAINER
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Packaging
+      - Container Type
+      synonym_type: AUTO_GENERATED
+  - name: P Mfgr
+    column_id: PART123::P_MFGR
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Manufacturer
+      - Producer
+      synonym_type: AUTO_GENERATED
+  - name: P Name
+    column_id: PART123::P_NAME
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Product Name
+      - Item Name
+      synonym_type: AUTO_GENERATED
+  - name: P Partkey
+    column_id: PART123::P_PARTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Component Key
+      - Item Key
+      synonym_type: AUTO_GENERATED
+  - name: P Size
+    column_id: PART123::P_SIZE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Product Size
+      - Item Size
+      synonym_type: AUTO_GENERATED
+  - name: P Type
+    column_id: PART123::P_TYPE
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Product Type
+      - Item Type
+      synonym_type: AUTO_GENERATED
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: true
+  parameters:
+  - id: d51762a9-8d05-4d3e-bf3b-32397a2d2944
+    name: int_param
+    data_type: INT64
+    default_value: '91'
+    description: ''
+  - id: 8f358079-08ae-4247-b841-73ba0e2876c7
+    name: qq
+    data_type: INT64
+    default_value: '5'
+    description: ''
+  - id: 1ec09aa1-6d83-419d-9190-d88b1ab75866
+    name: str_list
+    data_type: CHAR
+    default_value: val22
+    list_config:
+      list_choice:
+      - value: val11
+      - value: val22
+      - value: val33
+    description: ''
+  - id: fbcb9567-87e5-4635-af21-51ea0c2febfe
+    name: str_param
+    data_type: CHAR
+    default_value: ts_val
+    description: ''
+  - id: 2664f3ac-5cc7-4120-bb76-d62462f2e438
+    name: ws_str
+    data_type: CHAR
+    default_value: newstr
+    description: ''
+  constraints:
+    constraint:
+    - table: LINEORDER123
+      condition:
+      - date_range_condition:
+          column: Lo Commitdate
+          duration: 18
+          bucket: MONTH
+      active: false
