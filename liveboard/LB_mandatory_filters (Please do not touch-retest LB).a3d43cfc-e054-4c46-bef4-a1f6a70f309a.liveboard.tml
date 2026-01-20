@@ -2703,7 +2703,7 @@ liveboard:
     - name: lb_border_type
       value: SHARP
     - name: lb_brand_color
-      value: LBC_B
+      value: LBC_E
     - name: hide_group_title
       value: "false"
     - name: hide_group_description
