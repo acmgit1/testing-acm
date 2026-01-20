@@ -1,0 +1,101 @@
+guid: 97aa9aca-e0fe-4c9b-aa99-0acb86c7ada2
+cohort:
+  name: County Name set
+  owner: Honey
+  worksheet:
+    id: Hny_Golden_WS
+    name: Hny_Golden_WS
+    fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
+  config:
+    null_output_value: Ungrouped values
+    combine_non_group_values: false
+    cohort_type: SIMPLE
+    anchor_column_id: County Name
+    groups:
+    - name: Group 1
+      conditions:
+      - operator: EQ
+        value:
+        - "{Null}"
+        - Albany
+        - Berks
+        - Bernalillo
+        - Bexar
+        - Brevard
+        - Bronx
+        - Caddo
+        - Chatham
+        - Collin
+        - Contra Costa
+        - Cook
+        - Dauphin
+        - Denton
+        - Denver
+        - Dutchess
+        - Duval
+        - East Baton Rouge
+        - El Paso
+        - Erie
+        - Escambia
+        - Essex
+        - Flagler
+        - Fresno
+        - Fulton
+        - Genesee
+        - Harris
+        - Hidalgo
+        - Hillsborough
+        - Hudson
+        - Ingham
+        - Jefferson
+        - Kent
+        - Kern
+        - Larimer
+        - Lee
+        - Lehigh
+        - Los Angeles
+        - Madison
+        - Marion
+        - Mercer
+        - Miami-Dade
+        - Milwaukee
+        - Mobile
+        - Monroe
+        - Montgomery
+        - Multnomah
+        - New York
+        - Nueces
+        - Onondaga
+        - Orange
+        - Orleans
+        - Osceola
+        - Philadelphia
+        - Pinellas
+        - Polk
+        - Queens
+        - Richmond
+        - Riverside
+        - Sacramento
+        - San Bernardino
+        - San Diego
+        - San Francisco
+        - San Joaquin
+        - Santa Clara
+        - Sarasota
+        - Scott
+        - Sonoma
+        - St. Joseph
+        - St. Lucie
+        - Stanislaus
+        - Tarrant
+        - Travis
+        - Ventura
+        - Virginia Beach
+        - Washtenaw
+        - Wayne
+        - Webb
+        - Winnebago
+        column_name: County Name
+        filter_value_type: STRING
+      combine_type: ALL
+    cohort_grouping_type: GROUP_BASED

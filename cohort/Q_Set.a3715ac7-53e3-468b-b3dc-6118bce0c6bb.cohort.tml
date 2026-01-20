@@ -1,0 +1,80 @@
+guid: a3715ac7-53e3-468b-b3dc-6118bce0c6bb
+cohort:
+  name: Q_Set
+  answer:
+    tables:
+    - id: Hny_Golden_WS
+      name: Hny_Golden_WS
+      fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
+    formulas:
+    - id: formula_For1
+      name: For1
+      expr: "[ly/ty] "
+      was_auto_generated: false
+    - id: formula_For_Set
+      name: For_Set
+      expr: "[P_Set] "
+      was_auto_generated: false
+    search_query: "[Age] [Campaign Channel] [campaign enddate] [campaign enddate].monthly [County Name set] [formula_For1] [formula_For_Set]"
+    answer_columns:
+    - name: Campaign Channel
+    - name: County Name set
+    - name: For1
+    - name: For_Set
+    - name: Month(campaign enddate)
+    - name: Total Age
+    table:
+      table_columns:
+      - column_id: Campaign Channel
+        show_headline: false
+      - column_id: County Name set
+        show_headline: false
+      - column_id: For1
+        show_headline: false
+      - column_id: For_Set
+        show_headline: false
+      - column_id: Month(campaign enddate)
+        show_headline: false
+      - column_id: Total Age
+        show_headline: false
+      ordered_column_ids:
+      - Campaign Channel
+      - Month(campaign enddate)
+      - County Name set
+      - For1
+      - For_Set
+      - Total Age
+      client_state: ""
+      client_state_v2: "{}"
+    display_mode: TABLE_MODE
+    parameters:
+    - id: 1ccc2557-3fd1-4cce-b4df-e832f7cb0c24
+      name: P_Set
+      data_type: CHAR
+      default_value: BBB
+      list_config:
+        list_choice:
+        - value: AAA
+          display_name: aaa
+        - value: BBB
+          display_name: bbb
+        - value: CCC
+          display_name: ccc
+        - value: DDD
+          display_name: ddd
+      description: ""
+  referenced_cohorts:
+  - County Name set
+  owner: Honey
+  worksheet:
+    id: Hny_Golden_WS
+    name: Hny_Golden_WS
+    fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: County Name set
+    return_column_id: Month(campaign enddate)
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: true
+    pass_thru_filter:
+      accept_all: true

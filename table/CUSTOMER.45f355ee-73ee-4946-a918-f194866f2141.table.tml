@@ -1,0 +1,81 @@
+guid: 45f355ee-73ee-4946-a918-f194866f2141
+table:
+  name: CUSTOMER
+  db: NEBULADEV
+  schema: TPCH5K_falcon_default_schema
+  db_table: CUSTOMER
+  connection:
+    name: Honey_DM_Hardening
+    fqn: 2c5cf3d2-be07-499f-a187-0f01d89116b8
+  columns:
+  - name: C_CUSTKEY
+    db_column_name: C_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: C_NAME
+    db_column_name: C_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_ADDRESS
+    db_column_name: C_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_CITY
+    db_column_name: C_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_NATION
+    db_column_name: C_NATION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_REGION
+    db_column_name: C_REGION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_PHONE
+    db_column_name: C_PHONE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_MKTSEGMENT
+    db_column_name: C_MKTSEGMENT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: C_NEWCOL
+    db_column_name: C_NEWCOL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  rls_rules:
+    tables:
+    - name: CUSTOMER
+      fqn: 45f355ee-73ee-4946-a918-f194866f2141
+    table_paths:
+    - id: CUSTOMER_1
+      table: CUSTOMER
+      column:
+      - C_NATION
+    rules:
+    - name: RLS1
+      expr: "ts_groups = [CUSTOMER_1::C_NATION]"
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

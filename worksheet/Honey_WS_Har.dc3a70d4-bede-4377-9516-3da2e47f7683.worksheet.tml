@@ -1,0 +1,198 @@
+guid: dc3a70d4-bede-4377-9516-3da2e47f7683
+model:
+  name: Honey_WS_Har
+  model_tables:
+  - name: CUSTOMER
+    fqn: 45f355ee-73ee-4946-a918-f194866f2141
+  - name: LINEORDER hon
+    fqn: 16e6cc43-99ef-4d83-a6d7-22d9514d368c
+    joins:
+    - with: CUSTOMER
+      referencing_join: LINEORDER_CUSTOMER
+  - name: SUPPLIER
+    fqn: bf3b6f3e-d271-4da5-a8dc-c652ddddc286
+    joins:
+    - with: LINEORDER hon
+      referencing_join: SUPPLIER_to_LINEORDER
+  formulas:
+  - id: formula_For_Attribute
+    name: For_Attribute
+    expr: if ( unique count ( [LINEORDER hon::LO_SHIPMODE] ) > 3 ) then "List" else "not valid"
+  - id: formula_P_For
+    name: P_For
+    expr: '[P_Date]'
+  - id: formula_for_date
+    name: for_date
+    expr: '[LINEORDER hon::LO_COMMITDATE]'
+  - id: formula_for_measure
+    name: for_measure
+    expr: '[LINEORDER hon::LO_TAX]'
+  filters:
+  - column:
+    - Lo Shipmode
+    oper: in
+    values:
+    - '{null}'
+    - air
+    - fob
+    - mail
+    - rail
+    - ship
+    - truck
+  - column:
+    - Lo Commitdate
+    oper: between
+    values:
+    - 01/01/1993
+    - 11/27/1997
+  columns:
+  - name: C Custkey
+    column_id: CUSTOMER::C_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      is_hidden: true
+  - name: For_Attribute
+    formula_id: formula_For_Attribute
+    properties:
+      column_type: ATTRIBUTE
+  - name: for_measure
+    formula_id: formula_for_measure
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: for_date
+    formula_id: formula_for_date
+    properties:
+      column_type: ATTRIBUTE
+  - name: P_For
+    formula_id: formula_P_For
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Address
+    column_id: CUSTOMER::C_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+  - name: C City
+    column_id: CUSTOMER::C_CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Nation
+    column_id: CUSTOMER::C_NATION
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Region
+    column_id: CUSTOMER::C_REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Phone
+    column_id: CUSTOMER::C_PHONE
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Mktsegment
+    column_id: CUSTOMER::C_MKTSEGMENT
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Newcol
+    column_id: CUSTOMER::C_NEWCOL
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Shipmode
+    column_id: LINEORDER hon::LO_SHIPMODE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Tax
+    column_id: LINEORDER hon::LO_TAX
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Lo Commitdate
+    column_id: LINEORDER hon::LO_COMMITDATE
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+  - name: Lo Quantity
+    column_id: LINEORDER hon::LO_QUANTITY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Lo Linenumber
+    column_id: LINEORDER hon::LO_LINENUMBER
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Lo Custkey
+    column_id: LINEORDER hon::LO_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Lo Orderdate
+    column_id: LINEORDER hon::LO_ORDERDATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: S Suppkey
+    column_id: SUPPLIER::S_SUPPKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: S Name
+    column_id: SUPPLIER::S_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: S Address
+    column_id: SUPPLIER::S_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+  - name: S Nation
+    column_id: SUPPLIER::S_NATION
+    properties:
+      column_type: ATTRIBUTE
+  - name: S Phone
+    column_id: SUPPLIER::S_PHONE
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: false
+  parameters:
+  - id: 760891b3-310b-43f9-b7c4-27ba9ff6e024
+    name: P_Bool
+    data_type: BOOL
+    default_value: 'true'
+    list_config:
+      list_choice:
+      - value: 'true'
+        display_name: T
+      - value: 'false'
+        display_name: F
+    description: ''
+  - id: 6b79ac8d-8145-4945-b690-831a0894a7e4
+    name: P_Date
+    data_type: DATE
+    default_value: 02/02/1993
+    range_config:
+      range_min: 02/02/1993
+      range_max: 02/02/1994
+      include_min: true
+      include_max: true
+    description: ''
+  - id: 3a789047-310f-41f7-896a-2dbbaf45aa49
+    name: P_Integer
+    data_type: INT64
+    default_value: '2'
+    description: ''
+  - id: a775a473-3901-4a32-bf1b-668657240438
+    name: P_string
+    data_type: CHAR
+    default_value: A
+    list_config:
+      list_choice:
+      - value: A
+        display_name: AA
+      - value: B
+        display_name: BB
+      - value: D
+        display_name: DD
+    description: ''

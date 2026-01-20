@@ -1,0 +1,35 @@
+guid: 742775f3-d950-480b-b1ac-738403d9d3b9
+cohort:
+  name: set1_hny
+  answer:
+    tables:
+    - id: Honey_WS_Har
+      name: Honey_WS_Har
+      fqn: dc3a70d4-bede-4377-9516-3da2e47f7683
+    search_query: "[C Custkey] [Lo Shipmode]"
+    answer_columns:
+    - name: Lo Shipmode
+    - name: Total C Custkey
+    table:
+      table_columns:
+      - column_id: Lo Shipmode
+        show_headline: false
+      - column_id: Total C Custkey
+        show_headline: false
+      ordered_column_ids:
+      - Lo Shipmode
+      - Total C Custkey
+      client_state: ""
+      client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total C Custkey\",\"columnProperty\": {}}]}"
+    display_mode: TABLE_MODE
+  owner: Honey
+  worksheet:
+    id: Honey_WS_Har
+    name: Honey_WS_Har
+    fqn: dc3a70d4-bede-4377-9516-3da2e47f7683
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: Lo Shipmode
+    return_column_id: Total C Custkey
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: true
