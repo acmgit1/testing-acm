@@ -1,0 +1,101 @@
+guid: 81aec57a-b6c9-4f8e-be5a-30fe6f20f006
+model:
+  name: tpch_model
+  model_tables:
+  - name: CUSTOMER_sf_test
+    fqn: 5e671edb-3ff1-4abb-984f-88605ea81efe
+  - name: LINEORDER_sf_test
+    fqn: fd4b79ae-13dd-4b84-a820-1b62c465979a
+    joins:
+    - with: CUSTOMER_sf_test
+      referencing_join: LINEORDER_CUSTOMER
+    - with: PART_sf_test
+      referencing_join: LINEORDER_sf_test_to_PART_sf_test
+  - name: PART_sf_test
+    fqn: b1484517-abf9-4d1b-a6c3-fcffd1c50116
+  columns:
+  - name: C Mktsegment
+    column_id: CUSTOMER_sf_test::C_MKTSEGMENT
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Orderdate
+    column_id: LINEORDER_sf_test::LO_ORDERDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: C Nation
+    column_id: CUSTOMER_sf_test::C_NATION
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Region
+    column_id: CUSTOMER_sf_test::C_REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Custkey
+    column_id: LINEORDER_sf_test::LO_CUSTKEY
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Lo Orderkey
+    column_id: LINEORDER_sf_test::LO_ORDERKEY
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Lo Orderpriority
+    column_id: LINEORDER_sf_test::LO_ORDERPRIORITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Partkey
+    column_id: LINEORDER_sf_test::LO_PARTKEY
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Lo Quantity
+    column_id: LINEORDER_sf_test::LO_QUANTITY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Revenue
+    column_id: LINEORDER_sf_test::LO_REVENUE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Shipmode
+    column_id: LINEORDER_sf_test::LO_SHIPMODE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Supplycost
+    column_id: LINEORDER_sf_test::LO_SUPPLYCOST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Tax
+    column_id: LINEORDER_sf_test::LO_TAX
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: P Category
+    column_id: PART_sf_test::P_CATEGORY
+    properties:
+      column_type: ATTRIBUTE
+  - name: P Color
+    column_id: PART_sf_test::P_COLOR
+    properties:
+      column_type: ATTRIBUTE
+  - name: P Container
+    column_id: PART_sf_test::P_CONTAINER
+    properties:
+      column_type: ATTRIBUTE
+  - name: P Mfgr
+    column_id: PART_sf_test::P_MFGR
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: false
