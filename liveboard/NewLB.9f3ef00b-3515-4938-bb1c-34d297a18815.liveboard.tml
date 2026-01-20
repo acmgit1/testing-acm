@@ -297,11 +297,65 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total sales by city
     viz_guid: e46d72ca-adf8-4459-9374-fcc8424287c6
+  filters:
+  - column:
+    - test_model_lo_pp_mandatory::Lo Commitdate
+    is_mandatory: false
+    date_filter:
+      type: EXACT_DATE_RANGE
+      oper: between
+      date_range:
+        start_date: 01/01/1994
+        end_date: 01/01/1998
+    display_name: ""
   layout:
     tiles:
     - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 12
     - visualization_id: Viz_2
+      x: 0
+      "y": 8
+      height: 8
+      width: 6
     - visualization_id: Viz_3
+      x: 6
+      "y": 8
+      height: 8
+      width: 6
     - visualization_id: Viz_4
+      x: 0
+      "y": 16
+      height: 8
+      width: 6
     - visualization_id: Viz_5
+      x: 6
+      "y": 16
+      height: 8
+      width: 6
     - visualization_id: Viz_6
+      x: 0
+      "y": 24
+      height: 8
+      width: 6
+  ordered_chips:
+  - name: test_model_lo_pp_mandatory::Lo Commitdate
+    type: FILTER
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M
