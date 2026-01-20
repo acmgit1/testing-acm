@@ -895,14 +895,10 @@ liveboard:
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">testhhhk</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   - id: Viz_20
-    viz_guid: bf422910-30f7-475f-8227-b7eb7c99aaf5
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">ytrfaHJNAs</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(66, 46, 117);\"></div>"
-  - id: Viz_21
     viz_guid: accaae59-9155-408f-9177-12cdf5449ac4
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><a href=\"https://grapes-clone-upgrades.thoughtspotdev.cloud/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">10.12</span></a></h2><p class=\"theme-module__editor-paragraph\"><br></p><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><u><s><i><em class=\"theme-module__editor-text-underlineStrikethrough theme-module__editor-text-italic\" style=\"color: rgb(4, 145, 96); white-space: pre-wrap;\">czdczdasdasasd</em></i></s></u></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><table class=\"theme-module__editor-table\"><colgroup><col><col><col></colgroup><tbody><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">ZxZxz</span></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\" style=\"width: 75px; background-color: rgb(242, 243, 245); border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">xZxzxZ</span></p></td><td class=\"theme-module__editor-table-cell\" style=\"width: 75px; border: 1px solid black; vertical-align: top; text-align: start;\"><p class=\"theme-module__editor-paragraph\" style=\"text-align: start;\"><br></p></td></tr></tbody></table><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><img id=\"938b08fb-cb59-4a30-887e-ca7d1f3789a3\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(244, 126, 137);\"></div>"
-  - id: Viz_22
+  - id: Viz_21
     viz_guid: 128c3c6f-1e19-43db-8e20-5d54ae091bc8
     note_tile:
       html_parsed_string: |-
@@ -917,11 +913,7 @@ liveboard:
             width: 100%;
             height: 100%;
              margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: rgb(255, 255, 255);"></div>
-  - id: Viz_23
-    viz_guid: 9e2cb3e0-ab3d-43ec-b0fa-8063d4acd8a8
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">testingzfghj</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\"></div>"
-  - id: Viz_24
+  - id: Viz_22
     answer:
       name: recheck11_userparam_with parameters
       tables:
@@ -992,7 +984,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: recheck11_userparam_with parameters
     viz_guid: 898cd593-d805-4e72-9110-a57e8e3996b5
-  - id: Viz_25
+  - id: Viz_23
     answer:
       name: Total Discount_en-US_group1 by Quarterly Order Date_en-US_group1
       tables:
@@ -1033,7 +1025,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"75a325bc-20b0-430b-84d7-6995b9868b1c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"9aed13f8-93cc-4453-8058-deb965c0da41\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 60355ab6-c67f-4d50-a7cb-7f93e18d45fe
-  - id: Viz_26
+  - id: Viz_24
     answer:
       name: Copy of mandatory_filter
       tables:
@@ -1081,7 +1073,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"7750607f-3db1-45c6-853d-89f1440cf7ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"21640bb6-4612-4c0c-b989-fc504d43f9d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: fb4e3e0e-c70d-453e-8242-aab220147606
-  - id: Viz_27
+  - id: Viz_25
     answer:
       name: Total Lo Discount by P Color
       tables:
@@ -1118,27 +1110,19 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total Lo Discount by P Color
     viz_guid: 278bfdb7-1ebb-48f9-a366-b26615cdaebb
-  - id: Viz_28
-    viz_guid: af73a4c9-dbba-4e88-b3e6-e9047531ab1c
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">tesyui</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 129, 66);\"></div>"
-  - id: Viz_29
-    viz_guid: f701e440-859f-4d84-819a-6c59cd49d253
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">newone</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_30
+  - id: Viz_26
     viz_guid: fb3a2103-f280-4af3-ad17-05a848c25f02
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">retest</span></h2><p class=\"theme-module__editor-paragraph\"><br></p>"
-  - id: Viz_31
+  - id: Viz_27
     viz_guid: 85f82121-c2b3-474d-b1a7-7fda9888c824
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 129, 66);\"></div>"
-  - id: Viz_32
+  - id: Viz_28
     viz_guid: 3f26c495-d517-44b7-9a8a-02ef49e7cf6c
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">sdasas</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(140, 98, 245);\"></div>"
-  - id: Viz_33
+  - id: Viz_29
     answer:
       name: "Total Lo Custkey, Total Lo Linenumber by P Color"
       tables:
@@ -1191,7 +1175,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: "Total Lo Custkey, Total Lo Linenumber by P Color"
     viz_guid: e0e40641-4c24-43f8-8284-392d3b627f99
-  - id: Viz_34
+  - id: Viz_30
     answer:
       name: Total Lo Quantity by Lo Shipmode
       tables:
@@ -1226,7 +1210,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total Lo Quantity by Lo Shipmode
     viz_guid: 0c4a8fef-c843-472d-b6c8-caa26ab2c3f3
-  - id: Viz_35
+  - id: Viz_31
     answer:
       name: Total Lo Quantity
       tables:
@@ -1253,7 +1237,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: cdce1f0d-6b2c-4a5e-97a9-11b6c6bcacec
-  - id: Viz_36
+  - id: Viz_32
     answer:
       name: Pivot V2_ABAC1
       tables:
@@ -1364,7 +1348,7 @@ liveboard:
         description: ""
       dynamic_name: Pivot V2_ABAC
     viz_guid: cc01d2b4-0284-4db6-a358-c9d8a506373c
-  - id: Viz_37
+  - id: Viz_33
     answer:
       name: recheck11_userparam_with parameters
       tables:
@@ -1435,7 +1419,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: recheck11_userparam_with parameters
     viz_guid: 7aba0782-24cf-4c5d-9991-a7caac0fb40d
-  - id: Viz_38
+  - id: Viz_34
     answer:
       name: Total Lo Custkey by Lo Shipmode and Lo Orderpriorit111y
       tables:
@@ -1479,7 +1463,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total Lo Custkey by Lo Shipmode and Lo Orderpriorit111y
     viz_guid: 9a4fd3dc-4dcc-4eb2-94f6-f803012dc688
-  - id: Viz_39
+  - id: Viz_35
     answer:
       name: Pivot V1_ABAC
       tables:
@@ -1703,7 +1687,7 @@ liveboard:
         description: ""
       dynamic_name: Pivot V1_ABAC
     viz_guid: 79eccaa0-56ed-4935-a0ec-5423959fbe18
-  - id: Viz_40
+  - id: Viz_36
     answer:
       name: Total sales by city and item type
       tables:
@@ -1746,7 +1730,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"02fc44b3-19d9-4002-b987-f4e925c2b21b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"65990089-9b54-48c1-9140-a79d877d444f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bags\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dresses\",\"color\": \"#B094F8\"},{\"serieName\": \"headwear\",\"color\": \"#8C62F5\"},{\"serieName\": \"jackets\",\"color\": \"#049160\"},{\"serieName\": \"jeans\",\"color\": \"#56D3A8\"},{\"serieName\": \"pants\",\"color\": \"#06BF7F\"},{\"serieName\": \"shirts\",\"color\": \"#BF982A\"},{\"serieName\": \"shorts\",\"color\": \"#FCD977\"},{\"serieName\": \"skirts\",\"color\": \"#FCC838\"},{\"serieName\": \"socks\",\"color\": \"#704ec4\"},{\"serieName\": \"sweaters\",\"color\": \"#a381f7\"},{\"serieName\": \"sweatshirts\",\"color\": \"#8C62F5\"},{\"serieName\": \"swimwear\",\"color\": \"#059966\"},{\"serieName\": \"underwear\",\"color\": \"#38cc99\"},{\"serieName\": \"vests\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: f3078a3b-9810-4f20-be8d-aeb965546193
-  - id: Viz_41
+  - id: Viz_37
     answer:
       name: Total Lo Quantity
       tables:
@@ -1773,7 +1757,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: ae01f5b8-b2fa-477f-ab12-bc83728861e6
-  - id: Viz_42
+  - id: Viz_38
     answer:
       name: Total sales by city
       tables:
@@ -1810,7 +1794,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total sales by city
     viz_guid: fdb0073a-26b0-495e-a78e-a100bb45ba9d
-  - id: Viz_43
+  - id: Viz_39
     answer:
       name: Total sales by city and item type
       tables:
@@ -1854,7 +1838,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total sales by city and item type
     viz_guid: 35126ab1-5ac8-4d23-8805-5e5ae336be70
-  - id: Viz_44
+  - id: Viz_40
     answer:
       name: new muze studio
       tables:
@@ -1901,7 +1885,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: new muze studio
     viz_guid: e209130b-fd47-40ac-bd79-6a34727b99ed
-  - id: Viz_45
+  - id: Viz_41
     answer:
       name: New Muze_chart
       tables:
@@ -2094,52 +2078,52 @@ liveboard:
         "y": 52
         height: 8
         width: 6
-      - visualization_id: Viz_27
+      - visualization_id: Viz_25
         x: 6
         "y": 52
         height: 8
         width: 6
-      - visualization_id: Viz_31
+      - visualization_id: Viz_27
         x: 0
         "y": 12
         height: 4
         width: 3
-      - visualization_id: Viz_32
+      - visualization_id: Viz_28
         x: 0
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_34
+      - visualization_id: Viz_30
         x: 0
         "y": 60
         height: 2
         width: 3
-      - visualization_id: Viz_35
+      - visualization_id: Viz_31
         x: 3
         "y": 60
         height: 2
         width: 3
-      - visualization_id: Viz_41
+      - visualization_id: Viz_37
         x: 6
         "y": 60
         height: 2
         width: 3
-      - visualization_id: Viz_42
+      - visualization_id: Viz_38
         x: 0
         "y": 62
         height: 8
         width: 6
-      - visualization_id: Viz_43
+      - visualization_id: Viz_39
         x: 6
         "y": 62
         height: 8
         width: 6
-      - visualization_id: Viz_44
+      - visualization_id: Viz_40
         x: 0
         "y": 70
         height: 8
         width: 6
-      - visualization_id: Viz_45
+      - visualization_id: Viz_41
         x: 6
         "y": 70
         height: 8
@@ -2168,7 +2152,7 @@ liveboard:
         "y": 10
         height: 8
         width: 12
-      - visualization_id: Viz_40
+      - visualization_id: Viz_36
         x: 0
         "y": 18
         height: 8
@@ -2211,22 +2195,22 @@ liveboard:
     - name: CA
       description: ""
       tiles:
-      - visualization_id: Viz_36
+      - visualization_id: Viz_32
         x: 0
         "y": 0
         height: 8
         width: 6
-      - visualization_id: Viz_37
+      - visualization_id: Viz_33
         x: 0
         "y": 8
         height: 8
         width: 12
-      - visualization_id: Viz_38
+      - visualization_id: Viz_34
         x: 0
         "y": 16
         height: 8
         width: 6
-      - visualization_id: Viz_39
+      - visualization_id: Viz_35
         x: 6
         "y": 0
         height: 8
@@ -2235,7 +2219,7 @@ liveboard:
     - name: NT_iframe
       description: ""
       tiles:
-      - visualization_id: Viz_22
+      - visualization_id: Viz_21
         x: 0
         "y": 0
         height: 4
@@ -2244,63 +2228,36 @@ liveboard:
     - name: Tab 6
       description: ""
       tiles:
-      - visualization_id: Viz_21
+      - visualization_id: Viz_20
         x: 0
         "y": 4
         height: 6
         width: 8
-      - visualization_id: Viz_30
+      - visualization_id: Viz_26
         x: 0
         "y": 0
         height: 4
         width: 3
       id: 566a15f6-e8b3-4dd9-b554-b96db85b4898
-    - name: Tab 71
-      description: ""
-      id: 0c79e4f5-15e2-4bd2-97cc-6de914c8f6cb
-    - name: Tab 7
-      description: ""
-      tiles:
-      - visualization_id: Viz_20
-        x: 0
-        "y": 8
-        height: 3
-        width: 6
-      - visualization_id: Viz_23
-        x: 6
-        "y": 4
-        height: 4
-        width: 3
-      - visualization_id: Viz_28
-        x: 0
-        "y": 4
-        height: 4
-        width: 3
-      - visualization_id: Viz_29
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
-      id: 4bf6c4ea-2e63-486d-972b-ee081b66755e
     - name: CF
       description: ""
       tiles:
-      - visualization_id: Viz_24
+      - visualization_id: Viz_22
         x: 0
         "y": 0
         height: 8
         width: 12
-      - visualization_id: Viz_25
+      - visualization_id: Viz_23
         x: 0
         "y": 8
         height: 4
         width: 3
-      - visualization_id: Viz_26
+      - visualization_id: Viz_24
         x: 3
         "y": 8
         height: 8
         width: 6
-      - visualization_id: Viz_33
+      - visualization_id: Viz_29
         x: 0
         "y": 16
         height: 8
