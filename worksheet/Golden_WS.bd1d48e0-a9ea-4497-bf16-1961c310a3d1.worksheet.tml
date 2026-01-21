@@ -135,9 +135,6 @@ model:
       column_type: ATTRIBUTE
       synonyms:
       - Area
-      geo_config:
-        custom_file_guid: 443d8703-439c-4461-910c-61a877db5b53
-        geometryType: POLYGON
   - name: Store_Store Id
     column_id: TS_STORES::STORE_ID
     properties:

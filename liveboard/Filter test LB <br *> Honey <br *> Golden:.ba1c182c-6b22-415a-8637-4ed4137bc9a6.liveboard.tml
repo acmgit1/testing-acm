@@ -5357,6 +5357,136 @@ liveboard:
     - name: Hny_Golden_WS::int_params
       id: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
       override_value: "5"
+  - view_guid: b30a9aa3-2fad-464b-9df8-530735cbebea
+    name: Year 2026
+    view_filters:
+    - column:
+      - (Sample) Retail - Apparel::date
+      date_filter:
+        type: YEAR_ONLY
+        oper: =
+        date_range:
+          start_date: 01/01/2026
+          end_date: 01/01/2027
+        year_name: "2026"
+    - column:
+      - Hny_Golden_WS::County Name set
+      oper: in
+      values:
+      - "{null}"
+      - Allen
+      - Arapahoe
+      - Dallas
+      - Dane
+      - Group 1
+      - Kings
+      - Lackawanna
+      - Lafayette
+      - Lake
+      - Lancaster
+      - Lane
+    - column:
+      - Honey_WS_Har::Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1993
+          end_date: 01/01/1998
+    - column:
+      - Honey_WS_Har::P_For
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1994
+          end_date: 01/01/1997
+    - column:
+      - Honey_WS_Har::Lo Shipmode
+      oper: in
+      values:
+      - air
+      - fob
+      - mail
+      - ship
+    - column:
+      - Honey_WS_Har::for_measure
+      oper: '>'
+      values:
+      - "1"
+    - column:
+      - Hny_Golden_WS::Shipmode
+      oper: in
+      values:
+      - fob
+      - mail
+    - column:
+      - (Sample) Retail - Apparel::product
+      oper: in
+      values:
+      - Active boxer briefs
+      - Active briefs
+      - Active mesh bra
+      - Active sport boxer briefs
+      - Andorra hooded jacket
+      - Andorra jacket
+      - Antibes bottom
+      - Big wave board shorts-21 in.
+      - Bird of paradise capris
+      - Duck pants
+      - Duck shorts
+      - Earth day t-shirt
+      - Heavy duty pants
+      - Heavy duty shorts
+      - Heavy sweater jacket
+      - Old school pants
+      - Old school shorts
+      - On Vacation t-shirt
+      - S/s tropical shirt
+      - Save the whales t-shirt
+    - column:
+      - Hny_Golden_WS::date_ordered
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/01/1998
+          end_date: 07/28/2025
+    - column:
+      - test_model11::Lo Shipmode
+      oper: in
+      values:
+      - air
+    - column:
+      - test_model11::Lo Shipmode
+      oper: not in
+      values:
+      - air
+    - column:
+      - (Sample) Retail - Apparel::county
+      oper: not in
+      values:
+      - Ada County
+    - column:
+      - Honey_WS_Har::C City
+      oper: =
+    - column:
+      - Golden_WS::campaign_startdate
+      date_filter:
+        type: YEAR_ONLY
+        oper: =
+        date_range:
+          start_date: 01/01/2024
+          end_date: 01/01/2025
+        year_name: "2024"
+    is_public: false
+    view_parameters:
+    - name: Hny_Golden_WS::date_params
+      id: ec8bf2d8-f72f-4758-9646-6822cca86ccc
+      override_value: 01/02/2024
+    - name: Hny_Golden_WS::int_params
+      id: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
+      override_value: "5"
   - view_guid: b1065e06-e97a-41f5-ba42-03e99e52aa72
     name: Rolling Last
     view_filters:
