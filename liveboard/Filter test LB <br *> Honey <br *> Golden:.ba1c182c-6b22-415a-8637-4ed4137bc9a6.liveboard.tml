@@ -3742,7 +3742,7 @@ liveboard:
       - visualization_id: Viz_7
         x: 6
         "y": 0
-        height: 3
+        height: 4
         width: 3
       - visualization_id: Viz_8
         x: 0
@@ -4041,6 +4041,10 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_68
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
       id: f9a454d2-00a9-4f04-ab46-17cce7cdd05f
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
