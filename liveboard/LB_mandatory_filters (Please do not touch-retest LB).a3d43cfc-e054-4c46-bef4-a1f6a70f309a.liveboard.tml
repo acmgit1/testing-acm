@@ -322,11 +322,12 @@ liveboard:
       - id: test_model_lo_pp_mandatory
         name: test_model_lo_pp_mandatory
         fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
-      search_query: "[Lo Custkey] [Lo Commitdate] [Lo Commitdate].detailed [Lo Orderdate] [Lo Orderdate].detailed [Lo Orderpriority]"
+      search_query: "[Lo Custkey] [Lo Commitdate] [Lo Commitdate].detailed [Lo Orderdate] [Lo Orderdate].detailed [Lo Orderpriority] [Lo Shipmode]"
       answer_columns:
       - name: Lo Commitdate
       - name: Lo Orderdate
       - name: Lo Orderpriority
+      - name: Lo Shipmode
       - name: Total Lo Custkey
       table:
         table_columns:
@@ -336,21 +337,25 @@ liveboard:
           show_headline: false
         - column_id: Lo Orderpriority
           show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
         - column_id: Total Lo Custkey
           show_headline: false
         ordered_column_ids:
         - Lo Commitdate
         - Lo Orderdate
         - Lo Orderpriority
+        - Lo Shipmode
         - Total Lo Custkey
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: LINE
+        type: COLUMN
         chart_columns:
         - column_id: Lo Commitdate
         - column_id: Lo Orderdate
         - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
         - column_id: Total Lo Custkey
         axis_configs:
         - x:
@@ -359,8 +364,9 @@ liveboard:
           - Total Lo Custkey
           color:
           - Lo Orderpriority
+          - Lo Shipmode
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Commitdate\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderdate\",\"columnProperty\": {}},{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e783dd52-a26e-4ba4-b848-e13aa4e18c33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"ffc21c28-07d5-49e2-8740-423a46f1b01e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Commitdate\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Custkey\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Commitdate\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Lo Orderdate\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e783dd52-a26e-4ba4-b848-e13aa4e18c33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"ffc21c28-07d5-49e2-8740-423a46f1b01e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Commitdate\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Custkey\",\"color\": \"#FF8142\"}]}"
       display_mode: TABLE_MODE
       dynamic_name: Total Lo Custkey by Lo Commitdate
     viz_guid: 8ec65b56-9844-4a5f-ac9b-9b5d0dabef31
