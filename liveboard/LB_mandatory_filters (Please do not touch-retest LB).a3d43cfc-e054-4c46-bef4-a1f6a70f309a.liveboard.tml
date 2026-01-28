@@ -2089,7 +2089,7 @@ liveboard:
       tiles:
       - visualization_id: Viz_1
         x: 0
-        "y": 8
+        "y": 4
         height: 8
         width: 6
       - visualization_id: Viz_2
@@ -2099,87 +2099,87 @@ liveboard:
         width: 6
       - visualization_id: Viz_3
         x: 0
-        "y": 20
+        "y": 16
         height: 4
         width: 3
       - visualization_id: Viz_4
         x: 3
-        "y": 16
-        height: 2
+        "y": 12
+        height: 4
         width: 3
       - visualization_id: Viz_5
         x: 0
-        "y": 24
+        "y": 20
         height: 8
         width: 12
       - visualization_id: Viz_6
         x: 0
-        "y": 32
+        "y": 28
         height: 8
         width: 12
       - visualization_id: Viz_7
         x: 0
-        "y": 40
+        "y": 36
         height: 8
         width: 6
       - visualization_id: Viz_8
         x: 0
-        "y": 48
+        "y": 44
         height: 8
         width: 12
       - visualization_id: Viz_18
         x: 0
-        "y": 56
+        "y": 52
         height: 8
         width: 6
       - visualization_id: Viz_27
         x: 6
-        "y": 56
+        "y": 52
         height: 8
         width: 6
       - visualization_id: Viz_31
         x: 0
-        "y": 16
+        "y": 12
         height: 4
         width: 3
       - visualization_id: Viz_32
         x: 0
-        "y": 4
+        "y": 0
         height: 4
         width: 3
       - visualization_id: Viz_34
         x: 0
-        "y": 64
+        "y": 60
         height: 2
         width: 3
       - visualization_id: Viz_35
         x: 3
-        "y": 64
+        "y": 60
         height: 2
         width: 3
       - visualization_id: Viz_41
         x: 6
-        "y": 64
+        "y": 60
         height: 2
         width: 3
       - visualization_id: Viz_42
         x: 0
-        "y": 66
+        "y": 62
         height: 8
         width: 6
       - visualization_id: Viz_43
         x: 6
-        "y": 66
+        "y": 62
         height: 8
         width: 6
       - visualization_id: Viz_44
         x: 0
-        "y": 74
+        "y": 70
         height: 8
         width: 6
       - visualization_id: Viz_45
         x: 6
-        "y": 74
+        "y": 70
         height: 8
         width: 6
       id: 1b0c5c98-7e2f-49a2-9cd2-1c72bbd1c73b
