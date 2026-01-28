@@ -20,6 +20,18 @@ table:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: VARCHAR
+  rls_rules:
+    tables:
+    - name: TS_STATES
+      fqn: f04ad83b-6d07-43bb-b771-ae067d344990
+    table_paths:
+    - id: TS_STATES_1
+      table: TS_STATES
+      column:
+      - REGION
+    rules:
+    - name: rls1
+      expr: "ts_groups = [TS_STATES_1::REGION] "
   properties:
     spotter_config:
       is_spotter_enabled: false
