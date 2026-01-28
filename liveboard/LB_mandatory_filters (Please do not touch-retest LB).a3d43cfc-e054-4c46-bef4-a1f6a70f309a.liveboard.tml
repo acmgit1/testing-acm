@@ -2160,7 +2160,7 @@ liveboard:
       - visualization_id: Viz_41
         x: 6
         "y": 60
-        height: 2
+        height: 4
         width: 3
       - visualization_id: Viz_42
         x: 0
@@ -2169,7 +2169,7 @@ liveboard:
         width: 6
       - visualization_id: Viz_43
         x: 6
-        "y": 62
+        "y": 64
         height: 8
         width: 6
       - visualization_id: Viz_44
@@ -2179,7 +2179,7 @@ liveboard:
         width: 6
       - visualization_id: Viz_45
         x: 6
-        "y": 70
+        "y": 72
         height: 8
         width: 6
       id: 1b0c5c98-7e2f-49a2-9cd2-1c72bbd1c73b
