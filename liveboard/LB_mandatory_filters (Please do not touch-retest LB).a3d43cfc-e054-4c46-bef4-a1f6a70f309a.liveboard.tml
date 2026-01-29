@@ -919,7 +919,7 @@ liveboard:
     viz_guid: 1f1c3d7e-1b4c-46b3-a79d-9d471060c4af
     note_tile:
       html_parsed_string: |-
-        <h2 class="theme-module__editor-h2"><br></h2><hr><h2 class="theme-module__editor-h2"><br></h2><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph" dir="ltr"><span style="white-space: pre-wrap;">fdghjk</span></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><span style="position: relative;
+        <h2 class="theme-module__editor-h2-spaced"><br></h2><hr><h2 class="theme-module__editor-h2-spaced"><br></h2><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced" dir="ltr"><span style="white-space: pre-wrap;">fdghjk</span></p><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br></p><span style="position: relative;
             width: 100%;
             padding-bottom: 56%;
             height: 0;
@@ -929,7 +929,7 @@ liveboard:
             left: 0;
             width: 100%;
             height: 100%;
-             margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><p class="theme-module__editor-paragraph"><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: rgb(255, 255, 255);"></div>
+             margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: rgb(255, 255, 255);"></div>
   - id: Viz_23
     viz_guid: bc56b022-a7f8-48dd-8d28-d2b3dc4da778
     note_tile:
@@ -1987,6 +1987,21 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: New Muze_chart
     viz_guid: 2372346c-a9e4-40d9-84b4-0e2953960135
+  - id: Viz_46
+    viz_guid: 26dafb9d-9e16-4833-88b4-27e5fd9c2a1a
+    note_tile:
+      html_parsed_string: |-
+        <p class="theme-module__editor-paragraph-spaced" dir="ltr"><span style="white-space: pre-wrap;">Embedded stagning cluster liveboard , Add * in </span><span style="background-color: rgb(255, 255, 255); color: rgb(28, 35, 48); font-family: optimo-plain, &quot;helvetica neue&quot;, helvetica, arial, sans-serif; font-weight: 400; font-size: 14px; white-space: pre-wrap;">Permitted iFrame domains</span><br></p><span style="position: relative;
+            width: 100%;
+            padding-bottom: 56%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 8px;"><iframe data-src-link="https://cx-rdt-staging-clone.thoughtspotstaging.cloud/#/insights/pinboard/9c855a81-48fa-422b-8525-1a955b84f384" src="https://cx-rdt-staging-clone.thoughtspotstaging.cloud/#/insights/pinboard/9c855a81-48fa-422b-8525-1a955b84f384" frameborder="0" title="Embedded Page" allow="fullscreen" allowfullscreen="allowfullscreen" style="position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+             margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: revert-layer;"></div>
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2275,6 +2290,11 @@ liveboard:
       tiles:
       - visualization_id: Viz_22
         x: 0
+        "y": 4
+        height: 4
+        width: 3
+      - visualization_id: Viz_46
+        x: 1
         "y": 0
         height: 4
         width: 3
