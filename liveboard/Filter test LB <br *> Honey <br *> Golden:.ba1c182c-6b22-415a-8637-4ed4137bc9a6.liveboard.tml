@@ -984,7 +984,7 @@ liveboard:
           - Total quantity purchased
           - Total sales
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"Total quantity purchased\"],\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"BOTTOM_LEGEND\"},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"DAY_OF_MONTH(date)\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"3770202c-250d-4ee8-aaa9-956a2124d4df\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"1c663b33-8670-4a54-a133-789bf6b13d08\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": true}},{\"id\": \"a216bb56-e2fc-4741-a006-c323abc595d6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total sales\",\"color\": \"#48D1E0\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"Total sales\"],\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"BOTTOM_LEGEND\",\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"DAY_OF_MONTH(date)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {\"dataLabels\": true,\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"dataLabels\": true,\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"3770202c-250d-4ee8-aaa9-956a2124d4df\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"1c663b33-8670-4a54-a133-789bf6b13d08\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": true}},{\"id\": \"a216bb56-e2fc-4741-a006-c323abc595d6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total sales\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
       dynamic_name: Renamed in 10.15
       dynamic_description: Renamed description in 10.15
@@ -2240,16 +2240,6 @@ liveboard:
         - sales change%
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Net Sales(year to date)\",\"columnProperty\": {}},{\"columnId\": \"sales change%\",\"columnProperty\": {}},{\"columnId\": \"Net Sales(last year year to date)\",\"columnProperty\": {}}]}"
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Net Sales(last year year to date)
-        - column_id: Net Sales(year to date)
-        - column_id: sales change%
-        axis_configs:
-        - "y":
-          - Net Sales(year to date)
-        client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 73d88e15-1ce3-40f1-a41e-04fd1efc5c39
   - id: Viz_48
