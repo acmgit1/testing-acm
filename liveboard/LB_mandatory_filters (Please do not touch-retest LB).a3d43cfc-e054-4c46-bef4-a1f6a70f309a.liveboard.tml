@@ -2290,14 +2290,14 @@ liveboard:
       tiles:
       - visualization_id: Viz_22
         x: 0
-        "y": 4
+        "y": 8
         height: 4
         width: 3
       - visualization_id: Viz_46
-        x: 1
+        x: 0
         "y": 0
-        height: 4
-        width: 3
+        height: 8
+        width: 12
       id: 333031e3-2260-46c4-89ac-37245bd35b63
     - name: Tab 6
       description: ""
