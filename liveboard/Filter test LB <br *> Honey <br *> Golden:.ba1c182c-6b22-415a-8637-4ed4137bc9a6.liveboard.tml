@@ -3534,6 +3534,55 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 6a554830-3fb7-4067-9a60-621ca43b44cd
+  - id: Viz_70
+    answer:
+      name: "Total Age by Monthly date_orderedtime - Fiscal, date_ordered"
+      tables:
+      - id: Hny_Golden_WS
+        name: Hny_Golden_WS
+        fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
+      search_query: "[date_ordered] [date_ordered].detailed [date_orderedtime] [date_orderedtime].monthly [date_shipped] [date_shipped].monthly [Age] sort by [date_shipped] descending"
+      answer_columns:
+      - name: Month(date_orderedtime)
+      - name: Month(date_shipped)
+        sort_info:
+          category: DEFAULT
+      - name: Total Age
+      - name: date_ordered
+      table:
+        table_columns:
+        - column_id: Month(date_orderedtime)
+          show_headline: false
+        - column_id: Month(date_shipped)
+          show_headline: false
+        - column_id: Total Age
+          show_headline: false
+        - column_id: date_ordered
+          show_headline: false
+        ordered_column_ids:
+        - date_ordered
+        - Month(date_orderedtime)
+        - Month(date_shipped)
+        - Total Age
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Month(date_orderedtime)
+        - column_id: Month(date_shipped)
+        - column_id: Total Age
+        - column_id: date_ordered
+        axis_configs:
+        - x:
+          - Month(date_orderedtime)
+          - date_ordered
+          "y":
+          - Total Age
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"9b5bf31b-c159-4351-9901-5eede471da2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"37f03544-14f4-4f81-81c2-4f0c3bf023e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date_orderedtime)\",\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 57ca49a8-b980-48ca-80e5-09bdcce5df40
   filters:
   - column:
     - (Sample) Retail - Apparel::date
@@ -4077,6 +4126,7 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_69
+      - visualization_id: Viz_70
       id: 91710eb5-a5dc-45f6-bfcf-336b377daab4
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
