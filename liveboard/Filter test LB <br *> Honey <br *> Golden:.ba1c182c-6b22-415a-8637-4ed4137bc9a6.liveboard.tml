@@ -3497,6 +3497,43 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Honey_Line_Chart
     viz_guid: 8b87b16f-fe5f-4705-b5d8-d2c66c06d1f7
+  - id: Viz_69
+    answer:
+      name: "Monthly date_ordered - Pe_cc_oct04_2025, Monthly date_orderedtime - Fiscal, Monthly date_shipped - Fiscal"
+      tables:
+      - id: Hny_Golden_WS
+        name: Hny_Golden_WS
+        fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
+      search_query: "[date_ordered] [date_ordered].monthly [date_orderedtime] [date_orderedtime].monthly [date_shipped] [date_shipped].monthly"
+      answer_columns:
+      - name: Month(date_ordered)
+      - name: Month(date_orderedtime)
+      - name: Month(date_shipped)
+      table:
+        table_columns:
+        - column_id: Month(date_ordered)
+          show_headline: false
+        - column_id: Month(date_orderedtime)
+          show_headline: false
+        - column_id: Month(date_shipped)
+          show_headline: false
+        ordered_column_ids:
+        - Month(date_ordered)
+        - Month(date_orderedtime)
+        - Month(date_shipped)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(date_ordered)
+        - column_id: Month(date_orderedtime)
+        - column_id: Month(date_shipped)
+        axis_configs:
+        - "y":
+          - Month(date_ordered)
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 6a554830-3fb7-4067-9a60-621ca43b44cd
   filters:
   - column:
     - (Sample) Retail - Apparel::date
@@ -4038,6 +4075,8 @@ liveboard:
       id: f9a454d2-00a9-4f04-ab46-17cce7cdd05f
     - name: CC
       description: ""
+      tiles:
+      - visualization_id: Viz_69
       id: 91710eb5-a5dc-45f6-bfcf-336b377daab4
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
