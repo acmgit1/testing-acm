@@ -3585,6 +3585,59 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"9b5bf31b-c159-4351-9901-5eede471da2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"37f03544-14f4-4f81-81c2-4f0c3bf023e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date_orderedtime)\",\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 57ca49a8-b980-48ca-80e5-09bdcce5df40
+  - id: Viz_71
+    answer:
+      name: To Be deleted
+      tables:
+      - id: sentri-lo-model
+        name: sentri-lo-model
+        fqn: c957b931-243e-456a-93f3-1b3743e0ade7
+      search_query: "[Lo Discount] [Lo Extendedprice] [Lo Orderpriority] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shipmode
+      - name: Total Lo Discount
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: Total Lo Extendedprice
+          show_headline: false
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shipmode
+        - Total Lo Discount
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE_STACKED_COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Discount
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Discount
+          color:
+          - Lo Orderpriority
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"f39fd5e4-e2f1-460f-91d3-83d2b69756a8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"6f4b467b-ec82-4841-875d-09d445c5344c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": true}},{\"id\": \"c2cb5866-6212-4116-abd8-774bd41b08ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#82DFE9\"},{\"serieName\": \"4-not specified\",\"color\": \"#48D1E0\"},{\"serieName\": \"5-low\",\"color\": \"#ff9a68\"},{\"serieName\": \"Total Lo Extendedprice\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: To Be deleted
+    viz_guid: e60ae1b1-22ee-42f5-a657-6e83531e5a8f
   filters:
   - column:
     - (Sample) Retail - Apparel::date
@@ -4123,6 +4176,7 @@ liveboard:
         "y": 0
         height: 8
         width: 6
+      - visualization_id: Viz_71
       id: f9a454d2-00a9-4f04-ab46-17cce7cdd05f
     - name: CC
       description: ""
