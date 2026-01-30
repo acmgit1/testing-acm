@@ -4124,7 +4124,7 @@ liveboard:
         height: 8
         width: 6
       id: f9a454d2-00a9-4f04-ab46-17cce7cdd05f
-    - name: CC
+    - name: CC_T
       description: ""
       tiles:
       - visualization_id: Viz_69
