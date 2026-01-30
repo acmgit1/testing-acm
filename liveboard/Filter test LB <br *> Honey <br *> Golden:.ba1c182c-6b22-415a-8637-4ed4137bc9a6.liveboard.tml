@@ -4131,12 +4131,12 @@ liveboard:
         x: 0
         "y": 0
         height: 8
-        width: 5
+        width: 4
       - visualization_id: Viz_70
-        x: 5
+        x: 4
         "y": 0
         height: 8
-        width: 7
+        width: 8
       id: 91710eb5-a5dc-45f6-bfcf-336b377daab4
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
