@@ -3504,34 +3504,36 @@ liveboard:
       - id: Hny_Golden_WS
         name: Hny_Golden_WS
         fqn: 5f252eba-5c2f-4b78-9489-d6b5f1c75acc
-      search_query: "[date_ordered] [date_ordered].monthly [date_orderedtime] [date_orderedtime].monthly [date_shipped] [date_shipped].monthly"
+      search_query: "[date_ordered] [date_ordered].hourly [date_orderedtime] [date_orderedtime].monthly [date_shipped] [date_shipped].monthly"
       answer_columns:
-      - name: Month(date_ordered)
+      - name: Hour(date_ordered)
       - name: Month(date_orderedtime)
       - name: Month(date_shipped)
       table:
         table_columns:
-        - column_id: Month(date_ordered)
+        - column_id: Hour(date_ordered)
           show_headline: false
         - column_id: Month(date_orderedtime)
           show_headline: false
         - column_id: Month(date_shipped)
           show_headline: false
         ordered_column_ids:
-        - Month(date_ordered)
+        - Hour(date_ordered)
         - Month(date_orderedtime)
         - Month(date_shipped)
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Hour(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
-        - column_id: Month(date_ordered)
+        - column_id: Hour(date_ordered)
         - column_id: Month(date_orderedtime)
         - column_id: Month(date_shipped)
         axis_configs:
         - "y":
-          - Month(date_ordered)
+          - Hour(date_ordered)
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"00279cc3-9439-4477-8207-613c44cd4b9c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Hour(date_ordered)\"],\"isOpposite\": false}},{\"id\": \"083d0f79-438e-455a-a008-75057d978a85\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: 6a554830-3fb7-4067-9a60-621ca43b44cd
   - id: Viz_70
