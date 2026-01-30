@@ -2022,7 +2022,7 @@ liveboard:
         - date_ordered
         - Total Age
         client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"date_ordered\",\"width\": 100.84646606445312}],\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"wrapColumnText\": true}}]}"
       chart:
         type: LINE
         chart_columns:
@@ -2034,7 +2034,7 @@ liveboard:
           "y":
           - Total Age
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {}},{\"columnId\": \"Total Age\",\"columnProperty\": {}},{\"columnId\": \"8c1035d3-6005-4c75-883d-b24b03355f70\",\"columnProperty\": {}},{\"columnId\": \"a814347a-1a06-47fd-a2c5-50a11d152bd2\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f5a54bdb-fa93-4bdb-b35a-a972ffe2d7f1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"d2890913-831e-44b8-8570-02415d1506ca\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"f5a54bdb-fa93-4bdb-b35a-a972ffe2d7f1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"d2890913-831e-44b8-8570-02415d1506ca\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
       display_mode: TABLE_MODE
     viz_guid: 561dd230-793a-4a7a-8667-a5e9d0a3325d
   - id: Viz_42
