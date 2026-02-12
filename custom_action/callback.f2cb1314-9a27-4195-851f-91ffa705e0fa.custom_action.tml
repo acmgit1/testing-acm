@@ -1,0 +1,8 @@
+guid: f2cb1314-9a27-4195-851f-91ffa705e0fa
+action_object:
+  name: callback
+  type: CALLBACK
+  callback_action_details:
+    reference: callback
+  availability: GLOBAL
+  application: NONE
