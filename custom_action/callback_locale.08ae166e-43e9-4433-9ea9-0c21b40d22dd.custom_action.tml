@@ -1,0 +1,8 @@
+guid: 08ae166e-43e9-4433-9ea9-0c21b40d22dd
+action_object:
+  name: callback_locale
+  type: CALLBACK
+  callback_action_details:
+    reference: callback_locale
+  availability: LOCAL
+  application: NONE
