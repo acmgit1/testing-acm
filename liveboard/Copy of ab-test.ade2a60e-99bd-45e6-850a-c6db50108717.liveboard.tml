@@ -1,0 +1,105 @@
+guid: ade2a60e-99bd-45e6-850a-c6db50108717
+liveboard:
+  name: Copy of ab-test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: first sales
+      tables:
+      - id: WS_golden
+        name: WS_golden
+        fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+      formulas:
+      - id: formula_fx
+        name: fx
+        expr: "if ( [date_ordered] = group_min ( [date_ordered] , [Customer Id] ) ) then true else false"
+        was_auto_generated: false
+      search_query: "[Sales Quantity] [Customer Id] [formula_fx] [date_ordered] [date_ordered].daily [formula_fx].true sort by [Customer Id]"
+      answer_columns:
+      - name: Customer Id
+        sort_info:
+          category: DEFAULT
+      - name: Day(date_ordered)
+      - name: Total Sales Quantity
+        format:
+          category: CURRENCY
+          currencyFormatConfig:
+            locale: AED
+            unit: AUTO
+            decimals: 0.0
+            toSeparateThousands: true
+          isCategoryEditable: true
+      - name: fx
+      table:
+        table_columns:
+        - column_id: Customer Id
+          show_headline: false
+        - column_id: Day(date_ordered)
+          show_headline: false
+        - column_id: Total Sales Quantity
+          show_headline: false
+        - column_id: fx
+          show_headline: false
+        ordered_column_ids:
+        - Customer Id
+        - fx
+        - Day(date_ordered)
+        - Total Sales Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Customer Id\",\"columnProperty\": {}},{\"columnId\": \"fx\",\"columnProperty\": {}},{\"columnId\": \"Day(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {}}]}"
+      chart:
+        type: ADVANCED_PIVOT_TABLE
+        chart_columns:
+        - column_id: Customer Id
+        - column_id: Day(date_ordered)
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Total Sales Quantity
+        - column_id: fx
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Customer Id\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"fx\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Day(date_ordered)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN\",\"value\": \"8\",\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#FDE9AF\"},\"comparisonType\": \"VALUE_BASED\",\"isHighlightRow\": false}]},\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"3a754949-c6d6-4d03-8e28-cb6706f5eddd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Quantity\"],\"isOpposite\": false}},{\"id\": \"1f21689f-7e70-4843-9525-2295d0e00aca\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Id\",\"fx\",\"Measure names\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: rows
+            columns:
+            - Customer Id
+            - fx
+            mode: COLUMN_DRIVEN
+          - key: values
+            columns:
+            - Total Sales Quantity
+            mode: COLUMN_DRIVEN
+          - key: columns
+            columns:
+            - Day(date_ordered)
+            - Measure names
+            mode: COLUMN_DRIVEN
+          - key: split-by-color
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+    viz_guid: 537d56d4-bc35-4821-b4e9-946d6df4638e
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M
