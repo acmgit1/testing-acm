@@ -1,4 +1,5 @@
 guid: d9aebd05-7c41-4d40-b51d-87c24b9e996b
+obj_id: TS_PRODUCTS-d9aebd05
 table:
   name: TS_PRODUCTS
   db: NEBULADEV

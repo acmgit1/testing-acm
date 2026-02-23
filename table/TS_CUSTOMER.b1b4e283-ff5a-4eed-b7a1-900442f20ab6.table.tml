@@ -1,4 +1,5 @@
 guid: b1b4e283-ff5a-4eed-b7a1-900442f20ab6
+obj_id: TS_CUSTOMER-b1b4e283
 table:
   name: TS_CUSTOMER
   db: NEBULADEV
