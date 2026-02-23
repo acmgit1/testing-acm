@@ -1262,7 +1262,7 @@ liveboard:
     viz_guid: 7468d681-5a0f-4b81-9a20-0871262bc9aa
   - id: Viz_36
     answer:
-      name: Pivot V2_ABAC1
+      name: Pivot V2_ABAC
       tables:
       - id: test_model_lo_pp_mandatory
         name: test_model_lo_pp_mandatory
@@ -1369,7 +1369,7 @@ liveboard:
         data_type: CHAR
         default_value: anstest
         description: ""
-      dynamic_name: Pivot V2_ABAC1
+      dynamic_name: Pivot V2_ABAC
     viz_guid: 0ad0fb54-c395-4e28-ac42-03f456115cea
     action_object_associations:
     - action_name: callback_locale
