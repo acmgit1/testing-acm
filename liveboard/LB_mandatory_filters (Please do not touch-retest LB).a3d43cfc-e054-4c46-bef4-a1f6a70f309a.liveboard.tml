@@ -2002,6 +2002,51 @@ liveboard:
             width: 100%;
             height: 100%;
              margin-bottom: 8px;"></iframe></span><p class="theme-module__editor-paragraph-spaced"><br></p><p class="theme-module__editor-paragraph-spaced"><br><br></p><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: revert-layer;"></div>
+  - id: Viz_47
+    answer:
+      name: Total sales by item type and city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [city] [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          headline_aggregation: SUM
+          headline_client_state: "{\"headlineVizPropVersion\": \"V1\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN_EQUAL_TO\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FF8142\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#8C62F5\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total sales\"}]}}}"
+        - column_id: city
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: item type
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - city
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"item type\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"GREATER_THAN_EQUAL_TO\",\"value\": \"1\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#48D1E0\",\"bold\": true,\"italic\": true,\"strikeThrough\": true,\"underline\": true},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total sales\",\"isHighlightRow\": false}]}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+          color:
+          - city
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"item type\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"5136fd0c-d22d-4841-85dc-87baaa1aaa3b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"6862ba89-42c9-47ba-b87f-b8333bdfaed5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"item type\",\"color\": \"#48d1e0\"},{\"serieName\": \"Total sales\",\"color\": \"#F04152\"},{\"serieName\": \"alpharetta\",\"color\": \"#A2ACBA\"},{\"serieName\": \"ann arbor\",\"color\": \"#47515F\"},{\"serieName\": \"arcadia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"atlanta\",\"color\": \"#747E8C\"},{\"serieName\": \"berkeley\",\"color\": \"#FFA97E\"},{\"serieName\": \"billings\",\"color\": \"#C26232\"},{\"serieName\": \"bloomington\",\"color\": \"#FFCCB3\"},{\"serieName\": \"boise\",\"color\": \"#FF8142\"},{\"serieName\": \"boston\",\"color\": \"#B094F8\"},{\"serieName\": \"boulder\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bozeman\",\"color\": \"#D1C0FB\"},{\"serieName\": \"chandler\",\"color\": \"#8C62F5\"},{\"serieName\": \"chicago\",\"color\": \"#56D3A8\"},{\"serieName\": \"colorado springs\",\"color\": \"#049160\"},{\"serieName\": \"columbia\",\"color\": \"#9BE5CB\"},{\"serieName\": \"east hanover\",\"color\": \"#06BF7F\"},{\"serieName\": \"flagstaff\",\"color\": \"#FCD977\"},{\"serieName\": \"framingham\",\"color\": \"#BF982A\"},{\"serieName\": \"henderson\",\"color\": \"#FDE9AF\"},{\"serieName\": \"indianapolis\",\"color\": \"#FCC838\"},{\"serieName\": \"kentwood\",\"color\": \"#2b7d86\"},{\"serieName\": \"las vegas\",\"color\": \"#6ddae6\"},{\"serieName\": \"maple grove\",\"color\": \"#3aa7b3\"},{\"serieName\": \"newark\",\"color\": \"#91e3ec\"},{\"serieName\": \"north conway\",\"color\": \"#48D1E0\"},{\"serieName\": \"northbrook\",\"color\": \"#902731\"},{\"serieName\": \"norwalk\",\"color\": \"#f36775\"},{\"serieName\": \"st. louis\",\"color\": \"#c03442\"},{\"serieName\": \"west des moines\",\"color\": \"#f68d97\"},{\"serieName\": \"west hartford\",\"color\": \"#F04152\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: Total sales by item type and city
+    viz_guid: ad81650e-d83c-40f4-8c96-502a1ac4098b
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2366,6 +2411,8 @@ liveboard:
       id: 6eb47cf2-6332-46d8-82a0-fad02b4b5b74
     - name: test
       description: ""
+      tiles:
+      - visualization_id: Viz_47
       id: 5f0d393f-fba5-499f-807e-95f1552fa272
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
