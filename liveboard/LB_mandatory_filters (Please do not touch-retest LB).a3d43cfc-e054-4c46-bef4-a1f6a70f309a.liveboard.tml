@@ -2413,6 +2413,10 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_47
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
       id: 5f0d393f-fba5-499f-807e-95f1552fa272
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
@@ -2776,7 +2780,7 @@ liveboard:
     - name: lb_border_type
       value: SHARP
     - name: lb_brand_color
-      value: LBC_E
+      value: LBC_H
     - name: hide_group_title
       value: "false"
     - name: hide_group_description

@@ -60,4 +60,4 @@ table:
     type: LEFT_OUTER
   properties:
     spotter_config:
-      is_spotter_enabled: false
+      is_spotter_enabled: true
