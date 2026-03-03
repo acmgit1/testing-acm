@@ -1,0 +1,328 @@
+guid: 7118a18d-0a34-4a3c-ba74-817b867d3737
+obj_id: git-7118a18d
+liveboard:
+  name: git
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Age by Shipmode and Measure names
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [avg sales per customer] [Shipmode] [State Name] [campaign enddate] [campaign enddate].daily"
+      answer_columns:
+      - name: Day(campaign enddate)
+      - name: Shipmode
+      - name: State Name
+      - name: Total Age
+      - name: avg sales per customer
+      table:
+        table_columns:
+        - column_id: Day(campaign enddate)
+          headline_aggregation: MIN-MAX
+        - column_id: Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: avg sales per customer
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Shipmode
+        - State Name
+        - Day(campaign enddate)
+        - Total Age
+        - avg sales per customer
+        client_state: ""
+      chart:
+        type: ADVANCED_PIVOT_TABLE
+        chart_columns:
+        - column_id: Day(campaign enddate)
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Age
+        - column_id: avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"d304c37e-8f3d-400e-8216-17348e61616c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"bb306563-edf8-472a-8c98-aad011c0bbce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"7cdcaba4-b17f-4e21-8b5a-825eda4cba35\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State Name\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: rows
+            columns:
+            - Shipmode
+            mode: COLUMN_DRIVEN
+          - key: values
+            columns:
+            - Total Age
+            mode: COLUMN_DRIVEN
+          - key: columns
+            columns:
+            - Measure names
+            mode: COLUMN_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 55e35df3-182e-442e-9878-9f8bb7fa2c2f
+  - id: Viz_2
+    answer:
+      name: "Shipmode, State Name, Daily campaign enddate, Total Age, avg sales per customer"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [avg sales per customer] [Shipmode] [State Name] [campaign enddate] [campaign enddate].daily"
+      answer_columns:
+      - name: Day(campaign enddate)
+      - name: Shipmode
+      - name: State Name
+      - name: Total Age
+      - name: avg sales per customer
+      table:
+        table_columns:
+        - column_id: Day(campaign enddate)
+          headline_aggregation: MIN-MAX
+        - column_id: Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: avg sales per customer
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Shipmode
+        - State Name
+        - Day(campaign enddate)
+        - Total Age
+        - avg sales per customer
+        client_state: ""
+      chart:
+        type: MUZE_STUDIO
+        chart_columns:
+        - column_id: Day(campaign enddate)
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Age
+        - column_id: avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"1ac896b0-ee35-4ed4-a297-dda5288167a3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5e9fb5e6-74c0-4249-80a1-952d4f4faa8b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - Shipmode
+            - State Name
+            - Day(campaign enddate)
+            - Total Age
+            - avg sales per customer
+            mode: COLUMN_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 3c4843c1-52ce-4867-bcde-a3533f09137d
+  - id: Viz_3
+    answer:
+      name: "Total Age, avg sales per customer by Shipmode, State Name, Daily campaign enddate"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [avg sales per customer] [Shipmode] [State Name] [campaign enddate] [campaign enddate].daily"
+      answer_columns:
+      - name: Day(campaign enddate)
+      - name: Shipmode
+      - name: State Name
+      - name: Total Age
+      - name: avg sales per customer
+      table:
+        table_columns:
+        - column_id: Day(campaign enddate)
+          headline_aggregation: MIN-MAX
+        - column_id: Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: avg sales per customer
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Shipmode
+        - State Name
+        - Day(campaign enddate)
+        - Total Age
+        - avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Day(campaign enddate)
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Age
+        - column_id: avg sales per customer
+        axis_configs:
+        - x:
+          - Shipmode
+          - State Name
+          - Day(campaign enddate)
+          "y":
+          - Total Age
+          - avg sales per customer
+        - "y":
+          - Total Age
+          - avg sales per customer
+        - x:
+          - Shipmode
+          "y":
+          - Total Age
+          - avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Day(campaign enddate)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Day(campaign enddate)\",\"sortOrder\": \"asc\",\"expanded\": false,\"area\": \"row\"}]},\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"579c33a8-4c66-4ac3-b1ba-7bf2c161cfac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"48d739a0-dcf3-4186-ab99-8906662fc4ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"093dadc2-ad99-459f-9ff4-2e0fd50a25ee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\",\"State Name\",\"Day(campaign enddate)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9a7174f9-53c8-4944-8bb6-0b866c89186a
+  - id: Viz_4
+    answer:
+      name: "Total Age, avg sales per customer by Daily campaign enddate"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [avg sales per customer] [Shipmode] [State Name] [campaign enddate] [campaign enddate].daily"
+      answer_columns:
+      - name: Day(campaign enddate)
+      - name: Shipmode
+      - name: State Name
+      - name: Total Age
+      - name: avg sales per customer
+      table:
+        table_columns:
+        - column_id: Day(campaign enddate)
+          headline_aggregation: MIN-MAX
+        - column_id: Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: avg sales per customer
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Shipmode
+        - State Name
+        - Day(campaign enddate)
+        - Total Age
+        - avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_COLUMN
+        chart_columns:
+        - column_id: Day(campaign enddate)
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Age
+        - column_id: avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Day(campaign enddate)
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: MERGED
+              columns:
+              - Total Age
+              - avg sales per customer
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+    viz_guid: 2dcd103d-eeb5-4d45-80a1-c2bb8b842674
+  - id: Viz_5
+    answer:
+      name: "Total Age, avg sales per customer by Daily campaign enddate and Shipmode"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [avg sales per customer] [Shipmode] [State Name] [campaign enddate] [campaign enddate].daily"
+      answer_columns:
+      - name: Day(campaign enddate)
+      - name: Shipmode
+      - name: State Name
+      - name: Total Age
+      - name: avg sales per customer
+      table:
+        table_columns:
+        - column_id: Day(campaign enddate)
+          headline_aggregation: MIN-MAX
+        - column_id: Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: State Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: avg sales per customer
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Shipmode
+        - State Name
+        - Day(campaign enddate)
+        - Total Age
+        - avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_LINE_STACKED_COLUMN
+        chart_columns:
+        - column_id: Day(campaign enddate)
+        - column_id: Shipmode
+        - column_id: State Name
+        - column_id: Total Age
+        - column_id: avg sales per customer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Day(campaign enddate)
+            mode: AXIS_DRIVEN
+          - key: y-axis-column
+            axes:
+            - type: MERGED
+              columns:
+              - Total Age
+            mode: AXIS_DRIVEN
+          - key: y-axis-line
+            axes:
+            - type: MERGED
+              columns:
+              - avg sales per customer
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            axes:
+            - type: FLAT
+              column: Shipmode
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+    viz_guid: 54859962-65f7-4721-8094-585f3cd00ede
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+    - visualization_id: Viz_2
+    - visualization_id: Viz_3
+    - visualization_id: Viz_4
+    - visualization_id: Viz_5
