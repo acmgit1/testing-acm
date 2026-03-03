@@ -36,6 +36,7 @@ liveboard:
         - Total Age
         - avg sales per customer
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"State Name\",\"columnProperty\": {}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {}},{\"columnId\": \"Total Age\",\"columnProperty\": {}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {}}]}"
       chart:
         type: ADVANCED_PIVOT_TABLE
         chart_columns:
@@ -47,7 +48,7 @@ liveboard:
         - column_id: Total Age
         - column_id: avg sales per customer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"d304c37e-8f3d-400e-8216-17348e61616c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"bb306563-edf8-472a-8c98-aad011c0bbce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"7cdcaba4-b17f-4e21-8b5a-825eda4cba35\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State Name\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"e5112f7a-708f-433f-a30b-aeec87514112\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"d304c37e-8f3d-400e-8216-17348e61616c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"bb306563-edf8-472a-8c98-aad011c0bbce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"7cdcaba4-b17f-4e21-8b5a-825eda4cba35\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State Name\"]}}]}"
         custom_chart_config:
         - key: basic
           dimensions:
@@ -98,6 +99,7 @@ liveboard:
         - Total Age
         - avg sales per customer
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {}},{\"columnId\": \"State Name\",\"columnProperty\": {}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {}},{\"columnId\": \"Total Age\",\"columnProperty\": {}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {}}]}"
       chart:
         type: MUZE_STUDIO
         chart_columns:
@@ -107,7 +109,7 @@ liveboard:
         - column_id: Total Age
         - column_id: avg sales per customer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"1ac896b0-ee35-4ed4-a297-dda5288167a3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5e9fb5e6-74c0-4249-80a1-952d4f4faa8b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"c81a796a-465f-4544-b6f0-8fe5433b4f11\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"4b6e24e3-98b1-4f54-9dfc-9040a43a37dc\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"1ac896b0-ee35-4ed4-a297-dda5288167a3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5e9fb5e6-74c0-4249-80a1-952d4f4faa8b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\"]}}]}"
         custom_chart_config:
         - key: basic
           dimensions:
@@ -180,7 +182,7 @@ liveboard:
           - Total Age
           - avg sales per customer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Day(campaign enddate)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Day(campaign enddate)\",\"sortOrder\": \"asc\",\"expanded\": false,\"area\": \"row\"}]},\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"579c33a8-4c66-4ac3-b1ba-7bf2c161cfac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"48d739a0-dcf3-4186-ab99-8906662fc4ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"093dadc2-ad99-459f-9ff4-2e0fd50a25ee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\",\"State Name\",\"Day(campaign enddate)\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Day(campaign enddate)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Day(campaign enddate)\",\"sortOrder\": \"asc\",\"expanded\": false,\"area\": \"row\"}]},\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"a250b874-4b06-4394-bc79-0f39b7010cd0\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"d3a397c3-a7c2-47ec-91cd-7a013e41d374\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"579c33a8-4c66-4ac3-b1ba-7bf2c161cfac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"48d739a0-dcf3-4186-ab99-8906662fc4ad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"093dadc2-ad99-459f-9ff4-2e0fd50a25ee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\",\"State Name\",\"Day(campaign enddate)\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 9a7174f9-53c8-4944-8bb6-0b866c89186a
   - id: Viz_4
@@ -226,7 +228,7 @@ liveboard:
         - column_id: Total Age
         - column_id: avg sales per customer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"9d7fcdac-46b3-4c64-aa50-cbf3f4f9974a\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"76162e21-4eaf-45c0-93c1-75e77f1427e4\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
         custom_chart_config:
         - key: basic
           dimensions:
@@ -290,7 +292,7 @@ liveboard:
         - column_id: Total Age
         - column_id: avg sales per customer
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"State Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Day(campaign enddate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"avg sales per customer\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"4c9c9d49-dea4-4922-8cbf-6b6775b34618\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"05a83391-7b42-4b20-9387-3caeada7333d\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a46f58f4-b903-4f0a-b14c-42f61771fa52\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"5dbff9fa-f462-4a44-b4a0-0cb2637aab83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"avg sales per customer\"],\"isOpposite\": true}},{\"id\": \"11c6f026-5204-4006-ade6-5d0826746680\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(campaign enddate)\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Age\",\"colorMap\": [{\"serieName\": \"Shipmode\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
         custom_chart_config:
         - key: basic
           dimensions:
@@ -320,53 +322,29 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: 54859962-65f7-4721-8094-585f3cd00ede
   layout:
-    tabs:
-    - name: tab1
-      description: ""
-      tiles:
-      - visualization_id: Viz_1
-        x: 0
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_2
-        x: 6
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_3
-        x: 0
-        "y": 8
-        height: 8
-        width: 6
-      - visualization_id: Viz_4
-        x: 6
-        "y": 8
-        height: 8
-        width: 6
-      id: a7e1ddc0-5b4f-472f-bc4e-7371224b449a
-    - name: tab2
-      description: ""
-      tiles:
-      - visualization_id: Viz_5
-        x: 0
-        "y": 0
-        height: 8
-        width: 6
-      id: de2c22be-5baf-47fb-939a-ab0808ff0667
-  style:
-    style_properties:
-    - name: lb_border_type
-      value: CURVED
-    - name: lb_brand_color
-      value: LBC_A
-    - name: hide_group_title
-      value: "false"
-    - name: hide_group_description
-      value: "true"
-    - name: hide_group_tile_description
-      value: "false"
-    - name: hide_tile_description
-      value: "false"
-    - name: kpi_hero_font_size
-      value: M
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 6
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_3
+      x: 0
+      "y": 8
+      height: 8
+      width: 6
+    - visualization_id: Viz_4
+      x: 6
+      "y": 8
+      height: 8
+      width: 6
+    - visualization_id: Viz_5
+      x: 0
+      "y": 16
+      height: 8
+      width: 6
