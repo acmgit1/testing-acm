@@ -1,0 +1,89 @@
+guid: ae966c31-fa30-47b2-8bc8-9850a1503e91
+view:
+  name: moving view
+  tables:
+  - id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  formulas:
+  - id: formula_%change from previous week
+    name: '%change from previous week'
+    expr: "safe_divide ( [formula_moving_fx_this] , [formula_moving_fx_last] ) - 1"
+    was_auto_generated: false
+  - id: formula_moving_fx_last
+    name: moving_fx_last
+    expr: "moving_sum ( [Net Sales] , 1 , - 1 , [date_ordered] ) "
+    was_auto_generated: false
+  - id: formula_moving_fx_this
+    name: moving_fx_this
+    expr: "moving_sum ( [Net Sales] , 0 , 0 , [date_ordered] )"
+    was_auto_generated: false
+  - id: formula_neg trend check
+    name: neg trend check
+    expr: "if ( ( moving_sum ( [Net Sales] , 0 , 0 , [date_ordered] ) - moving_sum ( [Net Sales] , 1 , - 1 , [date_ordered] ) ) < 0 ) then - 1 else 1"
+    was_auto_generated: false
+  - id: formula_3 week neg trend
+    name: 3 week neg trend
+    expr: "moving_average ( ( if ( ( moving_sum ( [Net Sales] , 0 , 0 , [date_ordered] ) - moving_sum ( [Net Sales] , 1 , - 1 , [date_ordered] ) ) < 0 ) then - 1 else 1 ) , 2 , 0 , [date_ordered] )"
+    was_auto_generated: false
+  search_query: "[Net Sales] [date_ordered] [date_ordered].weekly [date_ordered].'this year' sort by [date_ordered] [date_ordered].weekly [formula_moving_fx_last] [formula_moving_fx_this] [formula_%change from previous week] [formula_neg trend check]"
+  view_columns:
+  - name: date
+    search_output_column: Week(date_ordered)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""
+  - name: sales
+    search_output_column: Total Net Sales
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""
+  - name: moving_fx_last
+    search_output_column: moving_fx_last
+    properties:
+      column_type: MEASURE
+      aggregation: MOVING_SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""
+  - name: moving_fx_this
+    search_output_column: moving_fx_this
+    properties:
+      column_type: MEASURE
+      aggregation: MOVING_SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""
+  - name: '%change from previous week'
+    search_output_column: '%change from previous week'
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""
+  - name: neg trend check
+    search_output_column: neg trend check
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - ""
+      custom_order:
+      - ""

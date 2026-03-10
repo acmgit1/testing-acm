@@ -1,4 +1,5 @@
 guid: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+obj_id: WS_golden-c8684f7f
 model:
   name: WS_golden
   description: 'The Worksheet WS_golden contains information about store transactions such as customer, product, and sales details. Its data can be used to answer questions such as: What is the average household size of customers buying a particular product? What is the average discount offered in a particular region? What is the average sales growth percentage in a particular city? What is the average expense per store? What is the average quantity instock for a particular product type? What is the average floor space of a store? The data also includes date related columns such as date ordered, date shipped, expiry date, and last reorder date. (AI generated)'

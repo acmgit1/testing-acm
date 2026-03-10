@@ -1,0 +1,56 @@
+guid: 8a12d14b-07db-450a-857c-c8fe71ccddfa
+obj_id: store_sizeset-8a12d14b
+cohort:
+  name: store_size set
+  owner: tsuser
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    null_output_value: Ungrouped values
+    combine_non_group_values: true
+    cohort_type: SIMPLE
+    anchor_column_id: store_size
+    groups:
+    - name: Extra Small
+      conditions:
+      - operator: EQ
+        value:
+        - XS
+        column_name: store_size
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: Small
+      conditions:
+      - operator: EQ
+        value:
+        - S
+        column_name: store_size
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: Medium
+      conditions:
+      - operator: EQ
+        value:
+        - M
+        column_name: store_size
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: Large
+      conditions:
+      - operator: EQ
+        value:
+        - L
+        column_name: store_size
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: Extra Large
+      conditions:
+      - operator: EQ
+        value:
+        - XL
+        column_name: store_size
+        filter_value_type: STRING
+      combine_type: ALL
+    cohort_grouping_type: GROUP_BASED

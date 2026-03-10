@@ -1,0 +1,64 @@
+guid: 5a4e0504-022b-4816-83d8-7f5bc6d1a7a7
+obj_id: Statenameset-5a4e0504
+cohort:
+  name: State name set
+  owner: tsuser
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    null_output_value: others
+    combine_non_group_values: true
+    cohort_type: SIMPLE
+    anchor_column_id: State Name
+    groups:
+    - name: california
+      conditions:
+      - operator: EQ
+        value:
+        - California
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: alabama
+      conditions:
+      - operator: EQ
+        value:
+        - Alabama
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: florida
+      conditions:
+      - operator: EQ
+        value:
+        - Florida
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: georgia
+      conditions:
+      - operator: EQ
+        value:
+        - Georgia
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: iowa
+      conditions:
+      - operator: EQ
+        value:
+        - Iowa
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: texas
+      conditions:
+      - operator: EQ
+        value:
+        - Texas
+        column_name: State Name
+        filter_value_type: STRING
+      combine_type: ALL
+    cohort_grouping_type: GROUP_BASED

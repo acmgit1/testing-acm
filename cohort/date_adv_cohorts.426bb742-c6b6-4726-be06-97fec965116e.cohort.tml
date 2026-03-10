@@ -1,0 +1,44 @@
+guid: 426bb742-c6b6-4726-be06-97fec965116e
+obj_id: date_adv_cohorts-426bb742
+cohort:
+  name: date_adv_cohorts
+  answer:
+    tables:
+    - id: WS_golden
+      name: WS_golden
+      fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+    search_query: "[Net Sales] [date_ordered] [date_ordered].daily [Product Type] [Region]"
+    answer_columns:
+    - name: Day(date_ordered)
+    - name: Product Type
+    - name: Region
+    - name: Total Net Sales
+    table:
+      table_columns:
+      - column_id: Day(date_ordered)
+        show_headline: false
+      - column_id: Product Type
+        show_headline: false
+      - column_id: Region
+        show_headline: false
+      - column_id: Total Net Sales
+        show_headline: false
+      ordered_column_ids:
+      - Day(date_ordered)
+      - Product Type
+      - Region
+      - Total Net Sales
+      client_state: ""
+      client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Day(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Product Type\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Net Sales\",\"columnProperty\": {}}]}"
+    display_mode: TABLE_MODE
+  owner: tsuser
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: Day(date_ordered)
+    return_column_id: Day(date_ordered)
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: true

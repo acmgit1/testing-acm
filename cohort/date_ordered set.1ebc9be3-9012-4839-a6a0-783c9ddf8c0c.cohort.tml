@@ -1,0 +1,60 @@
+guid: 1ebc9be3-9012-4839-a6a0-783c9ddf8c0c
+obj_id: date_orderedset-1ebc9be3
+cohort:
+  name: date_ordered set
+  owner: tsuser
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    combine_non_group_values: false
+    cohort_type: SIMPLE
+    anchor_column_id: date_ordered
+    groups:
+    - name: "2021"
+      conditions:
+      - operator: BW
+        value:
+        - 01/01/2021
+        - 12/31/2021
+        column_name: date_ordered
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: "2022"
+      conditions:
+      - operator: BW
+        value:
+        - 01/01/2022
+        - 12/31/2022
+        column_name: date_ordered
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: "2023"
+      conditions:
+      - operator: BW
+        value:
+        - 01/01/2023
+        - 12/31/2023
+        column_name: date_ordered
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: "2024"
+      conditions:
+      - operator: BW
+        value:
+        - 01/01/2024
+        - 12/31/2024
+        column_name: date_ordered
+        filter_value_type: STRING
+      combine_type: ALL
+    - name: "2025"
+      conditions:
+      - operator: BW
+        value:
+        - 01/01/2025
+        - 12/31/2025
+        column_name: date_ordered
+        filter_value_type: STRING
+      combine_type: ALL
+    cohort_grouping_type: GROUP_BASED

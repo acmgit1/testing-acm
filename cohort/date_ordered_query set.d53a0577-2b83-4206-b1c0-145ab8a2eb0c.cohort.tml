@@ -1,0 +1,37 @@
+guid: d53a0577-2b83-4206-b1c0-145ab8a2eb0c
+obj_id: date_ordered_queryset-d53a0577
+cohort:
+  name: date_ordered_query set
+  answer:
+    tables:
+    - id: WS_golden
+      name: WS_golden
+      fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+    search_query: "[date_orderedtime] [date_orderedtime].daily [Net Sales] [date_orderedtime].'year to date'"
+    answer_columns:
+    - name: Day(date_orderedtime)
+    - name: Total Net Sales
+    table:
+      table_columns:
+      - column_id: Day(date_orderedtime)
+        show_headline: false
+      - column_id: Total Net Sales
+        show_headline: false
+      ordered_column_ids:
+      - Day(date_orderedtime)
+      - Total Net Sales
+      client_state: ""
+      client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Day(date_orderedtime)\",\"columnProperty\": {}},{\"columnId\": \"Total Net Sales\",\"columnProperty\": {}}]}"
+    display_mode: TABLE_MODE
+  owner: tsuser
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: Day(date_orderedtime)
+    return_column_id: Day(date_orderedtime)
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: true
+    group_excluded_query_values: Excluded values

@@ -1,0 +1,46 @@
+guid: 7daa2131-2a31-47fd-b5e3-f7a365a2d1f9
+obj_id: Qset2-7daa2131
+cohort:
+  name: Qset2
+  answer:
+    tables:
+    - id: WS_golden
+      name: WS_golden
+      fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+    formulas:
+    - id: formula_return column
+      name: return column
+      expr: '''top february products'''
+      was_auto_generated: false
+    search_query: "[Net Sales] [Product Name] top 50 [date_ordered].february [formula_return column]"
+    answer_columns:
+    - name: Product Name
+    - name: Total Net Sales
+    - name: return column
+    table:
+      table_columns:
+      - column_id: Product Name
+        show_headline: false
+      - column_id: Total Net Sales
+        show_headline: false
+      - column_id: return column
+        show_headline: false
+      ordered_column_ids:
+      - Product Name
+      - return column
+      - Total Net Sales
+      client_state: ""
+      client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"return column\",\"columnProperty\": {}},{\"columnId\": \"Total Net Sales\",\"columnProperty\": {}}]}"
+    display_mode: TABLE_MODE
+  owner: usera
+  worksheet:
+    id: WS_golden
+    name: WS_golden
+    fqn: c8684f7f-d8a4-4bc9-b87d-115433c5e458
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: Product Name
+    return_column_id: return column
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: false
+    group_excluded_query_values: not in february top products
