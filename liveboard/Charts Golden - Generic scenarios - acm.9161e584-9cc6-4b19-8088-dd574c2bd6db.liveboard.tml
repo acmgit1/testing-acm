@@ -5053,7 +5053,7 @@ liveboard:
     viz_guid: 82b01b2f-6289-4f82-a9a6-bb295f37091c
   - id: Viz_108
     answer:
-      name: "Stacked Column ,Total Budget in %, avg_sales_per_qty_sold in $"
+      name: "Stacked Column ,Total Budget in, avg_sales_per_qty_sold in $"
       description: display all labels
       tables:
       - id: Golden_MODEL_ACM
@@ -5138,7 +5138,7 @@ liveboard:
             mode: AXIS_DRIVEN
         custom_visual_props: "{\"clientState\":\"\",\"axisVisualProps\":{\"Month(campaign enddate)\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\",\"show-x-axis-gridlines\":false},\"Total Budget\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\",\"show-y-axis-gridlines\":true,\"y-axis-gridline-style\":{\"dashStyle\":\"Solid\",\"thickness\":1,\"color\":\"#EAEDF2\"}},\"avg_sales_per_qty_sold\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\",\"show-y-axis-gridlines\":true}},\"columnVisualProps\":{\"Campaign Channel\":{\"column-sort\":{},\"cartesian-color-map-section\":{\"cartesian-color-map\":{\"email\":\"#F04152\",\"in-person\":\"#48D1E0\",\"print\":\"#FCC838\",\"sms\":\"#06BF7F\",\"social media\":\"#8C62F5\",\"tv\":\"#FF8142\"}}},\"age_bucket\":{},\"Month(campaign enddate)\":{},\"Month(campaign_startdate)\":{},\"Total Budget\":{\"bar-size-auto\":true},\"avg_sales_per_qty_sold\":{\"bar-size-auto\":true},\"Measure names\":{},\"Measure values\":{}},\"displayVisualProps\":{\"display\":{\"fit-to-screen\":false,\"show-stack-percent\":false},\"totals-summary\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false,\"show-row-sub-totals\":false,\"show-column-sub-totals\":false,\"totals-position\":{}},\"trellis\":{\"trellis-shared-axis\":false,\"trellis-title-show\":true,\"trellis-title-color\":\"#000000\",\"trellis-border-show\":false,\"trellis-border-color\":\"#000000\"},\"other\":{\"chart-background-color\":\"#ffffff\",\"plotted-area-background-color\":\"#ffffff\"}},\"dataLabelVisualProps\":{\"cartesian-data-labels\":{\"show-labels\":true,\"show-total-labels\":true},\"Total Budget\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":true,\"cartesian-data-labels-filter\":{}}},\"avg_sales_per_qty_sold\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":true,\"cartesian-data-labels-filter\":{}}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":true,\"legend-position\":\"Top\"}},\"tooltipVisualProps\":{\"global-tooltip\":{\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}}}"
       display_mode: CHART_MODE
-      dynamic_name: "Stacked Column ,Total Budget in %, avg_sales_per_qty_sold in $"
+      dynamic_name: "Stacked Column ,Total Budget in, avg_sales_per_qty_sold in $"
       dynamic_description: display all labels
     viz_guid: 7260f32b-0c82-4200-89f8-847208b6daae
   - id: Viz_109
