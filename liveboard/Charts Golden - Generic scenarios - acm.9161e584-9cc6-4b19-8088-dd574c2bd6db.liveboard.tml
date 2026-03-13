@@ -687,7 +687,7 @@ liveboard:
       - name: Total Household Size
       - name: Total Income
       - name: age_bucket
-        custom_name: age_bucket 31/12/2023
+        custom_name: age_bucket 12/31/2023
         dynamic_title: "age_bucket [${PARAMETER:analysis date}]"
       - name: avg sales per customer
       - name: avg_sales_per_qty_sold
@@ -1509,10 +1509,10 @@ liveboard:
       search_query: "[Age] [City]"
       answer_columns:
       - name: City
-        custom_name: City 31/12/2023 yes 0.25 1
+        custom_name: City 12/31/2023 yes 0.25 1
         dynamic_title: "City [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Age
-        custom_name: Total Age 31/12/2023 yes 0.25 1
+        custom_name: Total Age 12/31/2023 yes 0.25 1
         dynamic_title: "Total Age [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -1898,13 +1898,13 @@ liveboard:
       search_query: "[Expense] [Customer Id] [Region]"
       answer_columns:
       - name: Customer Id
-        custom_name: Customer Id 31/12/2023 yes 0.25 1
+        custom_name: Customer Id 12/31/2023 yes 0.25 1
         dynamic_title: "Customer Id [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Region
-        custom_name: Region 31/12/2023 yes 0.25 1
+        custom_name: Region 12/31/2023 yes 0.25 1
         dynamic_title: "Region [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Expense
-        custom_name: Total Expense 31/12/2023 yes 0.25 1
+        custom_name: Total Expense 12/31/2023 yes 0.25 1
         dynamic_title: "Total Expense [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -2442,13 +2442,13 @@ liveboard:
       search_query: "[avg sales per customer] [Age] [City]"
       answer_columns:
       - name: City
-        custom_name: 31/12/2023 yes 0.25 1 City
+        custom_name: 12/31/2023 yes 0.25 1 City
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] City"
       - name: Total Age
-        custom_name: 31/12/2023 yes 0.25 1 Total Age
+        custom_name: 12/31/2023 yes 0.25 1 Total Age
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Total Age"
       - name: avg sales per customer
-        custom_name: 31/12/2023 yes 0.25 1 avg sales per customer
+        custom_name: 12/31/2023 yes 0.25 1 avg sales per customer
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] avg sales per customer"
       table:
         table_columns:
@@ -2800,10 +2800,10 @@ liveboard:
       search_query: "[Age] [age_bucket] [campaign enddate] [campaign enddate].monthly"
       answer_columns:
       - name: Month(campaign enddate)
-        custom_name: 31/12/2023 yes 0.25 1 Monthly campaign enddate - Fiscal
+        custom_name: 12/31/2023 yes 0.25 1 Monthly campaign enddate - Fiscal
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Monthly campaign enddate - Fiscal"
       - name: Total Age
-        custom_name: Total Age31/12/2023 yes 0.25 1
+        custom_name: Total Age12/31/2023 yes 0.25 1
         dynamic_title: "Total Age[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: age_bucket
       table:
@@ -2999,11 +2999,11 @@ liveboard:
       search_query: "[date_ordered] [date_ordered].monthly [City] [Age]"
       answer_columns:
       - name: City
-        custom_name: City 31/12/2023 yes 0.25 1
+        custom_name: City 12/31/2023 yes 0.25 1
         dynamic_title: "City [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Month(date_ordered)
       - name: Total Age
-        custom_name: Total Age 31/12/2023 yes 0.25 1
+        custom_name: Total Age 12/31/2023 yes 0.25 1
         dynamic_title: "Total Age [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -3341,10 +3341,10 @@ liveboard:
       search_query: "[Budget] [Product Name]"
       answer_columns:
       - name: Product Name
-        custom_name: Product Name31/12/2023 yes 0.25 1
+        custom_name: Product Name12/31/2023 yes 0.25 1
         dynamic_title: "Product Name[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Budget
-        custom_name: Total Budget31/12/2023 yes 0.25 1
+        custom_name: Total Budget12/31/2023 yes 0.25 1
         dynamic_title: "Total Budget[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -3497,10 +3497,10 @@ liveboard:
       search_query: "[monthName] [Income]"
       answer_columns:
       - name: Total Income
-        custom_name: Total Income31/12/2023 yes 0.25 1
+        custom_name: Total Income12/31/2023 yes 0.25 1
         dynamic_title: "Total Income[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: monthName
-        custom_name: monthName31/12/2023 yes 0.25 1
+        custom_name: monthName12/31/2023 yes 0.25 1
         dynamic_title: "monthName[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -4134,19 +4134,19 @@ liveboard:
       search_query: "[Sales Quantity] [TAT] [Tax] [age_bucket] [Age]"
       answer_columns:
       - name: Total Age
-        custom_name: Total Age31/12/2023 yes 0.25 1
+        custom_name: Total Age12/31/2023 yes 0.25 1
         dynamic_title: "Total Age[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Sales Quantity
-        custom_name: Total Sales Quantity31/12/2023 yes 0.25 1
+        custom_name: Total Sales Quantity12/31/2023 yes 0.25 1
         dynamic_title: "Total Sales Quantity[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total TAT
-        custom_name: Total TAT31/12/2023 yes 0.25 1
+        custom_name: Total TAT12/31/2023 yes 0.25 1
         dynamic_title: "Total TAT[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Tax
-        custom_name: Total Tax31/12/2023 yes 0.25 1
+        custom_name: Total Tax12/31/2023 yes 0.25 1
         dynamic_title: "Total Tax[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: age_bucket
-        custom_name: age_bucket31/12/2023 yes 0.25 1
+        custom_name: age_bucket12/31/2023 yes 0.25 1
         dynamic_title: "age_bucket[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -5900,6 +5900,49 @@ liveboard:
       dynamic_name: "Stacked Area chart - y-axis 2 column, Total Budget in %, avg_sales_per_qty_sold in $ , age in $ ,stack 100% in display"
       dynamic_description: "display all labels , trellis by gender , slice by campaign channel ,legends top , x-axis name/label color red purple , y-axis name/label color red purple , shared axis domain in display"
     viz_guid: 7e64a450-2d78-4d3a-8ceb-bbbb970bffd8
+  - id: Viz_116
+    answer:
+      name: Total Age by City and age_bucket
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [age_bucket] [City]"
+      answer_columns:
+      - name: City
+      - name: Total Age
+      - name: age_bucket
+      table:
+        table_columns:
+        - column_id: City
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Age
+          headline_aggregation: SUM
+        - column_id: age_bucket
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - age_bucket
+        - City
+        - Total Age
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: City
+        - column_id: Total Age
+        - column_id: age_bucket
+        axis_configs:
+        - x:
+          - City
+          "y":
+          - Total Age
+          color:
+          - age_bucket
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"3. 30-40\",\"4. 40-50\",\"5. 50-60\"],\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"age_bucket\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"City\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e4cc432-0abe-4a12-b17d-d144518bb550\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"0bc994ff-2acc-4b29-9ef1-c2311845fbfd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FCC838\"},{\"serieName\": \"albany\",\"color\": \"#721F27\"},{\"serieName\": \"albuquerque\",\"color\": \"#F47E89\"},{\"serieName\": \"allentown\",\"color\": \"#B6313E\"},{\"serieName\": \"anaheim\",\"color\": \"#F9B3B9\"},{\"serieName\": \"ann arbor\",\"color\": \"#F04152\"},{\"serieName\": \"antioch\",\"color\": \"#2F3947\"},{\"serieName\": \"arlington\",\"color\": \"#A2ACBA\"},{\"serieName\": \"atlanta\",\"color\": \"#47515F\"},{\"serieName\": \"augusta\",\"color\": \"#BEC6D0\"},{\"serieName\": \"aurora\",\"color\": \"#747E8C\"},{\"serieName\": \"austin\",\"color\": \"#7A3D1F\"},{\"serieName\": \"bakersfield\",\"color\": \"#FFA97E\"},{\"serieName\": \"baton rouge\",\"color\": \"#C26232\"},{\"serieName\": \"birmingham\",\"color\": \"#FFCCB3\"},{\"serieName\": \"bonita springs\",\"color\": \"#FF8142\"},{\"serieName\": \"bronx\",\"color\": \"#422E75\"},{\"serieName\": \"brooklyn\",\"color\": \"#B094F8\"},{\"serieName\": \"buffalo\",\"color\": \"#6A4ABA\"},{\"serieName\": \"cape coral\",\"color\": \"#D1C0FB\"},{\"serieName\": \"chicago\",\"color\": \"#8C62F5\"},{\"serieName\": \"chula vista\",\"color\": \"#025B3C\"},{\"serieName\": \"colorado springs\",\"color\": \"#56D3A8\"},{\"serieName\": \"concord\",\"color\": \"#049160\"},{\"serieName\": \"corpus christi\",\"color\": \"#9BE5CB\"},{\"serieName\": \"dallas\",\"color\": \"#06BF7F\"},{\"serieName\": \"davenport\",\"color\": \"#785F1A\"},{\"serieName\": \"denton\",\"color\": \"#FCD977\"},{\"serieName\": \"denver\",\"color\": \"#BF982A\"},{\"serieName\": \"des moines\",\"color\": \"#FDE9AF\"},{\"serieName\": \"detroit\",\"color\": \"#FCC838\"},{\"serieName\": \"el paso\",\"color\": \"#22636B\"},{\"serieName\": \"eugene\",\"color\": \"#82DFE9\"},{\"serieName\": \"flint\",\"color\": \"#369FAA\"},{\"serieName\": \"fort collins\",\"color\": \"#B5ECF2\"},{\"serieName\": \"fort wayne\",\"color\": \"#48D1E0\"},{\"serieName\": \"fort worth\",\"color\": \"#163772\"},{\"serieName\": \"fresno\",\"color\": \"#71A1F4\"},{\"serieName\": \"grand rapids\",\"color\": \"#2359B6\"},{\"serieName\": \"harrisburg\",\"color\": \"#ABC7F9\"},{\"serieName\": \"houston\",\"color\": \"#2E75F0\"},{\"serieName\": \"huntsville\",\"color\": \"#721F27\"},{\"serieName\": \"indianapolis\",\"color\": \"#F47E89\"},{\"serieName\": \"indio\",\"color\": \"#B6313E\"},{\"serieName\": \"irvine\",\"color\": \"#F9B3B9\"},{\"serieName\": \"jacksonville\",\"color\": \"#F04152\"},{\"serieName\": \"jersey city\",\"color\": \"#2F3947\"},{\"serieName\": \"kissimmee\",\"color\": \"#A2ACBA\"},{\"serieName\": \"lafayette\",\"color\": \"#47515F\"},{\"serieName\": \"lakeland\",\"color\": \"#BEC6D0\"},{\"serieName\": \"lancaster\",\"color\": \"#747E8C\"},{\"serieName\": \"lansing\",\"color\": \"#7A3D1F\"},{\"serieName\": \"laredo\",\"color\": \"#FFA97E\"},{\"serieName\": \"long beach\",\"color\": \"#C26232\"},{\"serieName\": \"los angeles\",\"color\": \"#FFCCB3\"},{\"serieName\": \"madison\",\"color\": \"#FF8142\"},{\"serieName\": \"manhattan\",\"color\": \"#422E75\"},{\"serieName\": \"mcallen\",\"color\": \"#B094F8\"},{\"serieName\": \"miami\",\"color\": \"#6A4ABA\"},{\"serieName\": \"milwaukee\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mission viejo\",\"color\": \"#8C62F5\"},{\"serieName\": \"mobile\",\"color\": \"#025B3C\"},{\"serieName\": \"modesto\",\"color\": \"#56D3A8\"},{\"serieName\": \"murrieta\",\"color\": \"#049160\"},{\"serieName\": \"new orleans\",\"color\": \"#9BE5CB\"},{\"serieName\": \"new york\",\"color\": \"#06BF7F\"},{\"serieName\": \"newark\",\"color\": \"#785F1A\"},{\"serieName\": \"oakland\",\"color\": \"#FCD977\"},{\"serieName\": \"orlando\",\"color\": \"#BF982A\"},{\"serieName\": \"oxnard\",\"color\": \"#FDE9AF\"},{\"serieName\": \"palm bay\",\"color\": \"#FCC838\"},{\"serieName\": \"palm coast\",\"color\": \"#22636B\"},{\"serieName\": \"pensacola\",\"color\": \"#82DFE9\"},{\"serieName\": \"philadelphia\",\"color\": \"#369FAA\"},{\"serieName\": \"pittsburgh\",\"color\": \"#B5ECF2\"},{\"serieName\": \"plano\",\"color\": \"#48D1E0\"},{\"serieName\": \"port st. lucie\",\"color\": \"#163772\"},{\"serieName\": \"portland\",\"color\": \"#71A1F4\"},{\"serieName\": \"poughkeepsie\",\"color\": \"#2359B6\"},{\"serieName\": \"queens\",\"color\": \"#ABC7F9\"},{\"serieName\": \"reading\",\"color\": \"#2E75F0\"},{\"serieName\": \"richmond\",\"color\": \"#721F27\"},{\"serieName\": \"riverside\",\"color\": \"#F47E89\"},{\"serieName\": \"rochester\",\"color\": \"#B6313E\"},{\"serieName\": \"rockford\",\"color\": \"#F9B3B9\"},{\"serieName\": \"round lake beach\",\"color\": \"#F04152\"},{\"serieName\": \"sacramento\",\"color\": \"#2F3947\"},{\"serieName\": \"salem\",\"color\": \"#A2ACBA\"},{\"serieName\": \"san antonio\",\"color\": \"#47515F\"},{\"serieName\": \"san diego\",\"color\": \"#BEC6D0\"},{\"serieName\": \"san francisco\",\"color\": \"#747E8C\"},{\"serieName\": \"san jose\",\"color\": \"#7A3D1F\"},{\"serieName\": \"santa ana\",\"color\": \"#FFA97E\"},{\"serieName\": \"santa rosa\",\"color\": \"#C26232\"},{\"serieName\": \"sarasota\",\"color\": \"#FFCCB3\"},{\"serieName\": \"savannah\",\"color\": \"#FF8142\"},{\"serieName\": \"scranton\",\"color\": \"#422E75\"},{\"serieName\": \"shreveport\",\"color\": \"#B094F8\"},{\"serieName\": \"south bend\",\"color\": \"#6A4ABA\"},{\"serieName\": \"st. petersburg\",\"color\": \"#D1C0FB\"},{\"serieName\": \"staten island\",\"color\": \"#8C62F5\"},{\"serieName\": \"stockton\",\"color\": \"#025B3C\"},{\"serieName\": \"syracuse\",\"color\": \"#56D3A8\"},{\"serieName\": \"tampa\",\"color\": \"#049160\"},{\"serieName\": \"the woodlands\",\"color\": \"#9BE5CB\"},{\"serieName\": \"trenton\",\"color\": \"#06BF7F\"},{\"serieName\": \"victorville\",\"color\": \"#785F1A\"},{\"serieName\": \"virginia beach\",\"color\": \"#FCD977\"},{\"serieName\": \"1. <=20\",\"color\": \"#06BF7F\"},{\"serieName\": \"2. 20-30\",\"color\": \"#FCD977\"},{\"serieName\": \"3. 30-40\",\"color\": \"#FCC838\"},{\"serieName\": \"4. 40-50\",\"color\": \"#82DFE9\"},{\"serieName\": \"5. 50-60\",\"color\": \"#48D1E0\"},{\"serieName\": \"6. 60-70\",\"color\": \"#71A1F4\"},{\"serieName\": \"7. >70\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7119e37f-2464-48ae-9d7e-714b2599e6e0
   layout:
     tabs:
     - name: Table
@@ -6086,6 +6129,7 @@ liveboard:
         "y": 0
         height: 2
         width: 12
+      - visualization_id: Viz_116
       id: 1983d924-2602-42c3-b639-5e9c0e38ced3
     - name: Bar & Stacked Bar
       description: ""
