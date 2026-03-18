@@ -88,9 +88,6 @@ model:
   - id: formula_expiry_date
     name: expiry_date
     expr: add_days ( [TS_INVENTORY::EXPIRATION_DATE] , diff_days ( today ( ) , to_date ( "2027-05-15" , "%Y-%m-%d" ) ) )
-  - id: formula_fx
-    name: fx
-    expr: 'if ( [TS_PRODUCTS::PRODUCT_TYPE] = [str_params] ) then [TS_PRODUCTS::PRODUCT_TYPE] else null '
   - id: formula_inventory_added
     name: inventory_added
     expr: add_days ( [TS_INVENTORY::DATE_ADDED] , diff_days ( today ( ) , to_date ( "2023-10-03" , "%Y-%m-%d" ) ) )
@@ -136,10 +133,6 @@ model:
       column_type: ATTRIBUTE
       synonyms:
       - Area
-  - name: Store_Store Id
-    column_id: TS_STORES::STORE_ID
-    properties:
-      column_type: ATTRIBUTE
   - name: date_ordered
     formula_id: formula_date_ordered
     properties:
@@ -155,7 +148,7 @@ model:
       synonyms:
       - Order Date
       - Order Placed Date
-      default_date_bucket: NO_BUCKET
+      default_date_bucket: MONTHLY
   - name: date_shipped
     formula_id: formula_date_shipped
     properties:
@@ -350,11 +343,10 @@ model:
       - Variable Date
       - Flexible Date
       synonym_type: AUTO_GENERATED
-  - name: fx
-    formula_id: formula_fx
+  - name: Store_Store Id
+    column_id: TS_STORES::STORE_ID
     properties:
       column_type: ATTRIBUTE
-      index_type: DONT_INDEX
   - name: State Name
     column_id: TS_LOCATION::STATE_NAME
     properties:

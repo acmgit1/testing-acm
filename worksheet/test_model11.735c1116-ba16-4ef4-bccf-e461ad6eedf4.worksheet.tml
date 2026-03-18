@@ -1,4 +1,5 @@
 guid: 735c1116-ba16-4ef4-bccf-e461ad6eedf4
+obj_id: test_model11-735c1116
 model:
   name: test_model11
   description: The worksheet named "test_model" is structured to store and organize various attributes and metrics pertinent to a specific model under analysis. It encompasses a range of data points that provide insights into the performance and characteristics of the model. This worksheet serves as a valuable resource for evaluating and refining the model to enhance its effectiveness. (AI generated)

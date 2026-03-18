@@ -1,4 +1,5 @@
 guid: 6ac6d865-c160-4c72-83bd-a0541156a00c
+obj_id: Copyoftest_model_lo_pp_alias_BH-6ac6d865
 model:
   name: Copy of test_model_lo_pp_alias_BH
   description: This worksheet encompasses a comprehensive dataset that includes transactional details such as order and commitment dates, pricing, discounts, taxes, and shipping priorities. It also integrates product-specific information like brand, category, color, manufacturer, and packaging type. Additionally, it tracks customer and supplier identifiers, which are crucial for analyzing purchasing patterns and supply chain logistics. (AI generated)

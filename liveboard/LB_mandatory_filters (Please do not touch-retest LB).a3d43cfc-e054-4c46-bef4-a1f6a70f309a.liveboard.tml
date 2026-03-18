@@ -2142,6 +2142,24 @@ liveboard:
     is_mandatory: false
     is_single_value: false
     display_name: ""
+  - column:
+    - Copy of test_model_lo_pp_alias_BH::Color
+    oper: in
+    values:
+    - almond
+    - bisque
+    - black
+    - chiffon
+    - forest
+    - grey
+    - navy
+    - pink
+    - sandy
+    - wheat
+    - tomato
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tabs:
     - name: Tab 1
@@ -2453,6 +2471,8 @@ liveboard:
     type: PARAMETER
   - name: test_model_lo_pp_mandatory::Lo Custkey
     type: FILTER
+  - name: Copy of test_model_lo_pp_alias_BH::Color
+    type: FILTER
   views:
   - view_guid: 83210cc9-7594-47b8-b93e-d6b419dbf4b7
     name: vw3
@@ -2529,6 +2549,21 @@ liveboard:
       oper: '>='
       values:
       - "1"
+    - column:
+      - Copy of test_model_lo_pp_alias_BH::Color
+      oper: in
+      values:
+      - almond
+      - bisque
+      - black
+      - chiffon
+      - forest
+      - grey
+      - navy
+      - pink
+      - sandy
+      - wheat
+      - tomato
     is_public: true
     view_parameters:
     - name: str_param
@@ -2608,6 +2643,21 @@ liveboard:
       oper: '>='
       values:
       - "1"
+    - column:
+      - Copy of test_model_lo_pp_alias_BH::Color
+      oper: in
+      values:
+      - almond
+      - bisque
+      - black
+      - chiffon
+      - forest
+      - grey
+      - navy
+      - pink
+      - sandy
+      - wheat
+      - tomato
     is_public: true
     view_parameters:
     - name: str_param
@@ -2685,6 +2735,21 @@ liveboard:
       oper: '>='
       values:
       - "1"
+    - column:
+      - Copy of test_model_lo_pp_alias_BH::Color
+      oper: in
+      values:
+      - almond
+      - bisque
+      - black
+      - chiffon
+      - forest
+      - grey
+      - navy
+      - pink
+      - sandy
+      - wheat
+      - tomato
     is_public: true
     view_parameters:
     - name: str_param
@@ -2767,6 +2832,21 @@ liveboard:
       oper: '>='
       values:
       - "1"
+    - column:
+      - Copy of test_model_lo_pp_alias_BH::Color
+      oper: in
+      values:
+      - almond
+      - bisque
+      - black
+      - chiffon
+      - forest
+      - grey
+      - navy
+      - pink
+      - sandy
+      - wheat
+      - tomato
     is_public: false
     view_parameters:
     - name: str_param
