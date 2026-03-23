@@ -2097,6 +2097,10 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Synonyms_test
     viz_guid: 0f914bfa-e5d0-416e-a55b-4348ae0c17ac
+    action_object_associations:
+    - action_name: callback_locale
+      context: PRIMARY
+      enabled: true
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
