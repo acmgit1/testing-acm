@@ -1,0 +1,123 @@
+guid: 816b7069-fb6e-47e8-8197-7216053b140a
+obj_id: vcs_new-816b7069
+liveboard:
+  name: vcs_new
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total abc, Total Lo Revenue by C Region"
+      tables:
+      - id: 2134-Check
+        name: 2134-Check
+        fqn: 001a01db-73eb-4ec3-8f84-9e5b535a0101
+      search_query: "[abc] [Lo Revenue] [C Region]"
+      answer_columns:
+      - name: C Region
+      - name: Total Lo Revenue
+      - name: Total abc
+      table:
+        table_columns:
+        - column_id: C Region
+          show_headline: false
+        - column_id: Total Lo Revenue
+          show_headline: false
+        - column_id: Total abc
+          show_headline: false
+        ordered_column_ids:
+        - C Region
+        - Total abc
+        - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"C Region\",\"columnProperty\": {}},{\"columnId\": \"Total abc\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: C Region
+        - column_id: Total Lo Revenue
+        - column_id: Total abc
+        axis_configs:
+        - x:
+          - C Region
+          "y":
+          - Total abc
+          - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}},{\"columnId\": \"C Region\",\"columnProperty\": {}},{\"columnId\": \"Total abc\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"031cc118-e926-4662-bc17-ddb1f2b91d53\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total abc\"],\"isOpposite\": false}},{\"id\": \"edf6ef97-73b3-4633-aade-fc234173e0ae\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": true}},{\"id\": \"fb553ad4-ee87-4352-a6fd-ec8f4a5a7f18\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"C Region\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: b3e44976-9026-4d14-984d-64af7966f813
+  - id: Viz_2
+    answer:
+      name: Revenue vs Supply Cost by Region
+      description: Regional comparison of revenue and costs.
+      tables:
+      - id: 2134-Check
+        name: 2134-Check
+        fqn: 001a01db-73eb-4ec3-8f84-9e5b535a0101
+      search_query: "[Lo Revenue] [Lo Supplycost] [C Region]"
+      answer_columns:
+      - name: C Region
+      - name: Total Lo Revenue
+      - name: Total Lo Supplycost
+      table:
+        table_columns:
+        - column_id: C Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        - column_id: Total Lo Supplycost
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - C Region
+        - Total Lo Revenue
+        - Total Lo Supplycost
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: C Region
+        - column_id: Total Lo Revenue
+        - column_id: Total Lo Supplycost
+        axis_configs:
+        - x:
+          - C Region
+          "y":
+          - Total Lo Revenue
+          - Total Lo Supplycost
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 3c1a8ce9-1001-4af1-adc7-7c160e96a7b7
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 6
+      "y": 0
+      height: 8
+      width: 6
+  parameter_overrides:
+  - key: 894d1068-b0c5-435c-811a-acc6d74d251f
+    value:
+      name: 2134-Check::123
+  ordered_chips:
+  - name: 2134-Check::123
+    type: PARAMETER
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M
