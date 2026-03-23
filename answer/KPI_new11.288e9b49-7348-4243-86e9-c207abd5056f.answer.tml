@@ -1,0 +1,48 @@
+guid: 288e9b49-7348-4243-86e9-c207abd5056f
+obj_id: KPI_new-288e9b49
+answer:
+  name: KPI_new11
+  tables:
+  - id: test_model_lo_pp_mandatory
+    name: test_model_lo_pp_mandatory
+    fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+  search_query: "[Lo Discount] [Lo Commitdate] [Lo Commitdate].quarterly"
+  answer_columns:
+  - name: Quarter(Lo Commitdate)
+    custom_name: Quarterly Lo Commitdate - Fiscal1
+    dynamic_title: Quarterly Lo Commitdate - Fiscal1
+  - name: Total Lo Discount
+    format:
+      category: PERCENTAGE
+      percentageFormatConfig:
+        decimals: 0.0
+        removeTrailingZeroes: false
+      isCategoryEditable: true
+  table:
+    table_columns:
+    - column_id: Quarter(Lo Commitdate)
+      show_headline: false
+    - column_id: Total Lo Discount
+      show_headline: false
+    ordered_column_ids:
+    - Quarter(Lo Commitdate)
+    - Total Lo Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Quarter(Lo Commitdate)
+    - column_id: Total Lo Discount
+    axis_configs:
+    - x:
+      - Quarter(Lo Commitdate)
+      "y":
+      - Total Lo Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"af0c10af-f44e-4b98-92d9-f05cbbbc0c33\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"6308af93-8643-4574-9a62-1c52cae58272\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Lo Commitdate)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#747E8C\"}]}"
+  display_mode: CHART_MODE
+  action_object_associations:
+  - action_name: callback_locale
+    context: PRIMARY
+    enabled: true
