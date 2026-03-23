@@ -2047,6 +2047,56 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: Total sales by item type and city
     viz_guid: ad81650e-d83c-40f4-8c96-502a1ac4098b
+  - id: Viz_48
+    answer:
+      name: Total Lo Extendedprice by Lo Shipmode
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      search_query: "[Lo Shipmode] [Lo Extendedprice]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"f776a28b-893f-4b67-9fed-812e058bcf4e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"16405ccb-ca7a-4107-b34c-10b49e250027\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Lo Shipmode
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Lo Extendedprice
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Lo Extendedprice by Lo Shipmode
+    viz_guid: 0f914bfa-e5d0-416e-a55b-4348ae0c17ac
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2260,6 +2310,7 @@ liveboard:
         "y": 72
         height: 8
         width: 6
+      - visualization_id: Viz_48
       id: 1b0c5c98-7e2f-49a2-9cd2-1c72bbd1c73b
     - name: Tab 2
       description: ""
