@@ -3596,6 +3596,10 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"846af4bf-158a-4855-a984-2fe47300632d\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"70599ce5-5e38-4bd7-9767-0183904bf1e3\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"9b5bf31b-c159-4351-9901-5eede471da2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"37f03544-14f4-4f81-81c2-4f0c3bf023e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date_orderedtime)\",\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 57ca49a8-b980-48ca-80e5-09bdcce5df40
+  - id: Viz_71
+    viz_guid: ddb414d4-d142-49e1-9548-20ca641090d1
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2-spaced\"><span style=\"white-space: pre-wrap;\">26.5.0.cl</span></h2><p class=\"theme-module__editor-paragraph-spaced\"><br></p><p class=\"theme-module__editor-paragraph-spaced\"><img id=\"b659faa6-acdd-4559-bed0-d7e6d3997ad0\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><p class=\"theme-module__editor-paragraph-spaced\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   filters:
   - column:
     - (Sample) Retail - Apparel::date
@@ -4151,6 +4155,12 @@ liveboard:
       id: 91710eb5-a5dc-45f6-bfcf-336b377daab4
     - name: Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty
       description: ""
+      tiles:
+      - visualization_id: Viz_71
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
       id: c620b747-9f77-4a13-8ef8-b673b316c32c
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
