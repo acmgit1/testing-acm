@@ -133,6 +133,7 @@ model:
       column_type: ATTRIBUTE
       synonyms:
       - Area
+      ai_context: Geographic territory classification for market analysis, enabling regional performance comparisons and territory-based strategic planning.
   - name: date_ordered
     formula_id: formula_date_ordered
     properties:
@@ -140,6 +141,9 @@ model:
       synonyms:
       - order_date
       - date_of_order
+      calendar: pe_cc_oct04_2025
+      default_date_bucket: MONTHLY
+      ai_context: Calendar date when customer placed their order, serving as the initial timestamp for order fulfillment tracking and sales cycle analysis.
   - name: date_orderedtime
     formula_id: formula_date_orderedtime
     properties:
@@ -148,7 +152,9 @@ model:
       synonyms:
       - Order Date
       - Order Placed Date
+      calendar: pe_cc_oct04_2025
       default_date_bucket: MONTHLY
+      ai_context: Precise datetime stamp capturing exact moment order was placed, enabling detailed time-of-day purchasing pattern analysis and operational timing insights.
   - name: date_shipped
     formula_id: formula_date_shipped
     properties:
@@ -156,6 +162,7 @@ model:
       synonyms:
       - Dispatch Date
       - Delivery Date
+      ai_context: Date when order was dispatched from warehouse to customer, critical for measuring fulfillment speed and delivery performance metrics.
   - name: campaign_startdate
     formula_id: formula_campaign_startdate
     properties:
@@ -164,6 +171,8 @@ model:
       synonyms:
       - commencement_date
       - initiation_date
+      calendar: pe_cc_oct04_2025
+      ai_context: Launch date marking when marketing campaign became active, essential for measuring campaign duration and timing effectiveness analysis.
   - name: campaign enddate
     formula_id: formula_campaign enddate
     properties:
@@ -172,6 +181,8 @@ model:
       synonyms:
       - Campaign Termination Date
       - Campaign Finishing Date
+      calendar: pe_cc_oct04_2025
+      ai_context: Final date when marketing campaign concluded, used to calculate total campaign duration and post-campaign performance evaluation.
   - name: inventory_added
     formula_id: formula_inventory_added
     properties:
@@ -180,6 +191,7 @@ model:
       synonyms:
       - stock_added
       - supply_added
+      ai_context: Date when new stock was received and added to warehouse inventory, crucial for inventory turnover and supply chain timing analysis.
   - name: last_reorderdate
     formula_id: formula_last_reorderdate
     properties:
@@ -188,6 +200,7 @@ model:
       synonyms:
       - Last Reorder Date
       - Final Reorder Date
+      ai_context: Most recent date when product was reordered for inventory replenishment, indicating demand patterns and restocking frequency.
   - name: expiry_date
     formula_id: formula_expiry_date
     properties:
@@ -196,6 +209,8 @@ model:
       synonyms:
       - termination_date
       - expiration_date
+      calendar: pe_cc_oct04_2025
+      ai_context: Product expiration date for perishable or time-sensitive inventory items, essential for inventory management and loss prevention.
   - name: TAT
     formula_id: formula_TAT
     properties:
@@ -205,6 +220,7 @@ model:
       synonyms:
       - Turnaround Time
       - Response Time
+      ai_context: Turnaround time measuring days between order placement and delivery completion, indicating fulfillment efficiency and customer service quality.
   - name: Sales Growth %
     formula_id: formula_Sales Growth %
     properties:
@@ -215,6 +231,7 @@ model:
       - Growth Rate
       - Sales Increase
       format_pattern: '#.0%'
+      ai_context: Percentage increase in sales revenue compared to previous period, measuring business expansion and revenue performance trends.
   - name: age_bucket
     formula_id: formula_age_bucket
     properties:
@@ -223,6 +240,7 @@ model:
       synonyms:
       - Age Group
       - Age Range
+      ai_context: Categorized age ranges for demographic segmentation, enabling generational analysis and age-targeted marketing strategies.
   - name: avg_sales_per_qty_sold
     formula_id: formula_avg_sales_per_qty_sold
     properties:
@@ -232,12 +250,14 @@ model:
       synonyms:
       - Average Sales
       - Sales per Quantity
+      ai_context: Average revenue generated per unit sold, indicating pricing effectiveness and product value realization in transactions.
   - name: month bi
     formula_id: formula_month bi
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
+      ai_context: Business intelligence month classification for bi-monthly reporting periods, supporting specialized financial and operational reporting cycles.
   - name: sales_params
     formula_id: formula_sales_params
     properties:
@@ -248,6 +268,7 @@ model:
       - sales_parameters
       - sales_metrics
       synonym_type: AUTO_GENERATED
+      ai_context: Configurable sales parameters for analytical modeling, supporting dynamic calculations and performance measurement adjustments.
   - name: avg sales per customer
     formula_id: formula_avg sales per customer
     properties:
@@ -258,6 +279,7 @@ model:
       - Average Revenue per Customer
       - Customer Sales Average
       synonym_type: AUTO_GENERATED
+      ai_context: Mean revenue generated per individual customer, measuring customer value and purchase behavior effectiveness.
   - name: year#
     formula_id: formula_year#
     properties:
@@ -267,6 +289,7 @@ model:
       - Year Number
       - Calendar Year
       synonym_type: AUTO_GENERATED
+      ai_context: Four-digit calendar year identifier enabling annual trend analysis, year-over-year comparisons, and multi-year performance tracking.
   - name: ly/ty
     formula_id: formula_ly/ty
     properties:
@@ -276,6 +299,7 @@ model:
       - Last Year/This Year
       - Previous Year/Current Year
       synonym_type: AUTO_GENERATED
+      ai_context: Last year versus this year comparison indicator, enabling period-over-period variance analysis and growth trend identification.
   - name: sales change %
     formula_id: formula_sales change %
     properties:
@@ -286,6 +310,7 @@ model:
       - sales_variation_percentage
       - sales_shift_rate
       synonym_type: AUTO_GENERATED
+      ai_context: Percentage variation in sales volume between comparative periods, tracking sales momentum and business performance shifts.
   - name: quantity change %
     formula_id: formula_quantity change %
     properties:
@@ -297,6 +322,7 @@ model:
       - Stock Change Rate
       format_pattern: '#.000%'
       synonym_type: AUTO_GENERATED
+      ai_context: Percentage change in units sold between periods, measuring demand fluctuations independent of pricing changes.
   - name: customer change %
     formula_id: formula_customer change %
     properties:
@@ -307,6 +333,7 @@ model:
       - customer_variation_percentage
       - client_change_rate
       synonym_type: AUTO_GENERATED
+      ai_context: Percentage variation in customer count between periods, tracking customer acquisition and retention effectiveness.
   - name: monthName
     formula_id: formula_monthName
     properties:
@@ -315,6 +342,7 @@ model:
       - month_title
       - month_label
       synonym_type: AUTO_GENERATED
+      ai_context: Full month name in text format, facilitating seasonal analysis and month-based performance comparisons across business cycles.
   - name: movAvg
     formula_id: formula_movAvgQTY
     properties:
@@ -325,6 +353,7 @@ model:
       - Moving Average Quantity
       - Rolling Average Stock
       synonym_type: AUTO_GENERATED
+      ai_context: Moving average calculation smoothing short-term fluctuations to reveal underlying trends in sales or performance data.
   - name: sales_attr_in
     formula_id: formula_sales_attr_in
     properties:
@@ -334,6 +363,7 @@ model:
       - Sales Attributes
       - Sales Characteristics
       synonym_type: AUTO_GENERATED
+      ai_context: Boolean flag indicating whether sales attributes are included in current analysis, controlling data scope and calculation parameters.
   - name: dynamic date
     formula_id: formula_dynamic date
     properties:
@@ -342,11 +372,14 @@ model:
       synonyms:
       - Variable Date
       - Flexible Date
+      calendar: pe_cc_oct04_2025
       synonym_type: AUTO_GENERATED
+      ai_context: Flexible date field that adjusts based on analytical context, supporting various temporal calculations and relative date comparisons.
   - name: Store_Store Id
     column_id: TS_STORES::STORE_ID
     properties:
       column_type: ATTRIBUTE
+      ai_context: Primary store location identifier for operational tracking, enabling store-specific performance analysis and management reporting.
   - name: State Name
     column_id: TS_LOCATION::STATE_NAME
     properties:
@@ -364,6 +397,7 @@ model:
       - New York
       - Michigan
       - Oregon
+      ai_context: State-level geographic identifier for location-based analysis, supporting state-specific performance tracking and regulatory compliance.
   - name: County Name
     column_id: TS_LOCATION::COUNTY_NAME
     properties:
@@ -375,6 +409,7 @@ model:
         region_name:
           country: UNITED STATES
           region_name: county
+      ai_context: County-level administrative division for granular geographic analysis, enabling local market penetration and demographic studies.
   - name: Campaign Channel
     column_id: TS_CAMPAIGN::CAMPAIGN_CHANNEL
     properties:
@@ -382,6 +417,7 @@ model:
       synonyms:
       - Campaign Medium
       - Campaign Platform
+      ai_context: Marketing medium used to reach customers, essential for channel effectiveness analysis and media mix optimization.
   - name: Discount Pct
     column_id: SalesTable::DISCOUNT_PCT
     properties:
@@ -391,6 +427,7 @@ model:
       synonyms:
       - Discount Percentage
       - Discount Rate
+      ai_context: Percentage reduction applied to original product price, measuring promotional impact and pricing strategy effectiveness.
   - name: Net Sales
     column_id: SalesTable::NET_SALES
     properties:
@@ -400,6 +437,7 @@ model:
       synonyms:
       - Net Revenue
       - Net Profit
+      ai_context: Total revenue after deducting returns, discounts, and allowances, representing actual income generated from sales transactions.
   - name: Campaign Status
     column_id: TS_CAMPAIGN::CAMPAIGN_STATUS
     properties:
@@ -407,6 +445,7 @@ model:
       synonyms:
       - Campaign Condition
       - Campaign State
+      ai_context: Current phase of marketing campaign lifecycle, tracking whether campaigns are planned, active, or completed.
   - name: Budget
     column_id: TS_CAMPAIGN::BUDGET
     properties:
@@ -418,6 +457,7 @@ model:
       - Allowance
       currency_type:
         iso_code: USD
+      ai_context: Allocated financial resources for marketing campaign, enabling cost management and return on investment calculations.
   - name: Age
     column_id: TS_CUSTOMER::AGE
     properties:
@@ -426,6 +466,7 @@ model:
       synonyms:
       - Years
       - Generation
+      ai_context: Customer's chronological age in years, fundamental demographic attribute for customer profiling and targeted marketing analysis.
   - name: Gender
     column_id: TS_CUSTOMER::GENDER
     properties:
@@ -435,6 +476,7 @@ model:
       custom_order:
       - female
       - male
+      ai_context: Customer's gender classification for demographic analysis, enabling gender-based marketing strategies and product preference studies.
   - name: Income
     column_id: TS_CUSTOMER::INCOME
     properties:
@@ -444,6 +486,7 @@ model:
       synonyms:
       - Revenue
       - Profit
+      ai_context: Customer's annual earnings level, crucial for economic segmentation and purchasing power analysis in market research.
   - name: Household Size
     column_id: TS_CUSTOMER::HOUSEHOLD_SIZE
     properties:
@@ -453,6 +496,7 @@ model:
       synonyms:
       - Household Number
       - Household Measurement
+      ai_context: Number of people living in customer's household, affecting purchasing patterns and family-oriented product targeting strategies.
   - name: Marital Status
     column_id: TS_CUSTOMER::MARITAL_STATUS
     properties:
@@ -460,12 +504,14 @@ model:
       synonyms:
       - Marriage Status
       - Matrimonial Status
+      ai_context: Customer's relationship status classification, influencing buying behavior and lifestyle-based marketing approach development.
   - name: Inventory Id
     column_id: TS_INVENTORY::INVENTORY_ID
     properties:
       column_type: ATTRIBUTE
       synonyms:
       - Inventory Number
+      ai_context: Unique stock record identifier for warehouse management, enabling precise inventory tracking and stock movement analysis.
   - name: Quantity Instock
     column_id: TS_INVENTORY::QUANTITY_INSTOCK
     properties:
@@ -477,6 +523,7 @@ model:
       - Quantity in Store
       currency_type:
         is_browser: true
+      ai_context: Current number of units available in warehouse, critical for inventory management and stock availability monitoring.
   - name: City
     column_id: TS_LOCATION::CITY
     properties:
@@ -486,6 +533,7 @@ model:
       - Municipality
       geo_config:
         country: true
+      ai_context: Municipal location identifier for precise geographic targeting, supporting city-level market analysis and local business strategies.
   - name: Population
     column_id: TS_LOCATION::POPULATION
     properties:
@@ -495,6 +543,7 @@ model:
       synonyms:
       - Crowd
       - People
+      ai_context: Total number of residents in geographic area, providing market size context for penetration analysis and opportunity assessment.
   - name: Density
     column_id: TS_LOCATION::DENSITY
     properties:
@@ -504,6 +553,7 @@ model:
       synonyms:
       - Compactness
       - Concentration
+      ai_context: Population concentration per geographic unit, indicating market saturation potential and customer accessibility factors.
   - name: Product Name
     description: product name
     column_id: TS_PRODUCT_DETAILS::PRODUCT_NAME
@@ -512,6 +562,7 @@ model:
       synonyms:
       - Product Title
       - Product Description
+      ai_context: Descriptive title identifying specific merchandise item, essential for product performance tracking and inventory management.
   - name: Product Price
     column_id: TS_PRODUCT_DETAILS::PRODUCT_PRICE
     properties:
@@ -521,6 +572,7 @@ model:
       synonyms:
       - Product Worth
       - Product Cost
+      ai_context: Monetary value assigned to individual product, representing pricing strategy and revenue potential per item sold.
   - name: Product Type
     column_id: TS_PRODUCTS::PRODUCT_TYPE
     properties:
@@ -528,6 +580,7 @@ model:
       synonyms:
       - Product Category
       - Product Class
+      ai_context: Category classification grouping similar products, enabling category-level analysis and merchandise planning strategies.
   - name: Sale Id
     column_id: SalesTable::SALE_ID
     properties:
@@ -535,12 +588,14 @@ model:
       synonyms:
       - Transaction Id
       - Sale Number
+      ai_context: Unique transaction identifier for individual sales events, enabling precise transaction tracking and customer journey analysis.
   - name: SalesStore Id
     column_id: SalesTable::STORE_ID
     properties:
       column_type: ATTRIBUTE
       synonyms:
       - Store Number
+      ai_context: Store identifier specifically for sales transaction tracking, linking sales events to specific retail locations.
   - name: Product Detail Id
     description: prod detail id
     column_id: SalesTable::PRODUCT_DETAIL_ID
@@ -549,6 +604,7 @@ model:
       synonyms:
       - Product Detail Number
       - Product Detail Reference
+      ai_context: Granular product specification identifier capturing detailed product variations, supporting precise inventory and sales tracking.
   - name: Product Id
     column_id: SalesTable::PRODUCT_ID
     properties:
@@ -556,18 +612,21 @@ model:
       synonyms:
       - Item Id
       - Product Number
+      ai_context: Primary product identifier linking items across systems, fundamental for product lifecycle tracking and catalog management.
   - name: Customer Id
     column_id: SalesTable::CUSTOMER_ID
     properties:
       column_type: ATTRIBUTE
       synonyms:
       - Customer Number
+      ai_context: Unique alphanumeric identifier for individual customers, enabling customer tracking and personalized service across transactions.
   - name: Shipmode
     column_id: SalesTable::SHIPMODE
     properties:
       column_type: ATTRIBUTE
       synonyms:
       - Delivery Mode
+      ai_context: Transportation method selected for order delivery, affecting shipping costs, delivery speed, and customer satisfaction.
   - name: Sales Quantity
     description: sales qty
     column_id: SalesTable::SALES_QUANTITY
@@ -578,6 +637,7 @@ model:
       synonyms:
       - Sales Amount
       - Sales Volume
+      ai_context: Total number of units sold in transaction, representing volume-based sales performance and demand measurement.
   - name: Tax
     column_id: SalesTable::TAX
     properties:
@@ -587,6 +647,7 @@ model:
       synonyms:
       - Levy
       - Duty
+      ai_context: Government-imposed levy amount added to purchase total, representing tax obligations and regulatory compliance costs.
   - name: Store Status
     column_id: TS_STORES::STORE_STATUS
     properties:
@@ -594,6 +655,7 @@ model:
       synonyms:
       - Store Condition
       - Store State
+      ai_context: Current operational state of retail location, indicating whether store is actively serving customers or temporarily closed.
   - name: Floor Space
     column_id: TS_STORES::FLOOR_SPACE
     properties:
@@ -603,6 +665,7 @@ model:
       synonyms:
       - Floor Area
       - Floor Measurement
+      ai_context: Total retail area available for customer shopping, measuring store capacity and space utilization efficiency.
   - name: Expense
     column_id: TS_STORES::EXPENSE
     properties:
@@ -612,6 +675,7 @@ model:
       synonyms:
       - Outlay
       - Cost
+      ai_context: Total operational costs incurred by store, including rent, utilities, and staffing for profitability analysis.
   - name: store_size
     column_id: TS_STORES::STORE_SIZE
     properties:
@@ -619,6 +683,7 @@ model:
       synonyms:
       - store_area
       - store_dimension
+      ai_context: Categorical classification of store dimensions, ranging from extra-small to extra-large for capacity and performance comparison.
   properties:
     is_bypass_rls: false
     join_progressive: false

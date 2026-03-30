@@ -1,4 +1,5 @@
 guid: ba1c182c-6b22-415a-8637-4ed4137bc9a6
+obj_id: FiltertestLBbrHoneybrGolden-ba1c182c
 liveboard:
   name: "Filter test LB <br /> Honey <br /> Golden:"
   description: |-
@@ -877,7 +878,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Day(date)\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c0fa2f57-b2fd-47c6-a528-8590d3ba84ff\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\",\"Total sales\"],\"isOpposite\": false}},{\"id\": \"a481eb52-f840-49b2-9385-9437b992525d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total sales\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
       parameters:
-      - id: c56e708c-0a30-4d26-9d70-f6d0e8297194
+      - id: edadf8be-635b-49ec-a63f-68dcdbd441d6
         name: P_str
         data_type: CHAR
         default_value: B
@@ -2240,6 +2241,16 @@ liveboard:
         - sales change%
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Net Sales(year to date)\",\"columnProperty\": {}},{\"columnId\": \"sales change%\",\"columnProperty\": {}},{\"columnId\": \"Net Sales(last year year to date)\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Net Sales(last year year to date)
+        - column_id: Net Sales(year to date)
+        - column_id: sales change%
+        axis_configs:
+        - "y":
+          - sales change%
+        client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 73d88e15-1ce3-40f1-a41e-04fd1efc5c39
   - id: Viz_48
@@ -3533,7 +3544,7 @@ liveboard:
         - "y":
           - Hour(date_ordered)
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"00279cc3-9439-4477-8207-613c44cd4b9c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Hour(date_ordered)\"],\"isOpposite\": false}},{\"id\": \"083d0f79-438e-455a-a008-75057d978a85\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Hour(date_ordered)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {}},{\"columnId\": \"021964ba-9eeb-4d26-a3dc-27593a6e9638\",\"columnProperty\": {}},{\"columnId\": \"0377d1a9-bb98-43f9-b555-529f9fdd9ee9\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"00279cc3-9439-4477-8207-613c44cd4b9c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Hour(date_ordered)\"],\"isOpposite\": false}},{\"id\": \"083d0f79-438e-455a-a008-75057d978a85\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: 6a554830-3fb7-4067-9a60-621ca43b44cd
   - id: Viz_70
@@ -3582,7 +3593,7 @@ liveboard:
           "y":
           - Total Age
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"9b5bf31b-c159-4351-9901-5eede471da2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"37f03544-14f4-4f81-81c2-4f0c3bf023e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date_orderedtime)\",\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"date_ordered\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_orderedtime)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Month(date_shipped)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"846af4bf-158a-4855-a984-2fe47300632d\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"70599ce5-5e38-4bd7-9767-0183904bf1e3\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"9b5bf31b-c159-4351-9901-5eede471da2d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"37f03544-14f4-4f81-81c2-4f0c3bf023e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date_orderedtime)\",\"date_ordered\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 57ca49a8-b980-48ca-80e5-09bdcce5df40
   filters:
@@ -3735,8 +3746,8 @@ liveboard:
       type: YEAR_ONLY
       oper: =
       date_range:
-        start_date: 03/01/2023
-        end_date: 03/01/2024
+        start_date: 01/01/2024
+        end_date: 01/01/2025
       year_name: "2024"
     display_name: ""
   layout:
@@ -4124,7 +4135,7 @@ liveboard:
         height: 8
         width: 6
       id: f9a454d2-00a9-4f04-ab46-17cce7cdd05f
-    - name: CC_T
+    - name: CC_Tab
       description: ""
       tiles:
       - visualization_id: Viz_69
@@ -4138,6 +4149,9 @@ liveboard:
         height: 8
         width: 8
       id: 91710eb5-a5dc-45f6-bfcf-336b377daab4
+    - name: Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty Empty
+      description: ""
+      id: c620b747-9f77-4a13-8ef8-b673b316c32c
   parameter_overrides:
   - key: ab9beb36-66c0-41e2-856e-2be97e9c5bcc
     value:
