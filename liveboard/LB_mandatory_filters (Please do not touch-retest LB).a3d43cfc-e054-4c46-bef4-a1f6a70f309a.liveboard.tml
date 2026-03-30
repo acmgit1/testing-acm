@@ -2315,6 +2315,10 @@ liveboard:
         height: 8
         width: 6
       - visualization_id: Viz_48
+        x: 0
+        "y": 78
+        height: 8
+        width: 6
       id: 1b0c5c98-7e2f-49a2-9cd2-1c72bbd1c73b
     - name: Tab 2
       description: ""
@@ -2491,6 +2495,9 @@ liveboard:
         height: 8
         width: 12
       id: 5f0d393f-fba5-499f-807e-95f1552fa272
+    - name: tab11
+      description: ""
+      id: d38c560e-c8da-420b-9e61-1cd6b32d06cc
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
     value:
