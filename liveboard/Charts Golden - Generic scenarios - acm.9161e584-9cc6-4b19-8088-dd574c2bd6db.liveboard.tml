@@ -6595,6 +6595,9 @@ liveboard:
         height: 8
         width: 6
       id: baf37c26-4422-4349-859b-a77ea7c689ce
+    - name: new column
+      description: ""
+      id: a1bb0f74-d7a0-47d3-8d39-c6ad5df8d173
   parameter_overrides:
   - key: 3bfe5756-1cb8-4faa-b51e-b6ac5ff93840
     value:
