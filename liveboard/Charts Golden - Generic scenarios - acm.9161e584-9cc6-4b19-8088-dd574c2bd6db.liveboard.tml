@@ -5943,6 +5943,64 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"3. 30-40\",\"4. 40-50\",\"5. 50-60\"],\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"age_bucket\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"City\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e4cc432-0abe-4a12-b17d-d144518bb550\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"0bc994ff-2acc-4b29-9ef1-c2311845fbfd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Age\",\"color\": \"#FCC838\"},{\"serieName\": \"albany\",\"color\": \"#721F27\"},{\"serieName\": \"albuquerque\",\"color\": \"#F47E89\"},{\"serieName\": \"allentown\",\"color\": \"#B6313E\"},{\"serieName\": \"anaheim\",\"color\": \"#F9B3B9\"},{\"serieName\": \"ann arbor\",\"color\": \"#F04152\"},{\"serieName\": \"antioch\",\"color\": \"#2F3947\"},{\"serieName\": \"arlington\",\"color\": \"#A2ACBA\"},{\"serieName\": \"atlanta\",\"color\": \"#47515F\"},{\"serieName\": \"augusta\",\"color\": \"#BEC6D0\"},{\"serieName\": \"aurora\",\"color\": \"#747E8C\"},{\"serieName\": \"austin\",\"color\": \"#7A3D1F\"},{\"serieName\": \"bakersfield\",\"color\": \"#FFA97E\"},{\"serieName\": \"baton rouge\",\"color\": \"#C26232\"},{\"serieName\": \"birmingham\",\"color\": \"#FFCCB3\"},{\"serieName\": \"bonita springs\",\"color\": \"#FF8142\"},{\"serieName\": \"bronx\",\"color\": \"#422E75\"},{\"serieName\": \"brooklyn\",\"color\": \"#B094F8\"},{\"serieName\": \"buffalo\",\"color\": \"#6A4ABA\"},{\"serieName\": \"cape coral\",\"color\": \"#D1C0FB\"},{\"serieName\": \"chicago\",\"color\": \"#8C62F5\"},{\"serieName\": \"chula vista\",\"color\": \"#025B3C\"},{\"serieName\": \"colorado springs\",\"color\": \"#56D3A8\"},{\"serieName\": \"concord\",\"color\": \"#049160\"},{\"serieName\": \"corpus christi\",\"color\": \"#9BE5CB\"},{\"serieName\": \"dallas\",\"color\": \"#06BF7F\"},{\"serieName\": \"davenport\",\"color\": \"#785F1A\"},{\"serieName\": \"denton\",\"color\": \"#FCD977\"},{\"serieName\": \"denver\",\"color\": \"#BF982A\"},{\"serieName\": \"des moines\",\"color\": \"#FDE9AF\"},{\"serieName\": \"detroit\",\"color\": \"#FCC838\"},{\"serieName\": \"el paso\",\"color\": \"#22636B\"},{\"serieName\": \"eugene\",\"color\": \"#82DFE9\"},{\"serieName\": \"flint\",\"color\": \"#369FAA\"},{\"serieName\": \"fort collins\",\"color\": \"#B5ECF2\"},{\"serieName\": \"fort wayne\",\"color\": \"#48D1E0\"},{\"serieName\": \"fort worth\",\"color\": \"#163772\"},{\"serieName\": \"fresno\",\"color\": \"#71A1F4\"},{\"serieName\": \"grand rapids\",\"color\": \"#2359B6\"},{\"serieName\": \"harrisburg\",\"color\": \"#ABC7F9\"},{\"serieName\": \"houston\",\"color\": \"#2E75F0\"},{\"serieName\": \"huntsville\",\"color\": \"#721F27\"},{\"serieName\": \"indianapolis\",\"color\": \"#F47E89\"},{\"serieName\": \"indio\",\"color\": \"#B6313E\"},{\"serieName\": \"irvine\",\"color\": \"#F9B3B9\"},{\"serieName\": \"jacksonville\",\"color\": \"#F04152\"},{\"serieName\": \"jersey city\",\"color\": \"#2F3947\"},{\"serieName\": \"kissimmee\",\"color\": \"#A2ACBA\"},{\"serieName\": \"lafayette\",\"color\": \"#47515F\"},{\"serieName\": \"lakeland\",\"color\": \"#BEC6D0\"},{\"serieName\": \"lancaster\",\"color\": \"#747E8C\"},{\"serieName\": \"lansing\",\"color\": \"#7A3D1F\"},{\"serieName\": \"laredo\",\"color\": \"#FFA97E\"},{\"serieName\": \"long beach\",\"color\": \"#C26232\"},{\"serieName\": \"los angeles\",\"color\": \"#FFCCB3\"},{\"serieName\": \"madison\",\"color\": \"#FF8142\"},{\"serieName\": \"manhattan\",\"color\": \"#422E75\"},{\"serieName\": \"mcallen\",\"color\": \"#B094F8\"},{\"serieName\": \"miami\",\"color\": \"#6A4ABA\"},{\"serieName\": \"milwaukee\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mission viejo\",\"color\": \"#8C62F5\"},{\"serieName\": \"mobile\",\"color\": \"#025B3C\"},{\"serieName\": \"modesto\",\"color\": \"#56D3A8\"},{\"serieName\": \"murrieta\",\"color\": \"#049160\"},{\"serieName\": \"new orleans\",\"color\": \"#9BE5CB\"},{\"serieName\": \"new york\",\"color\": \"#06BF7F\"},{\"serieName\": \"newark\",\"color\": \"#785F1A\"},{\"serieName\": \"oakland\",\"color\": \"#FCD977\"},{\"serieName\": \"orlando\",\"color\": \"#BF982A\"},{\"serieName\": \"oxnard\",\"color\": \"#FDE9AF\"},{\"serieName\": \"palm bay\",\"color\": \"#FCC838\"},{\"serieName\": \"palm coast\",\"color\": \"#22636B\"},{\"serieName\": \"pensacola\",\"color\": \"#82DFE9\"},{\"serieName\": \"philadelphia\",\"color\": \"#369FAA\"},{\"serieName\": \"pittsburgh\",\"color\": \"#B5ECF2\"},{\"serieName\": \"plano\",\"color\": \"#48D1E0\"},{\"serieName\": \"port st. lucie\",\"color\": \"#163772\"},{\"serieName\": \"portland\",\"color\": \"#71A1F4\"},{\"serieName\": \"poughkeepsie\",\"color\": \"#2359B6\"},{\"serieName\": \"queens\",\"color\": \"#ABC7F9\"},{\"serieName\": \"reading\",\"color\": \"#2E75F0\"},{\"serieName\": \"richmond\",\"color\": \"#721F27\"},{\"serieName\": \"riverside\",\"color\": \"#F47E89\"},{\"serieName\": \"rochester\",\"color\": \"#B6313E\"},{\"serieName\": \"rockford\",\"color\": \"#F9B3B9\"},{\"serieName\": \"round lake beach\",\"color\": \"#F04152\"},{\"serieName\": \"sacramento\",\"color\": \"#2F3947\"},{\"serieName\": \"salem\",\"color\": \"#A2ACBA\"},{\"serieName\": \"san antonio\",\"color\": \"#47515F\"},{\"serieName\": \"san diego\",\"color\": \"#BEC6D0\"},{\"serieName\": \"san francisco\",\"color\": \"#747E8C\"},{\"serieName\": \"san jose\",\"color\": \"#7A3D1F\"},{\"serieName\": \"santa ana\",\"color\": \"#FFA97E\"},{\"serieName\": \"santa rosa\",\"color\": \"#C26232\"},{\"serieName\": \"sarasota\",\"color\": \"#FFCCB3\"},{\"serieName\": \"savannah\",\"color\": \"#FF8142\"},{\"serieName\": \"scranton\",\"color\": \"#422E75\"},{\"serieName\": \"shreveport\",\"color\": \"#B094F8\"},{\"serieName\": \"south bend\",\"color\": \"#6A4ABA\"},{\"serieName\": \"st. petersburg\",\"color\": \"#D1C0FB\"},{\"serieName\": \"staten island\",\"color\": \"#8C62F5\"},{\"serieName\": \"stockton\",\"color\": \"#025B3C\"},{\"serieName\": \"syracuse\",\"color\": \"#56D3A8\"},{\"serieName\": \"tampa\",\"color\": \"#049160\"},{\"serieName\": \"the woodlands\",\"color\": \"#9BE5CB\"},{\"serieName\": \"trenton\",\"color\": \"#06BF7F\"},{\"serieName\": \"victorville\",\"color\": \"#785F1A\"},{\"serieName\": \"virginia beach\",\"color\": \"#FCD977\"},{\"serieName\": \"1. <=20\",\"color\": \"#06BF7F\"},{\"serieName\": \"2. 20-30\",\"color\": \"#FCD977\"},{\"serieName\": \"3. 30-40\",\"color\": \"#FCC838\"},{\"serieName\": \"4. 40-50\",\"color\": \"#82DFE9\"},{\"serieName\": \"5. 50-60\",\"color\": \"#48D1E0\"},{\"serieName\": \"6. 60-70\",\"color\": \"#71A1F4\"},{\"serieName\": \"7. >70\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 7119e37f-2464-48ae-9d7e-714b2599e6e0
+  - id: Viz_117
+    answer:
+      name: "x - axis name color red, label color green / x-axis orientation vertical, y-axis orientation angled"
+      description: "y - axis name color orange, label color purple"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Budget] [Campaign Status] [City]"
+      answer_columns:
+      - name: Campaign Status
+      - name: City
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: Campaign Status
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: City
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Budget
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Campaign Status
+        - City
+        - Total Budget
+        client_state: ""
+      chart:
+        type: ADVANCED_STACKED_COLUMN
+        chart_columns:
+        - column_id: Campaign Status
+        - column_id: City
+        - column_id: Total Budget
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: City
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Budget
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            axes:
+            - type: FLAT
+              column: Campaign Status
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"clientState\":\"\",\"axisVisualProps\":{\"City\":{\"axis-label-rotation\":\"Vertical\",\"name-color\":\"#F04152\",\"label-color\":\"#06BF7F\",\"show-x-axis-gridlines\":false},\"Total Budget\":{\"axis-range\":{\"min\":100000,\"max\":250000},\"axis-label-rotation\":\"Angled\",\"inheritAxisNameStyle\":{\"isLinked\":false,\"textStyle\":{\"color\":\"#FF8142\"},\"linkedTo\":{\"id\":\"\",\"type\":\"\",\"key\":\"\"}},\"inheritNF\":{\"isLinked\":true,\"format\":{\"category\":\"CURRENCY\",\"isCategoryEditable\":true,\"currencyFormatConfig\":{\"decimals\":0,\"removeTrailingZeroes\":false,\"toSeparateThousands\":true,\"locale\":\"USD\",\"unit\":\"AUTO\"}}},\"inheritValueLabelStyle\":{\"isLinked\":false,\"textStyle\":{\"color\":\"#8C62F5\"},\"linkedTo\":{\"id\":\"\",\"type\":\"\",\"key\":\"\"}},\"show-y-axis-gridlines\":true,\"y-axis-gridline-style\":{\"dashStyle\":\"Solid\",\"thickness\":1,\"color\":\"#EAEDF2\"}}},\"columnVisualProps\":{\"Total Budget\":{\"bar-size-auto\":true},\"City\":{\"column-sort\":{}},\"Campaign Status\":{\"column-sort\":{},\"cartesian-color-map-section\":{\"cartesian-color-map\":{\"completed\":\"#2E75F0\",\"ongoing\":\"#48D1E0\",\"planned\":\"#FCC838\"}}}},\"displayVisualProps\":{\"display\":{\"fit-to-screen\":false,\"show-stack-percent\":false},\"axis-display\":{\"x-axis-display\":{\"show-axis\":true,\"show-axis-name\":true,\"show-axis-intervals\":false},\"y-axis-display\":{\"show-axis\":true,\"show-axis-name\":true,\"show-axis-intervals\":false}},\"totals-summary\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false,\"show-row-sub-totals\":false,\"show-column-sub-totals\":false,\"totals-position\":{}},\"trellis\":{\"trellis-shared-axis\":false,\"trellis-title-show\":true,\"trellis-title-color\":\"#000000\",\"trellis-border-show\":false,\"trellis-border-color\":\"#000000\"},\"other\":{\"chart-background-color\":{\"backgroundColor\":\"#ffffff\",\"borderColor\":\"#ffffff\"},\"plotted-area-background-color\":{\"backgroundColor\":\"#ffffff\",\"borderColor\":\"#ffffff\"}}},\"dataLabelVisualProps\":{\"cartesian-data-labels\":{\"show-labels\":false,\"show-total-labels\":false},\"Total Budget\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false,\"cartesian-data-labels-show-settings\":false}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":true,\"legend-position\":\"Top\"}},\"tooltipVisualProps\":{\"global-tooltip\":{\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}}}"
+      display_mode: CHART_MODE
+      dynamic_name: "x - axis name color red, label color green / x-axis orientation vertical, y-axis orientation angled"
+      dynamic_description: "y - axis name color orange, label color purple"
+    viz_guid: 2fa9bea8-5d08-45b9-9e73-0da6c1eb2ba7
   layout:
     tabs:
     - name: Table
@@ -6597,6 +6655,8 @@ liveboard:
       id: baf37c26-4422-4349-859b-a77ea7c689ce
     - name: new column
       description: ""
+      tiles:
+      - visualization_id: Viz_117
       id: a1bb0f74-d7a0-47d3-8d39-c6ad5df8d173
   parameter_overrides:
   - key: 3bfe5756-1cb8-4faa-b51e-b6ac5ff93840
