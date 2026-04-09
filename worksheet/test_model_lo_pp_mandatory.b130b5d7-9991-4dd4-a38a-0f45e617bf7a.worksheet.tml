@@ -24,7 +24,7 @@ model:
       - Transport Mode
       is_hidden: true
       synonym_type: AUTO_GENERATED
-      is_mandatory_token_filter: true
+      is_mandatory_token_filter: false
   - name: Lo Commitdate
     column_id: LINEORDER123::LO_COMMITDATE
     properties:
@@ -205,7 +205,7 @@ model:
       - Product Color
       - Item Color
       synonym_type: AUTO_GENERATED
-      is_mandatory_token_filter: true
+      is_mandatory_token_filter: false
   - name: P Container
     column_id: PART123::P_CONTAINER
     properties:
