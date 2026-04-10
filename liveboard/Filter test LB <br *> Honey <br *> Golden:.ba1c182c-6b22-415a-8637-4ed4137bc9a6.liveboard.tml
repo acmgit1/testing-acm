@@ -3884,7 +3884,7 @@ liveboard:
         height: 5
         width: 4
       - visualization_id: Viz_15
-        x: 4
+        x: 0
         "y": 5
         height: 4
         width: 3
@@ -3892,110 +3892,110 @@ liveboard:
         x: 4
         "y": 0
         height: 5
-        width: 6
+        width: 4
       - visualization_id: Viz_17
-        x: 0
-        "y": 5
+        x: 8
+        "y": 0
         height: 6
         width: 4
       - visualization_id: Viz_18
         x: 7
-        "y": 5
+        "y": 6
         height: 5
         width: 5
       - visualization_id: Viz_19
         x: 0
-        "y": 11
+        "y": 9
         height: 8
         width: 6
       - visualization_id: Viz_20
         x: 6
-        "y": 10
+        "y": 11
         height: 8
         width: 6
       - visualization_id: Viz_21
         x: 0
-        "y": 26
+        "y": 27
         height: 8
         width: 12
       - visualization_id: Viz_22
         x: 6
-        "y": 18
+        "y": 19
         height: 8
         width: 6
       - visualization_id: Viz_23
         x: 0
-        "y": 34
+        "y": 35
         height: 8
         width: 6
       - visualization_id: Viz_24
         x: 6
-        "y": 34
+        "y": 35
         height: 8
         width: 6
       - visualization_id: Viz_25
         x: 0
-        "y": 42
+        "y": 43
         height: 8
         width: 6
       - visualization_id: Viz_26
         x: 6
-        "y": 42
+        "y": 43
         height: 8
         width: 6
       - visualization_id: Viz_27
         x: 0
-        "y": 50
+        "y": 51
         height: 8
         width: 6
       - visualization_id: Viz_28
         x: 0
-        "y": 58
+        "y": 59
         height: 8
         width: 12
       - visualization_id: Viz_29
         x: 0
-        "y": 66
+        "y": 67
         height: 8
         width: 6
       - visualization_id: Viz_30
         x: 6
-        "y": 66
+        "y": 67
         height: 8
         width: 6
       - visualization_id: Viz_32
         x: 0
-        "y": 74
+        "y": 75
         height: 8
         width: 6
       - visualization_id: Viz_33
         x: 0
-        "y": 82
+        "y": 83
         height: 8
         width: 12
       - visualization_id: Viz_34
         x: 0
-        "y": 90
+        "y": 91
         height: 8
         width: 6
       - visualization_id: Viz_38
         x: 6
-        "y": 90
+        "y": 91
         height: 4
         width: 3
       - visualization_id: Viz_39
         x: 6
-        "y": 94
+        "y": 95
         height: 8
         width: 6
       - visualization_id: Viz_40
         x: 0
-        "y": 98
+        "y": 99
         height: 4
         width: 5
       - visualization_id: Viz_51
         x: 0
-        "y": 102
+        "y": 103
         height: 8
         width: 12
       id: 1fa9b783-ab07-4b68-8ac4-a86a5f40197a
