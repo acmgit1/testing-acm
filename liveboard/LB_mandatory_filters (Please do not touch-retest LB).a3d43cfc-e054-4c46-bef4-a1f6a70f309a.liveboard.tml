@@ -1,5 +1,4 @@
 guid: a3d43cfc-e054-4c46-bef4-a1f6a70f309a
-obj_id: LB_mandatory_filtersPleasedonottouch-retestLB-a3d43cfc
 liveboard:
   name: LB_mandatory_filters (Please do not touch-retest LB)
   description: Please do not touch-retest LB
@@ -2101,6 +2100,43 @@ liveboard:
     - action_name: callback_locale
       context: PRIMARY
       enabled: true
+  - id: Viz_49
+    answer:
+      name: Total sales by county
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [county]"
+      answer_columns:
+      - name: Total sales
+      - name: county
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        ordered_column_ids:
+        - county
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total sales
+        - column_id: county
+        axis_configs:
+        - x:
+          - county
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8ad81d3d-ab6f-4539-96e6-46d3f86ab602\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"d56ed942-a845-412f-8c8f-5b29bd05f8dd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total sales\",\"colorMap\": [{\"serieName\": \"county\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total sales by county-save
+    viz_guid: 71e58250-92c5-498a-9131-2c0ec9d6c09a
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2497,6 +2533,8 @@ liveboard:
       id: 5f0d393f-fba5-499f-807e-95f1552fa272
     - name: tab11
       description: ""
+      tiles:
+      - visualization_id: Viz_49
       id: d38c560e-c8da-420b-9e61-1cd6b32d06cc
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe

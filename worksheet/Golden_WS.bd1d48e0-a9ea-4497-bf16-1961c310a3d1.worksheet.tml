@@ -1,5 +1,4 @@
 guid: bd1d48e0-a9ea-4497-bf16-1961c310a3d1
-obj_id: Golden_WS-bd1d48e0
 model:
   name: Golden_WS
   description: 'The Worksheet WS_golden contains information about store transactions such as customer, product, and sales details. Its data can be used to answer questions such as: What is the average household size of customers buying a particular product? What is the average discount offered in a particular region? What is the average sales growth percentage in a particular city? What is the average expense per store? What is the average quantity instock for a particular product type? What is the average floor space of a store? The data also includes date related columns such as date ordered, date shipped, expiry date, and last reorder date. (AI generated)'
@@ -461,7 +460,8 @@ model:
   - name: Age
     column_id: TS_CUSTOMER::AGE
     properties:
-      column_type: ATTRIBUTE
+      column_type: MEASURE
+      aggregation: SUM
       index_type: DONT_INDEX
       synonyms:
       - Years

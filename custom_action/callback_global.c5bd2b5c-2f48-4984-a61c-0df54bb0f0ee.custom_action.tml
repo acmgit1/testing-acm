@@ -1,5 +1,4 @@
 guid: c5bd2b5c-2f48-4984-a61c-0df54bb0f0ee
-obj_id: callback_global-c5bd2b5c
 action_object:
   name: callback_global
   type: CALLBACK

@@ -1,5 +1,4 @@
 guid: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
-obj_id: test_model_lo_pp_mandatory-b130b5d7
 model:
   name: test_model_lo_pp_mandatory
   description: This worksheet encompasses a comprehensive dataset that includes transactional details such as order and commitment dates, pricing, discounts, taxes, and shipping priorities. It also integrates product-specific information like brand, category, color, manufacturer, and packaging type. Additionally, it tracks customer and supplier identifiers, which are crucial for analyzing purchasing patterns and supply chain logistics. (AI generated)
@@ -24,7 +23,7 @@ model:
       - Transport Mode
       is_hidden: true
       synonym_type: AUTO_GENERATED
-      is_mandatory_token_filter: false
+      is_mandatory_token_filter: true
   - name: Lo Commitdate
     column_id: LINEORDER123::LO_COMMITDATE
     properties:
@@ -205,7 +204,7 @@ model:
       - Product Color
       - Item Color
       synonym_type: AUTO_GENERATED
-      is_mandatory_token_filter: false
+      is_mandatory_token_filter: true
   - name: P Container
     column_id: PART123::P_CONTAINER
     properties:
