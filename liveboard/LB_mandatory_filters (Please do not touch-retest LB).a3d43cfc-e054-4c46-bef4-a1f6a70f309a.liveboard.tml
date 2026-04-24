@@ -2137,6 +2137,54 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total sales by county-save
     viz_guid: 71e58250-92c5-498a-9131-2c0ec9d6c09a
+  - id: Viz_50
+    answer:
+      name: Total Lo Discount by frm and Lo Shipmode
+      tables:
+      - id: test_model_lo_pp_mandatory
+        name: test_model_lo_pp_mandatory
+        fqn: b130b5d7-9991-4dd4-a38a-0f45e617bf7a
+      formulas:
+      - id: formula_frm
+        name: frm
+        expr: "[ws_str] "
+        was_auto_generated: false
+      search_query: "[Lo Discount] [Lo Shipmode] [formula_frm]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Discount
+      - name: frm
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Total Lo Discount
+          show_headline: false
+        - column_id: frm
+          show_headline: false
+        ordered_column_ids:
+        - Lo Shipmode
+        - frm
+        - Total Lo Discount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"frm\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Discount
+        - column_id: frm
+        axis_configs:
+        - x:
+          - frm
+          "y":
+          - Total Lo Discount
+          color:
+          - Lo Shipmode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"frm\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c5029999-bafd-48da-93cd-72072ce79775\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"52b175ce-ebde-4554-91e7-b07d0fcaf4e6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"frm\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"ship\",\"color\": \"#8C62F5\"},{\"serieName\": \"truck\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 40562120-e130-4576-aa76-b9bb2108daa9
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2535,6 +2583,7 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_49
+      - visualization_id: Viz_50
       id: d38c560e-c8da-420b-9e61-1cd6b32d06cc
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
