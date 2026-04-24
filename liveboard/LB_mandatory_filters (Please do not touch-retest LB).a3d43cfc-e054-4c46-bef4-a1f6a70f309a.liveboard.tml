@@ -2185,6 +2185,35 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"frm\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c5029999-bafd-48da-93cd-72072ce79775\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"52b175ce-ebde-4554-91e7-b07d0fcaf4e6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"frm\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"ship\",\"color\": \"#8C62F5\"},{\"serieName\": \"truck\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 40562120-e130-4576-aa76-b9bb2108daa9
+  - id: Viz_51
+    answer:
+      name: Total sales
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales]"
+      answer_columns:
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Total sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total sales
+        axis_configs:
+        - "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"6fcdc5e3-fdfd-4ee2-85b5-48dbb87ac806\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"788e088b-8c94-4d99-8686-659c9d69cc5f\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1d06a7f8-26e3-4001-b081-148d728a7a02
   filters:
   - column:
     - test_model_lo_pp_mandatory::Lo Shipmode
@@ -2584,6 +2613,7 @@ liveboard:
       tiles:
       - visualization_id: Viz_49
       - visualization_id: Viz_50
+      - visualization_id: Viz_51
       id: d38c560e-c8da-420b-9e61-1cd6b32d06cc
   parameter_overrides:
   - key: fbcb9567-87e5-4635-af21-51ea0c2febfe
