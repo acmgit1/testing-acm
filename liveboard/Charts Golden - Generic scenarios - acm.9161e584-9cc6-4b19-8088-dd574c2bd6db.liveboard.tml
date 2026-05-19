@@ -1,5 +1,4 @@
 guid: 9161e584-9cc6-4b19-8088-dd574c2bd6db
-obj_id: ChartsGolden-Genericscenarios-acm-9161e584
 liveboard:
   name: Charts Golden - Generic scenarios - acm
   visualizations:
@@ -6003,6 +6002,88 @@ liveboard:
     viz_guid: 2fa9bea8-5d08-45b9-9e73-0da6c1eb2ba7
   layout:
     tabs:
+    - name: new column
+      description: ""
+      tiles:
+      - visualization_id: Viz_117
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: a1bb0f74-d7a0-47d3-8d39-c6ad5df8d173
+    - name: New Muze charts
+      description: ""
+      tiles:
+      - visualization_id: Viz_107
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_108
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_109
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_110
+        x: 6
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_111
+        x: 0
+        "y": 16
+        height: 8
+        width: 6
+      - visualization_id: Viz_112
+        x: 6
+        "y": 16
+        height: 8
+        width: 6
+      - visualization_id: Viz_113
+        x: 0
+        "y": 24
+        height: 8
+        width: 6
+      - visualization_id: Viz_114
+        x: 6
+        "y": 24
+        height: 8
+        width: 6
+      - visualization_id: Viz_115
+        x: 0
+        "y": 32
+        height: 8
+        width: 6
+      id: baf37c26-4422-4349-859b-a77ea7c689ce
+    - name: Muze Studio
+      description: ""
+      tiles:
+      - visualization_id: Viz_99
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_100
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_101
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_102
+        x: 6
+        "y": 8
+        height: 8
+        width: 6
+      id: b661ea5e-76cf-4037-b5fc-18fcc2bd6d53
     - name: Table
       description: ""
       tiles:
@@ -6580,84 +6661,6 @@ liveboard:
         height: 1
         width: 12
       id: db3849bb-b282-49d3-b865-87e79f4d20aa
-    - name: Muze Studio
-      description: ""
-      tiles:
-      - visualization_id: Viz_99
-        x: 0
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_100
-        x: 6
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_101
-        x: 0
-        "y": 8
-        height: 8
-        width: 6
-      - visualization_id: Viz_102
-        x: 6
-        "y": 8
-        height: 8
-        width: 6
-      id: b661ea5e-76cf-4037-b5fc-18fcc2bd6d53
-    - name: New Muze charts
-      description: ""
-      tiles:
-      - visualization_id: Viz_107
-        x: 0
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_108
-        x: 6
-        "y": 0
-        height: 8
-        width: 6
-      - visualization_id: Viz_109
-        x: 0
-        "y": 8
-        height: 8
-        width: 6
-      - visualization_id: Viz_110
-        x: 6
-        "y": 8
-        height: 8
-        width: 6
-      - visualization_id: Viz_111
-        x: 0
-        "y": 16
-        height: 8
-        width: 6
-      - visualization_id: Viz_112
-        x: 6
-        "y": 16
-        height: 8
-        width: 6
-      - visualization_id: Viz_113
-        x: 0
-        "y": 24
-        height: 8
-        width: 6
-      - visualization_id: Viz_114
-        x: 6
-        "y": 24
-        height: 8
-        width: 6
-      - visualization_id: Viz_115
-        x: 0
-        "y": 32
-        height: 8
-        width: 6
-      id: baf37c26-4422-4349-859b-a77ea7c689ce
-    - name: new column
-      description: ""
-      tiles:
-      - visualization_id: Viz_117
-      id: a1bb0f74-d7a0-47d3-8d39-c6ad5df8d173
   parameter_overrides:
   - key: 3bfe5756-1cb8-4faa-b51e-b6ac5ff93840
     value:
