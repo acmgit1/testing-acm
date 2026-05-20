@@ -6121,6 +6121,69 @@ liveboard:
         viz_style: "{}"
       display_mode: CHART_MODE
     viz_guid: 294a8f80-d87f-4856-842c-7d80dce327cb
+  - id: Viz_120
+    answer:
+      name: "Total Age, Total Budget by Marital Status"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Age] [Budget] [Marital Status] [Inventory Id] [Inventory Id].inv_001 [Inventory Id].inv_003 [Inventory Id].inv_008 [Inventory Id].inv_010"
+      answer_columns:
+      - name: Inventory Id
+      - name: Marital Status
+      - name: Total Age
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: Inventory Id
+          show_headline: false
+        - column_id: Marital Status
+          show_headline: false
+        - column_id: Total Age
+          show_headline: false
+        - column_id: Total Budget
+          show_headline: false
+        ordered_column_ids:
+        - Marital Status
+        - Inventory Id
+        - Total Age
+        - Total Budget
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_DONUT
+        chart_columns:
+        - column_id: Inventory Id
+        - column_id: Marital Status
+        - column_id: Total Age
+        - column_id: Total Budget
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{\\\"gridLineColor\\\":\\\"#E6E6E6\\\",\\\"gridLineWidth\\\":1,\\\"gridLineDashStyle\\\":\\\"Dot\\\"}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Marital Status\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null},\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Inventory Id\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null},\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Age\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Budget\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":{\\\"type\\\":\\\"DATA_LABEL_PROPS\\\",\\\"id\\\":\\\"Total Age\\\",\\\"key\\\":\\\"labelTextStyle\\\"}}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"4df0744f-882f-432b-ad21-8125c2a18e2f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Age\"],\"isOpposite\": false}},{\"id\": \"31eb3b60-032e-4d84-9924-f3dbc5113ff9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": true}},{\"id\": \"b2e354ae-ee4d-4483-a50c-06141d0381f0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Marital Status\"]}}],\"systemSeriesColors\": [{\"serieName\": \"divorced\",\"color\": \"#06BF7F\"},{\"serieName\": \"married\",\"color\": \"#FCC838\"},{\"serieName\": \"single\",\"color\": \"#48D1E0\"},{\"serieName\": \"widowed\",\"color\": \"#2E75F0\"},{\"serieName\": \"Inventory Id\",\"color\": \"#48d1e0\"},{\"serieName\": \"Total Age\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Budget\",\"color\": \"#2E75F0\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Marital Status
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Age
+            - type: FLAT
+              column: Total Budget
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            axes:
+            - type: FLAT
+              column: Inventory Id
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"clientState\":\"\",\"axisVisualProps\":{},\"columnVisualProps\":{\"Total Age\":{},\"Total Budget\":{},\"Marital Status\":{\"column-sort\":{},\"cartesian-color-map-section\":{\"cartesian-color-map\":{\"married\":\"#2E75F0\",\"single\":\"#48D1E0\",\"widowed\":\"#FCC838\"}}}},\"displayVisualProps\":{\"display\":{},\"trellis\":{\"trellis-title-show\":true,\"trellis-title-color\":\"#000000\",\"trellis-border-show\":false,\"trellis-border-color\":\"#000000\"},\"other\":{\"chart-background-color\":{\"backgroundColor\":\"#FCE7AC\",\"borderColor\":\"#2E75F0\"},\"plotted-area-background-color\":{\"backgroundColor\":\"#9BE5CB\",\"borderColor\":\"#B6313E\"}}},\"dataLabelVisualProps\":{\"cartesian-data-labels\":{\"show-labels\":false},\"Total Age\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false}},\"Total Budget\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false}}},\"legendVisualProps\":{},\"tooltipVisualProps\":{\"global-tooltip\":{\"show-tooltip\":true,\"tooltip-show-details\":true,\"tooltip-show-aggregates\":true,\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#FCC838\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#FCC838\",\"style\":[]}}}}"
+        viz_style: "{}"
+      display_mode: CHART_MODE
+    viz_guid: f4f57cfc-48a4-45c1-849e-cf397ede76a3
   layout:
     tabs:
     - name: new column
@@ -6182,6 +6245,7 @@ liveboard:
         width: 6
       - visualization_id: Viz_118
       - visualization_id: Viz_119
+      - visualization_id: Viz_120
       id: baf37c26-4422-4349-859b-a77ea7c689ce
     - name: Muze Studio
       description: ""
