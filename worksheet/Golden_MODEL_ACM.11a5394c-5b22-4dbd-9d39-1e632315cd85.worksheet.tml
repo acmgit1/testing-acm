@@ -337,6 +337,9 @@ model:
         region_name:
           country: UNITED STATES
           region_name: state
+      custom_order:
+      - South
+      - Midwest
   - name: State Name
     column_id: TS_LOCATION::STATE_NAME
     properties:
