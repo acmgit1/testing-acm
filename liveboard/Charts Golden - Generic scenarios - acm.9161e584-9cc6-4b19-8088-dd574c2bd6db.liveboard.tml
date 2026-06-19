@@ -212,7 +212,7 @@ liveboard:
             mode: COLUMN_DRIVEN
           - key: split-by-color
             mode: COLUMN_DRIVEN
-        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"columnWidths\\\":{\\\"rows\\\":{\\\"widths\\\":[],\\\"fields\\\":null},\\\"columns\\\":{\\\"widths\\\":[{\\\"target\\\":[{\\\"field\\\":\\\"Measure names\\\",\\\"sourceType\\\":\\\"normal\\\",\\\"value\\\":\\\"Total Expense\\\"}],\\\"width\\\":275}],\\\"fields\\\":[\\\"Measure names\\\"]}},\\\"expandCollapse\\\":{\\\"rows\\\":{\\\"state\\\":[],\\\"fields\\\":null},\\\"columns\\\":{\\\"state\\\":[],\\\"fields\\\":null}},\\\"pagination\\\":{\\\"currentPageIdx\\\":1,\\\"fields\\\":null},\\\"sort\\\":{\\\"rows\\\":{},\\\"columns\\\":{},\\\"axis\\\":{}}}\",\"axisVisualProps\":{},\"columnVisualProps\":{\"Product Name\":{\"column-sort\":{}},\"Total Expense\":{}},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{\"global-tooltip\":{\"show-tooltip\":true,\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":false,\"position\":\"Right\"}},\"displayVisualProps\":{\"values\":{},\"totals-summary\":{\"show-grand-totals\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false},\"show-sub-totals\":{\"show-row-sub-totals\":false,\"show-column-sub-totals\":false},\"totals-position\":\"End\"},\"heatmap-mode-section\":{\"heatmap-mode-enable\":false,\"includeTotalDomain\":false,\"heatmap-mode-radio\":\"Background\"},\"pagination\":{\"pagination-enable\":true}}}"
+        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"columnWidths\\\":{\\\"rows\\\":{\\\"widths\\\":[],\\\"fields\\\":null},\\\"columns\\\":{\\\"widths\\\":[{\\\"target\\\":[{\\\"field\\\":\\\"28c02eb4-a6e7-4276-8a59-29ca6b0e45e1\\\",\\\"sourceType\\\":\\\"normal\\\",\\\"value\\\":\\\"0fdadf28-ffb3-498b-bfc4-6f1a52d52a25\\\"}],\\\"width\\\":275}],\\\"fields\\\":[\\\"28c02eb4-a6e7-4276-8a59-29ca6b0e45e1\\\"]}},\\\"expandCollapse\\\":{\\\"rows\\\":{\\\"state\\\":[],\\\"fields\\\":null},\\\"columns\\\":{\\\"state\\\":[],\\\"fields\\\":null}},\\\"pagination\\\":{\\\"currentPageIdx\\\":1,\\\"fields\\\":null},\\\"sort\\\":{\\\"rows\\\":{},\\\"columns\\\":{},\\\"axis\\\":{}}}\",\"axisVisualProps\":{},\"columnVisualProps\":{\"Product Name\":{\"column-sort\":{}},\"Total Expense\":{}},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{\"global-tooltip\":{\"show-tooltip\":true,\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":false,\"position\":\"Right\"}},\"displayVisualProps\":{\"values\":{},\"totals-summary\":{\"show-grand-totals\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false},\"show-sub-totals\":{\"show-row-sub-totals\":false,\"show-column-sub-totals\":false},\"totals-position\":\"End\"},\"heatmap-mode-section\":{\"heatmap-mode-enable\":false,\"includeTotalDomain\":false,\"heatmap-mode-radio\":\"Background\"},\"pagination\":{\"pagination-enable\":true}}}"
       display_mode: CHART_MODE
       dynamic_name: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Total Expense by Product Name and Measure names"
       dynamic_description: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
@@ -6610,8 +6610,8 @@ liveboard:
       - visualization_id: Viz_46
         x: 0
         "y": 0
-        height: 8
-        width: 6
+        height: 3
+        width: 3
       - visualization_id: Viz_47
         x: 6
         "y": 0
@@ -6619,7 +6619,7 @@ liveboard:
         width: 6
       - visualization_id: Viz_48
         x: 0
-        "y": 8
+        "y": 3
         height: 8
         width: 6
       id: 346d239c-ff3c-4e97-94e1-266520296281
