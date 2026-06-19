@@ -6610,8 +6610,8 @@ liveboard:
       - visualization_id: Viz_46
         x: 0
         "y": 0
-        height: 3
-        width: 3
+        height: 5
+        width: 5
       - visualization_id: Viz_47
         x: 6
         "y": 0
@@ -6619,7 +6619,7 @@ liveboard:
         width: 6
       - visualization_id: Viz_48
         x: 0
-        "y": 3
+        "y": 5
         height: 8
         width: 6
       id: 346d239c-ff3c-4e97-94e1-266520296281
