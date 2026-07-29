@@ -4,16 +4,16 @@ model:
   description: 'The Worksheet WS_golden contains information about store transactions such as customer, product, and sales details. Its data can be used to answer questions such as: What is the average household size of customers buying a particular product? What is the average discount offered in a particular region? What is the average sales growth percentage in a particular city? What is the average expense per store? What is the average quantity instock for a particular product type? What is the average floor space of a store? The data also includes date related columns such as date ordered, date shipped, expiry date, and last reorder date. (AI generated)'
   model_tables:
   - name: TS_CAMPAIGN
-    fqn: 049d42ca-7240-4c55-afc5-f41997382ebb
+    fqn: 278a8c64-c677-48a5-a4ce-90b91ff7fc6e
   - name: TS_CUSTOMER
-    fqn: 22c8aa0e-acfd-48bb-a00e-4ffba514d383
+    fqn: 4c048f50-bd8b-4ee2-993e-4cabb33642e8
     joins:
     - with: TS_CAMPAIGN
       referencing_join: TS_CAMPAIGN_to_TS_CUSTOMER
       type: INNER
   - name: TS_SALES
     alias: SalesTable
-    fqn: 243a39f3-6484-414b-b186-4a7947c0d168
+    fqn: de4fb050-376b-4af5-b038-658488c18c71
     joins:
     - with: TS_CUSTOMER
       referencing_join: TS_SALES_to_TS_CUSTOMER
@@ -24,32 +24,32 @@ model:
     - with: TS_STORES
       referencing_join: TS_SALES_to_TS_STORES
   - name: TS_INVENTORY
-    fqn: 8024dfeb-6535-4a4a-877e-e9e011aef0f2
+    fqn: 15d4b3d1-6d0b-4d7c-a2e1-d572034596bf
     joins:
     - with: TS_PRODUCT_DETAILS
       referencing_join: TS_INVENTORY_to_TS_PRODUCT_DETAILS
     - with: TS_STORES
       referencing_join: TS_INVENTORY_to_TS_STORES
   - name: TS_LOCATION
-    fqn: 68c574c8-2b9a-4591-a6ce-a96c4bb9ea34
+    fqn: e5c06b3f-9227-4d2a-92de-475a6fa6bc6b
     joins:
     - with: StateTable
       referencing_join: TS_LOCATION_to_TS_STATES
   - name: TS_STORES
-    fqn: 51617f28-b4e8-47b3-9ceb-a5a7b9806739
+    fqn: 1d5d077d-5aac-4e4b-b235-74810e691d33
     joins:
     - with: TS_LOCATION
       referencing_join: TS_STORES_to_TS_LOCATION
   - name: TS_PRODUCT_DETAILS
-    fqn: 1a8c4650-0079-4837-9476-b44d552cb9dc
+    fqn: 42b0ef86-b979-4fd1-9b30-d67f2e465388
     joins:
     - with: TS_PRODUCTS
       referencing_join: TS_PRODUCT_DETAILS_to_TS_PRODUCTS
   - name: TS_PRODUCTS
-    fqn: ef3b3721-7896-4b7e-8cfe-4aabfb7cde53
+    fqn: 4527942d-d858-4438-a34e-359b8dbf46c3
   - name: TS_STATES
     alias: StateTable
-    fqn: d2656e89-7c14-4499-b2f7-2e1ad007e1c0
+    fqn: eb58a895-5454-4cc9-855b-3278b33614a9
   formulas:
   - id: formula_Sales Growth %
     name: Sales Growth %
@@ -126,6 +126,9 @@ model:
   - id: formula_testFX
     name: testFX
     expr: '[SalesTable::NET_SALES] * [int_params]'
+  - id: formula_testfx
+    name: testfx
+    expr: '[test] '
   - id: formula_year#
     name: year#
     expr: year ( [formula_date_ordered] )
@@ -606,6 +609,11 @@ model:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
+  - name: testfxx
+    formula_id: formula_testfx
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
   properties:
     is_bypass_rls: false
     join_progressive: false
@@ -764,6 +772,17 @@ model:
       - value: count
       - value: unique_count
       - value: test
+    description: ''
+  - id: deffd88c-5450-4a80-a2c9-1199ae4732be
+    name: test
+    data_type: BOOL
+    default_value: 'true'
+    list_config:
+      list_choice:
+      - value: 'true'
+        display_name: t
+      - value: 'false'
+        display_name: f
     description: ''
   - id: ca6869e6-ecee-4802-8145-6f07ffcce7a6
     name: test_list

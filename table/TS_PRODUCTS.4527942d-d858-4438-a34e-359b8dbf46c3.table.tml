@@ -1,0 +1,25 @@
+guid: 4527942d-d858-4438-a34e-359b8dbf46c3
+table:
+  name: TS_PRODUCTS
+  db: NEBULADEV
+  schema: TPCH_COMPLEX_SCHEMA
+  db_table: TS_PRODUCTS
+  connection:
+    name: ts_complex_schema
+    fqn: 7da3df47-6550-4138-ad62-dbae6a53ddde
+  columns:
+  - name: PRODUCT_ID
+    db_column_name: PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_TYPE
+    db_column_name: PRODUCT_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

@@ -1,0 +1,62 @@
+guid: 4c048f50-bd8b-4ee2-993e-4cabb33642e8
+table:
+  name: TS_CUSTOMER
+  db: NEBULADEV
+  schema: TPCH_COMPLEX_SCHEMA
+  db_table: TS_CUSTOMER
+  connection:
+    name: ts_complex_schema
+    fqn: 7da3df47-6550-4138-ad62-dbae6a53ddde
+  columns:
+  - name: CUSTOMER_ID
+    db_column_name: CUSTOMER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: AGE
+    db_column_name: AGE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: GENDER
+    db_column_name: GENDER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: INCOME
+    db_column_name: INCOME
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: HOUSEHOLD_SIZE
+    db_column_name: HOUSEHOLD_SIZE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: MARITAL_STATUS
+    db_column_name: MARITAL_STATUS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: TS_CAMPAIGN_to_TS_CUSTOMER
+    destination:
+      name: TS_CAMPAIGN
+      fqn: 278a8c64-c677-48a5-a4ce-90b91ff7fc6e
+    "on": "[TS_CUSTOMER::CUSTOMER_ID] = [TS_CAMPAIGN::CUSTOMER_ID]"
+    type: LEFT_OUTER
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

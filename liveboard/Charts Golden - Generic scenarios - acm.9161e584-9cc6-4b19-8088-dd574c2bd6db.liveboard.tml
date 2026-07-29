@@ -686,7 +686,7 @@ liveboard:
       - name: Total Household Size
       - name: Total Income
       - name: age_bucket
-        custom_name: age_bucket 12/31/2023
+        custom_name: age_bucket 31/12/2023
         dynamic_title: "age_bucket [${PARAMETER:analysis date}]"
       - name: avg sales per customer
       - name: avg_sales_per_qty_sold
@@ -1508,10 +1508,10 @@ liveboard:
       search_query: "[Age] [City]"
       answer_columns:
       - name: City
-        custom_name: City 12/31/2023 yes 0.25 1
+        custom_name: City 31/12/2023 yes 0.25 1
         dynamic_title: "City [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Age
-        custom_name: Total Age 12/31/2023 yes 0.25 1
+        custom_name: Total Age 31/12/2023 yes 0.25 1
         dynamic_title: "Total Age [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -1897,13 +1897,13 @@ liveboard:
       search_query: "[Expense] [Customer Id] [Region]"
       answer_columns:
       - name: Customer Id
-        custom_name: Customer Id 12/31/2023 yes 0.25 1
+        custom_name: Customer Id 31/12/2023 yes 0.25 1
         dynamic_title: "Customer Id [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Region
-        custom_name: Region 12/31/2023 yes 0.25 1
+        custom_name: Region 31/12/2023 yes 0.25 1
         dynamic_title: "Region [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Expense
-        custom_name: Total Expense 12/31/2023 yes 0.25 1
+        custom_name: Total Expense 31/12/2023 yes 0.25 1
         dynamic_title: "Total Expense [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -2441,13 +2441,13 @@ liveboard:
       search_query: "[avg sales per customer] [Age] [City]"
       answer_columns:
       - name: City
-        custom_name: 12/31/2023 yes 0.25 1 City
+        custom_name: 31/12/2023 yes 0.25 1 City
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] City"
       - name: Total Age
-        custom_name: 12/31/2023 yes 0.25 1 Total Age
+        custom_name: 31/12/2023 yes 0.25 1 Total Age
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Total Age"
       - name: avg sales per customer
-        custom_name: 12/31/2023 yes 0.25 1 avg sales per customer
+        custom_name: 31/12/2023 yes 0.25 1 avg sales per customer
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] avg sales per customer"
       table:
         table_columns:
@@ -2799,10 +2799,10 @@ liveboard:
       search_query: "[Age] [age_bucket] [campaign enddate] [campaign enddate].monthly"
       answer_columns:
       - name: Month(campaign enddate)
-        custom_name: 12/31/2023 yes 0.25 1 Monthly campaign enddate - Fiscal
+        custom_name: 31/12/2023 yes 0.25 1 Monthly campaign enddate - Fiscal
         dynamic_title: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Monthly campaign enddate - Fiscal"
       - name: Total Age
-        custom_name: Total Age12/31/2023 yes 0.25 1
+        custom_name: Total Age31/12/2023 yes 0.25 1
         dynamic_title: "Total Age[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: age_bucket
       table:
@@ -2998,11 +2998,11 @@ liveboard:
       search_query: "[date_ordered] [date_ordered].monthly [City] [Age]"
       answer_columns:
       - name: City
-        custom_name: City 12/31/2023 yes 0.25 1
+        custom_name: City 31/12/2023 yes 0.25 1
         dynamic_title: "City [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Month(date_ordered)
       - name: Total Age
-        custom_name: Total Age 12/31/2023 yes 0.25 1
+        custom_name: Total Age 31/12/2023 yes 0.25 1
         dynamic_title: "Total Age [${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -3340,10 +3340,10 @@ liveboard:
       search_query: "[Budget] [Product Name]"
       answer_columns:
       - name: Product Name
-        custom_name: Product Name12/31/2023 yes 0.25 1
+        custom_name: Product Name31/12/2023 yes 0.25 1
         dynamic_title: "Product Name[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Budget
-        custom_name: Total Budget12/31/2023 yes 0.25 1
+        custom_name: Total Budget31/12/2023 yes 0.25 1
         dynamic_title: "Total Budget[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -3496,10 +3496,10 @@ liveboard:
       search_query: "[monthName] [Income]"
       answer_columns:
       - name: Total Income
-        custom_name: Total Income12/31/2023 yes 0.25 1
+        custom_name: Total Income31/12/2023 yes 0.25 1
         dynamic_title: "Total Income[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: monthName
-        custom_name: monthName12/31/2023 yes 0.25 1
+        custom_name: monthName31/12/2023 yes 0.25 1
         dynamic_title: "monthName[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -4133,19 +4133,19 @@ liveboard:
       search_query: "[Sales Quantity] [TAT] [Tax] [age_bucket] [Age]"
       answer_columns:
       - name: Total Age
-        custom_name: Total Age12/31/2023 yes 0.25 1
+        custom_name: Total Age31/12/2023 yes 0.25 1
         dynamic_title: "Total Age[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Sales Quantity
-        custom_name: Total Sales Quantity12/31/2023 yes 0.25 1
+        custom_name: Total Sales Quantity31/12/2023 yes 0.25 1
         dynamic_title: "Total Sales Quantity[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total TAT
-        custom_name: Total TAT12/31/2023 yes 0.25 1
+        custom_name: Total TAT31/12/2023 yes 0.25 1
         dynamic_title: "Total TAT[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: Total Tax
-        custom_name: Total Tax12/31/2023 yes 0.25 1
+        custom_name: Total Tax31/12/2023 yes 0.25 1
         dynamic_title: "Total Tax[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       - name: age_bucket
-        custom_name: age_bucket12/31/2023 yes 0.25 1
+        custom_name: age_bucket31/12/2023 yes 0.25 1
         dynamic_title: "age_bucket[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
       table:
         table_columns:
@@ -6138,6 +6138,42 @@ liveboard:
         viz_style: "{}"
       display_mode: CHART_MODE
     viz_guid: 05ac0631-722e-4b4e-bea5-40f47603a149
+  - id: Viz_120
+    answer:
+      name: Total Budget by County Name
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[County Name] [Budget]"
+      answer_columns:
+      - name: County Name
+      - name: Total Budget
+      table:
+        table_columns:
+        - column_id: County Name
+          show_headline: false
+        - column_id: Total Budget
+          show_headline: false
+        ordered_column_ids:
+        - County Name
+        - Total Budget
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: County Name
+        - column_id: Total Budget
+        axis_configs:
+        - x:
+          - County Name
+          "y":
+          - Total Budget
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-6488088.674966184,3961465.4451791197],\"zoomLevel\": 3.010117900142963,\"extent\": [-1.48106333390482E7,-2353877.270506644,1834455.9891158305,1.0276808160864884E7]},\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"County Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Budget\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"e05938cd-fde1-4d90-a622-adddafd71e8c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Budget\"],\"isOpposite\": false}},{\"id\": \"26df542b-274b-4e0c-bb9e-2212e319f7bd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"County Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Budget\",\"color\": \"#F04152\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Budget\",\"colorMap\": [{\"serieName\": \"County Name\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: a2db96cd-65ca-47e6-8a86-c6e51d14a6aa
   layout:
     tabs:
     - name: new column
@@ -6603,6 +6639,8 @@ liveboard:
       id: 494e7e1a-d18e-4dd2-970a-6d5ad7d0a0d6
     - name: Geo Bubble
       description: ""
+      tiles:
+      - visualization_id: Viz_120
       id: d8e34602-b707-4a81-b467-70d39fb53268
     - name: Treemap
       description: ""

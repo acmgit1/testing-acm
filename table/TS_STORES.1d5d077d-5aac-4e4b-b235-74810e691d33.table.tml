@@ -1,0 +1,60 @@
+guid: 1d5d077d-5aac-4e4b-b235-74810e691d33
+table:
+  name: TS_STORES
+  db: NEBULADEV
+  schema: TPCH_COMPLEX_SCHEMA
+  db_table: TS_STORES
+  connection:
+    name: ts_complex_schema
+    fqn: 7da3df47-6550-4138-ad62-dbae6a53ddde
+  columns:
+  - name: STORE_ID
+    db_column_name: STORE_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: STORE_SIZE
+    db_column_name: STORE_SIZE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: STORE_STATUS
+    db_column_name: STORE_STATUS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: FLOOR_SPACE
+    db_column_name: FLOOR_SPACE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: EXPENSE
+    db_column_name: EXPENSE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: CITY_CODE
+    db_column_name: CITY_CODE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: TS_STORES_to_TS_LOCATION
+    destination:
+      name: TS_LOCATION
+      fqn: e5c06b3f-9227-4d2a-92de-475a6fa6bc6b
+    "on": "[TS_STORES::CITY_CODE] = [TS_LOCATION::CITY_CODE]"
+    type: INNER
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

@@ -1,0 +1,25 @@
+guid: eb58a895-5454-4cc9-855b-3278b33614a9
+table:
+  name: TS_STATES
+  db: NEBULADEV
+  schema: TPCH_COMPLEX_SCHEMA
+  db_table: TS_STATES
+  connection:
+    name: ts_complex_schema
+    fqn: 7da3df47-6550-4138-ad62-dbae6a53ddde
+  columns:
+  - name: STATE
+    db_column_name: STATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: REGION
+    db_column_name: REGION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

@@ -1,0 +1,46 @@
+guid: 42b0ef86-b979-4fd1-9b30-d67f2e465388
+table:
+  name: TS_PRODUCT_DETAILS
+  db: NEBULADEV
+  schema: TPCH_COMPLEX_SCHEMA
+  db_table: TS_PRODUCT_DETAILS
+  connection:
+    name: ts_complex_schema
+    fqn: 7da3df47-6550-4138-ad62-dbae6a53ddde
+  columns:
+  - name: PRODUCT_DETAIL_ID
+    db_column_name: PRODUCT_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_ID
+    db_column_name: PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_NAME
+    db_column_name: PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_PRICE
+    db_column_name: PRODUCT_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  joins_with:
+  - name: TS_PRODUCT_DETAILS_to_TS_PRODUCTS
+    destination:
+      name: TS_PRODUCTS
+      fqn: 4527942d-d858-4438-a34e-359b8dbf46c3
+    "on": "[TS_PRODUCT_DETAILS::PRODUCT_ID] = [TS_PRODUCTS::PRODUCT_ID]"
+    type: INNER
+  properties:
+    spotter_config:
+      is_spotter_enabled: false
