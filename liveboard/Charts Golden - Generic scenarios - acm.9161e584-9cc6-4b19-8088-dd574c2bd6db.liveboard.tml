@@ -6249,6 +6249,44 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: filter with 'Albany' 'Albuquerque' 'Allentown' 'Anaheim' 'Ann Arbor' bubble chart
     viz_guid: 7e99bb52-3e44-44a5-ba77-9d81f3dcfbc6
+  - id: Viz_123
+    answer:
+      name: "top 5 city with colour #06BF7F"
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Population] [City] top 5 [City]"
+      answer_columns:
+      - name: City
+      - name: Total Population
+      table:
+        table_columns:
+        - column_id: City
+          show_headline: false
+        - column_id: Total Population
+          show_headline: false
+        ordered_column_ids:
+        - City
+        - Total Population
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: City
+        - column_id: Total Population
+        axis_configs:
+        - x:
+          - City
+          "y":
+          - Total Population
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0668119723013565E7,4632830.262771586],\"zoomLevel\": 4.6464684084126535,\"extent\": [-1.3333156126187913E7,2610537.9333039923,-8003083.319839217,6655122.59223918]},\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":\\\"satellite-streets-v9\\\",\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"City\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null},\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Population\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"2bfca462-6616-41bd-918f-a344ffc8a997\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Population\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":true,\\\"linkedTo\\\":{\\\"type\\\":\\\"AXIS\\\",\\\"id\\\":\\\"bcc33465-a098-4e8c-b8df-814f1874a348\\\",\\\"key\\\":\\\"nameTextStyle\\\"},\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":true,\\\"linkedTo\\\":{\\\"type\\\":\\\"AXIS\\\",\\\"id\\\":\\\"bcc33465-a098-4e8c-b8df-814f1874a348\\\",\\\"key\\\":\\\"labelTextStyle\\\"},\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"bcc33465-a098-4e8c-b8df-814f1874a348\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"City\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"seriesColors\": [{\"serieName\": \"Total Population\",\"color\": \"#06BF7F\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Population\",\"color\": \"#F04152\"}]}"
+        viz_style: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: "top 5 city with colour #06BF7F"
+    viz_guid: 2195207e-204c-433a-b80a-2beae2786456
   layout:
     tabs:
     - name: new column
@@ -6718,6 +6756,7 @@ liveboard:
       - visualization_id: Viz_120
       - visualization_id: Viz_121
       - visualization_id: Viz_122
+      - visualization_id: Viz_123
       id: d8e34602-b707-4a81-b467-70d39fb53268
     - name: Treemap
       description: ""
