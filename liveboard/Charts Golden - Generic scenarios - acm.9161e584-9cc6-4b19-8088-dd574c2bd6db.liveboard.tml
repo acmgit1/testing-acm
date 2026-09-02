@@ -6963,6 +6963,9 @@ liveboard:
         height: 1
         width: 12
       id: db3849bb-b282-49d3-b865-87e79f4d20aa
+    - name: muze studio ai
+      description: ""
+      id: dc0f9db2-598f-467a-bef3-1325c9f780a4
   parameter_overrides:
   - key: 3bfe5756-1cb8-4faa-b51e-b6ac5ff93840
     value:
