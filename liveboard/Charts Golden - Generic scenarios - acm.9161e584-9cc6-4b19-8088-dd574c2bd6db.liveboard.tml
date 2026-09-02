@@ -6287,6 +6287,50 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "top 5 city with colour #06BF7F"
     viz_guid: 2195207e-204c-433a-b80a-2beae2786456
+  - id: Viz_124
+    answer:
+      name: "@analysis date @bool_params @decimal_params @int_params Shipmode, Total Sales Quantity"
+      description: '@analysis date @bool_params @decimal_params @int_params'
+      tables:
+      - id: Golden_MODEL_ACM
+        name: Golden_MODEL_ACM
+        fqn: 11a5394c-5b22-4dbd-9d39-1e632315cd85
+      search_query: "[Shipmode] [Sales Quantity]"
+      answer_columns:
+      - name: Shipmode
+      - name: Total Sales Quantity
+      table:
+        table_columns:
+        - column_id: Shipmode
+          show_headline: false
+        - column_id: Total Sales Quantity
+          show_headline: false
+        ordered_column_ids:
+        - Shipmode
+        - Total Sales Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: MUZE_STUDIO
+        chart_columns:
+        - column_id: Shipmode
+        - column_id: Total Sales Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": false}},\"columnProperties\": [{\"columnId\": \"Shipmode\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": false,\"showPreviousDateLabel\": false,\"showPreviousValue\": false}}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": false,\"showPreviousDateLabel\": false,\"showPreviousValue\": false}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": false,\"showPreviousDateLabel\": false,\"showPreviousValue\": false}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": false,\"showPreviousDateLabel\": false,\"showPreviousValue\": false}}}],\"axisProperties\": [{\"id\": \"77d84643-7119-4bb2-977d-550c7d661fd3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Quantity\"],\"isOpposite\": false}},{\"id\": \"75dac065-c445-45e5-8839-2a2042457383\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Quantity\",\"color\": \"#8C62F5\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: fields
+            columns:
+            - Shipmode
+            - Total Sales Quantity
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{\"clientState\":\"{\\\"version\\\":1,\\\"playground\\\":{\\\"version\\\":\\\"v1\\\",\\\"code\\\":{\\\"jsCodeBase64\\\":\\\"LyoqCiAqIEF2YWlsYWJsZSBDb2x1bW5zOgogKiAiU2hpcG1vZGUiCiAqICJUb3RhbCBTYWxlcyBRdWFudGl0eSIKICogIk1lYXN1cmUgbmFtZXMiIC8vIElmICdtZWFzdXJlVmFsdWVzJyBpcyBlbmFibGVkLgogKiAiTWVhc3VyZSB2YWx1ZXMiIC8vIElmICdtZWFzdXJlVmFsdWVzJyBpcyBlbmFibGVkLgogKiAtLS0gRU5EIC0tLSAKICovCgpjb25zdCB7CiAgbXV6ZSwKICBnZXREYXRhRnJvbVNlYXJjaFF1ZXJ5LAogIGZvcm1hdHRlcnMKfSA9IHZpejsKY29uc3QgewogIE51bWJlckZvcm1hdHRlcgp9ID0gZm9ybWF0dGVyczsKY29uc3QgZGF0YSA9IGdldERhdGFGcm9tU2VhcmNoUXVlcnkoKTsKY29uc3QgdG90YWxTYWxlc1F1YW50aXR5Rm9ybWF0dGVyID0gbmV3IE51bWJlckZvcm1hdHRlcigiZGVjaW1hbCIsIHsKICB0eXBlOiAibnVtYmVyIiwKICB1bml0OiAiYXV0byIsCiAgZGVjaW1hbERpZ2l0czogMCwKICB0aG91c2FuZFNlcGFyYXRvcjogImNvbW1hIgp9KTsKY29uc3QgX19kZXJpdmVkVmFsdWVfZzEgPSBkYXRhLmdyb3VwQnkoWyJTaGlwbW9kZSJdKS5ncm91cEJ5KFtdLCBbewogIGFnZ246ICJhdmciLAogIGZpZWxkOiAiVG90YWwgU2FsZXMgUXVhbnRpdHkiCn1dKS5nZXREYXRhKCkuZGF0YVswXVswXTsKbXV6ZS5jYW52YXMoKS5yb3dzKFsiVG90YWwgU2FsZXMgUXVhbnRpdHkiXSkuY29sdW1ucyhbIlNoaXBtb2RlIl0pLmxheWVycyhbewogIG1hcms6ICJiYXIiLAogIGVuY29kaW5nOiB7CiAgICB4OiAiU2hpcG1vZGUiLAogICAgeTogIlRvdGFsIFNhbGVzIFF1YW50aXR5IiwKICAgIGNvbG9yOiAiU2hpcG1vZGUiLAogICAgdGV4dDogewogICAgICBmaWVsZDogIlRvdGFsIFNhbGVzIFF1YW50aXR5IiwKICAgICAgZm9ybWF0dGVyOiB0b3RhbFNhbGVzUXVhbnRpdHlGb3JtYXR0ZXIuZm9ybWF0dGVyRnVuYygpLAogICAgICBsYWJlbFBsYWNlbWVudDogewogICAgICAgIGFuY2hvcnM6IFsib3V0c2lkZS10b3AiXQogICAgICB9CiAgICB9LAogICAgY29ybmVyUmFkaXVzOiB7CiAgICAgIHZhbHVlOiA0CiAgICB9CiAgfQp9LCB7CiAgbWFyazogInRpY2siLAogIGVuY29kaW5nOiB7CiAgICB4OiB7CiAgICAgIGZpZWxkOiBudWxsCiAgICB9LAogICAgeTogIlRvdGFsIFNhbGVzIFF1YW50aXR5IiwKICAgIGNvbG9yOiB7CiAgICAgIHZhbHVlOiAoKSA9PiAiIzU1NTU1NSIKICAgIH0sCiAgICBvcGFjaXR5OiB7CiAgICAgIHZhbHVlOiAoKSA9PiAwLjYKICAgIH0KICB9LAogIHNvdXJjZTogKCkgPT4gewogICAgY29uc3QgY29uc3REYXRhID0gW3sKICAgICAgIlRvdGFsIFNhbGVzIFF1YW50aXR5IjogX19kZXJpdmVkVmFsdWVfZzEKICAgIH1dOwogICAgY29uc3QgY29uc3RTY2hlbWEgPSBbewogICAgICBuYW1lOiAiVG90YWwgU2FsZXMgUXVhbnRpdHkiLAogICAgICB0eXBlOiAibWVhc3VyZSIKICAgIH1dOwogICAgY29uc3QgcGFyc2VkRGF0YSA9IG11emUuRGF0YU1vZGVsLmxvYWREYXRhU3luYyhjb25zdERhdGEsIGNvbnN0U2NoZW1hKTsKICAgIHJldHVybiBuZXcgbXV6ZS5EYXRhU3RvcmUocGFyc2VkRGF0YSk7CiAgfSwKICB0cmFuc2l0aW9uOiB7CiAgICBkaXNhYmxlZDogdHJ1ZQogIH0sCiAgY2xhc3NOYW1lOiAic3R5bGVkLWxheWVyLTEiCn1dKS5jb25maWcoewogIGF4ZXM6IHsKICAgIHg6IHsKICAgICAgZmllbGRzOiB7CiAgICAgICAgU2hpcG1vZGU6IHsKICAgICAgICAgIG9yZGVyaW5nOiB7CiAgICAgICAgICAgIHR5cGU6ICJmaWVsZCIsCiAgICAgICAgICAgIGRpcmVjdGlvbjogImRlc2MiLAogICAgICAgICAgICBmaWVsZDogewogICAgICAgICAgICAgIG5hbWU6ICJUb3RhbCBTYWxlcyBRdWFudGl0eSIsCiAgICAgICAgICAgICAgYWdncmVnYXRpb246ICJzdW0iCiAgICAgICAgICAgIH0KICAgICAgICAgIH0sCiAgICAgICAgICBzaG93QXhpc05hbWU6IHRydWUKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICB5OiB7CiAgICAgIGZpZWxkczogewogICAgICAgICJUb3RhbCBTYWxlcyBRdWFudGl0eSI6IHsKICAgICAgICAgIHRpY2tGb3JtYXQ6IHRvdGFsU2FsZXNRdWFudGl0eUZvcm1hdHRlci5mb3JtYXR0ZXJGdW5jKCksCiAgICAgICAgICBzaG93QXhpc05hbWU6IHRydWUKICAgICAgICB9CiAgICAgIH0KICAgIH0KICB9LAogIHJvd3M6IHsKICAgIGZhY2V0czogewogICAgICBmaWVsZHM6IHsKICAgICAgICAiVG90YWwgU2FsZXMgUXVhbnRpdHkiOiB7CiAgICAgICAgICBmb3JtYXR0ZXI6IHRvdGFsU2FsZXNRdWFudGl0eUZvcm1hdHRlci5mb3JtYXR0ZXJGdW5jKCkKICAgICAgICB9CiAgICAgIH0KICAgIH0KICB9LAogIGludGVyYWN0aW9uOiB7CiAgICB0b29sdGlwOiB7CiAgICAgIGZpZWxkRm9ybWF0dGVyczogewogICAgICAgICJUb3RhbCBTYWxlcyBRdWFudGl0eSI6IHRvdGFsU2FsZXNRdWFudGl0eUZvcm1hdHRlci5mb3JtYXR0ZXJGdW5jKCkKICAgICAgfQogICAgfQogIH0sCiAgZ3JpZExpbmVzOiB7CiAgICB5OiB7CiAgICAgIHNob3c6IHRydWUKICAgIH0sCiAgICBjb2xvcjogIiNFMEUwRTAiCiAgfSwKICBsZWdlbmQ6IHsKICAgIGNvbG9yOiB7CiAgICAgIGZpZWxkczogewogICAgICAgIFNoaXBtb2RlOiB7CiAgICAgICAgICByYW5nZTogWyIjMDA0QjlCIiwgIiNGRkE2MDAiLCAiIzM2OUZBQSIsICIjRUI3RDU3IiwgIiM3RDUxRjAiLCAiI0QzMzQxRCIsICIjMDA2QTEzIl0KICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICBzaG93OiBmYWxzZQogIH0KfSkuZGF0YShkYXRhKS5tb3VudCgiI2NoYXJ0Iik7\\\",\\\"cssCodeBase64\\\":\\\"aHRtbCwgYm9keSB7CiAgbWFyZ2luOiAwOwogIHBhZGRpbmc6IDA7CiAgd2lkdGg6IDEwMHZ3OwogIGhlaWdodDogMTAwdmg7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQoKI2NoYXJ0IHsKICB3aWR0aDogMTAwJTsKICBoZWlnaHQ6IDEwMCU7Cn0KCi5tdXplLWxheWVyLXN0eWxlZC1sYXllci0xIHBhdGggeyBzdHJva2UtZGFzaGFycmF5OiA2IDQgIWltcG9ydGFudDsgc3Ryb2tlLXdpZHRoOiAxLjVweCAhaW1wb3J0YW50OyB9\\\",\\\"htmlCodeBase64\\\":\\\"PGRpdiBpZD0iY2hhcnQiPjwvZGl2Pg\\\\u003d\\\\u003d\\\"},\\\"splitSizes\\\":[55,45],\\\"editorConsoleSplitSizes\\\":[99,1]},\\\"ai\\\":{\\\"spec\\\":{\\\"axis\\\":{\\\"x\\\":{\\\"axisName\\\":{\\\"show\\\":true}},\\\"y\\\":{\\\"axisName\\\":{\\\"show\\\":true},\\\"gridlines\\\":{\\\"lineColor\\\":\\\"#E0E0E0\\\"}}},\\\"columns\\\":[{\\\"fields\\\":[\\\"Shipmode\\\"],\\\"type\\\":\\\"single\\\"}],\\\"formatting\\\":{\\\"fields\\\":{\\\"Total Sales Quantity\\\":{\\\"decimalDigits\\\":0,\\\"style\\\":\\\"decimal\\\",\\\"thousandSeparator\\\":\\\"comma\\\",\\\"type\\\":\\\"number\\\",\\\"unit\\\":\\\"auto\\\"}}},\\\"layers\\\":[{\\\"config\\\":{\\\"cornerRadius\\\":4},\\\"encoding\\\":{\\\"color\\\":{\\\"field\\\":\\\"Shipmode\\\"},\\\"text\\\":{\\\"field\\\":\\\"Total Sales Quantity\\\",\\\"placement\\\":{\\\"anchors\\\":[\\\"outside-top\\\"]}},\\\"x\\\":{\\\"field\\\":\\\"Shipmode\\\"},\\\"y\\\":{\\\"field\\\":\\\"Total Sales Quantity\\\"}},\\\"mark\\\":\\\"bar\\\"},{\\\"config\\\":{\\\"strokeDash\\\":\\\"dashed\\\",\\\"strokeWidth\\\":1.5},\\\"encoding\\\":{\\\"color\\\":{\\\"value\\\":\\\"#555555\\\"},\\\"opacity\\\":{\\\"value\\\":0.6},\\\"y\\\":{\\\"value\\\":{\\\"formula\\\":\\\"avg(\\\\\\\"Total Sales Quantity\\\\\\\")\\\"}}},\\\"mark\\\":\\\"rule\\\"}],\\\"legend\\\":{\\\"color\\\":{\\\"fields\\\":{\\\"Shipmode\\\":{\\\"range\\\":[\\\"#004B9B\\\",\\\"#FFA600\\\",\\\"#369FAA\\\",\\\"#EB7D57\\\",\\\"#7D51F0\\\",\\\"#D3341D\\\",\\\"#006A13\\\"]}}},\\\"show\\\":false},\\\"rows\\\":[{\\\"fields\\\":[\\\"Total Sales Quantity\\\"],\\\"type\\\":\\\"single\\\"}],\\\"sort\\\":{\\\"axes\\\":{\\\"x\\\":{\\\"Shipmode\\\":{\\\"direction\\\":\\\"desc\\\",\\\"field\\\":{\\\"aggregation\\\":\\\"sum\\\",\\\"name\\\":\\\"Total Sales Quantity\\\"},\\\"type\\\":\\\"field\\\"}}}}}}}\",\"axisVisualProps\":{},\"columnVisualProps\":{},\"dataLabelVisualProps\":{},\"tooltipVisualProps\":{},\"legendVisualProps\":{},\"displayVisualProps\":{}}"
+        viz_style: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}] Shipmode, Total Sales Quantity"
+      dynamic_description: "[${PARAMETER:analysis date}] [${PARAMETER:bool_params}] [${PARAMETER:decimal_params}] [${PARAMETER:int_params}]"
+    viz_guid: 2d210c18-3f77-483e-815c-9e8b767a99b9
   layout:
     tabs:
     - name: new column
@@ -6965,6 +7009,8 @@ liveboard:
       id: db3849bb-b282-49d3-b865-87e79f4d20aa
     - name: muze studio ai
       description: ""
+      tiles:
+      - visualization_id: Viz_124
       id: dc0f9db2-598f-467a-bef3-1325c9f780a4
   parameter_overrides:
   - key: 3bfe5756-1cb8-4faa-b51e-b6ac5ff93840
